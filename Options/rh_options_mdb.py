@@ -8,7 +8,7 @@ from pymongo import MongoClient
 import robin_stocks as r
 import sys
 
-login = r.login('philip0massey', 'Rie1Hnd2*#')
+login = r.login(os.getenv('RHUSER'), os.getenv('RNPWD'))
 
 client = MongoClient()
 db = client['robinhood_options']
