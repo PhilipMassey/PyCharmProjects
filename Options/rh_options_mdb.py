@@ -1,14 +1,21 @@
 import site
 site.addsitedir('/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages')
-
+import os
+import sys
 from datetime import datetime
 import pandas as pd
 import pymongo
 from pymongo import MongoClient
 import robin_stocks as r
-import sys
 
-login = r.login(os.getenv('RHUSER'), os.getenv('RNPWD'))
+import configparser
+config = configparser.RawConfigParser()
+configFilePath = '/Users/philipmassey/.tokens/robinhood.cfg'
+config.read(configFilePath)
+rhuser = config.get('login', 'user')
+rhpwd = config.get('login', 'pwd')
+login = r.login(rhuser,rhpwd)
+
 
 client = MongoClient()
 db = client['robinhood_options']
@@ -38,9 +45,6 @@ for expiration_date in expiration_dates:
             print(e.error_document)
         except Exception as ee:
             print(ee)
-
-        inserted_records = len(list(db[ticker].find({'chain_symbol': ticker})))
-        print('{0}\t{1}\t{2}'.format(ticker, expiration_date,inserted_records))
     except Exceptions as ee:
         print(ee)
-print('Completed')
+print('{0}\t{1}'.format(ticker,'Completed'))
