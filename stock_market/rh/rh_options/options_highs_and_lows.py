@@ -28,6 +28,7 @@ def getStrikesOHLCChangesExpiration(symbol, expiration_dates, optionType, span, 
         print('{}\t'.format(expirationDate), end='')
         #options = r.find_options_for_list_of_stocks_by_expiration_date([symbol], expirationDate, optionType)
         options = r.find_options_by_expiration([symbol], expirationDate, optionType)
+        options = (filter(lambda x: x['volume'] != '', options))
         dfoptions = pd.DataFrame((filter(lambda x: x['volume'] > volume_limit, options)))
         if dfoptions.empty:
             print('Volume is 0 for options')

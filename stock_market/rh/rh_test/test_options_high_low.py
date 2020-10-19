@@ -1,7 +1,7 @@
 import rh
 r = rh.r
 
-symbol = 'UFPI'
+symbol = 'HD'
 expiration_dates = r.get_chains(symbol)['expiration_dates']
 print(expiration_dates)
 span = 'day'

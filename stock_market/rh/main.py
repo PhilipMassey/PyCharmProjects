@@ -1,6 +1,6 @@
 import robin_stocks as r
-from datetime import datetime
 from dateutil import tz
+from datetime import datetime
 
 
 from_zone = tz.tzutc()

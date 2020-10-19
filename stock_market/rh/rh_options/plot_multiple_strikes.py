@@ -12,6 +12,7 @@ from rh.main import utcToLocal
 def getStrikePrices(symbol,expirationDate,optionType='call',volume_limit=0):
     #options = r.find_options_for_list_of_stocks_by_expiration_date([symbol], expirationDate=expirationDate,optionType=optionType)
     options = r.find_options_by_expiration([symbol], expirationDate=expirationDate,optionType=optionType)
+    options = (filter(lambda x: x['volume'] != '', options))
     dfoptions = pd.DataFrame((filter(lambda x:x['volume']>volume_limit,options)))
     if dfoptions.empty:
         print('Volume is 0 for options')
