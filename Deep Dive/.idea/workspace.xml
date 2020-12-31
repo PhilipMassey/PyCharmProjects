@@ -2,29 +2,292 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95a45075-3636-4e0b-a23c-304d5991ece2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Plotting/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Plotting/.idea/Plotting.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Plotting/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Plotting/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Plotting/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Plotting/matplot skip agians.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Plotting/matplot skip days.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Plotting/mplfinance one.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Plotting/plotly line.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Plotting/plotly one.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Plotting/plotly rangebreak.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myRobinhood/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myRobinhood/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myRobinhood/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myRobinhood/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myRobinhood/.idea/myRobinhood.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myRobinhood/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myRobinhood/rh_options/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../myRobinhood/rh_options/options_high_and_lows.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Options/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Options/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Options/rh_options_mdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Options/rh_options_mdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Options/run_rh_options_mdb.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../Options/run_rh_options_mdb.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Options/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Options/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-deepdive" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examoles/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Examoles/threads_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/fidelity_symbol.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/market_data_test/test_getNDaysAgo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/market_data_test/test_get_stockpickle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/scripts/run_pickle_missing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-11-12.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-11-13.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-11-16.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-11-17.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-11-18.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-11-19.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-11-20.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-11-23.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-11-24.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-11-25.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-02.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-03.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-04.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-05.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-06.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-09.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-10.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-11.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-12.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-13.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-16.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-19.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-20.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-11-23.pk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/plots/scripts/script_fidelity_bubble.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/plots/scripts/script_portfolio_bubble_ascending.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/portfolio/porfolio_test/test_concat.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/portfolio/porfolio_test/test_fidelity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/01 - Multi-Line Statements and Strings.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/01 - Multi-Line Statements and Strings.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/02 - Conditionals.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/02 - Conditionals.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/03 - Functions.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/03 - Functions.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/04 - The While Loop.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/04 - The While Loop.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/05 - Break, Continue and the Try Statement.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/05 - Break, Continue and the Try Statement.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/06 - The For Loop.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/06 - The For Loop.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/07 - Classes.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 02 - A Quick Refresher/07 - Classes.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/01 - Variables are Memory References.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/01 - Variables are Memory References.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/02 - Reference Counting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/02 - Reference Counting.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/03 - Garbage Collection.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/03 - Garbage Collection.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/07 - Function Arguments and Mutability.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/07 - Function Arguments and Mutability.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/09 - Variable Equality.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/09 - Variable Equality.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/10 - Everything is an Object.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/10 - Everything is an Object.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/11 - Python Optimizations - Interning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/11 - Python Optimizations - Interning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/12 - Python Optimizations - String Interning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/12 - Python Optimizations - String Interning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/13 - Python Optimizations - Peephole.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 03 - Variables and Memory/13 - Python Optimizations - Peephole.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 04 - Numeric Types/01 - Integers - Data Type.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 04 - Numeric Types/01 - Integers - Data Type.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 04 - Numeric Types/06 - Floats - Equality Testing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 04 - Numeric Types/06 - Floats - Equality Testing.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 04 - Numeric Types/08 - Floats - Rounding.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 04 - Numeric Types/08 - Floats - Rounding.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 04 - Numeric Types/10 - Decimals - Constructors and Contexts.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 04 - Numeric Types/10 - Decimals - Constructors and Contexts.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 04 - Numeric Types/17 - Booleans - Boolean Operators.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 04 - Numeric Types/17 - Booleans - Boolean Operators.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/01 - Positional Arguments.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/01 - Positional Arguments.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/02 - Unpacking Iterables.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/02 - Unpacking Iterables.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/03 - Extended Unpacking.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/03 - Extended Unpacking.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/04 - Star-Args.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/04 - Star-Args.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/05 - Keyword Arguments.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/05 - Keyword Arguments.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/06 - Kwargs.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/06 - Kwargs.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/07 - Putting it all Together.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/07 - Putting it all Together.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/08 - Simple Function Timer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/08 - Simple Function Timer.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/10 - Parameter Defaults - Beware Again.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 05 - Function Parameters/10 - Parameter Defaults - Beware Again.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/01 - Docstrings and Annotations.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/01 - Docstrings and Annotations.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/02 - Lambda Expressions.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/02 - Lambda Expressions.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/03 - Lambdas and Sorting.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/03 - Lambdas and Sorting.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/04 - Challenge - Randomizing using Sorted.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/04 - Challenge - Randomizing using Sorted.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/05 - Function Introspection.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/05 - Function Introspection.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/06 - Callables.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/06 - Callables.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/07 - Map, Filter, Zip and List Comprehensions.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/07 - Map, Filter, Zip and List Comprehensions.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/08 - Reducing Functions.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/08 - Reducing Functions.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/10 - The operator Module.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 06 - First-Class Functions/10 - The operator Module.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/01 - Global and Local Scopes.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/02 - Nonlocal Scopes.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/03 - Closures.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/04 - Closure Applications - Part 1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/05 - Closure Applications - Part 2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/06 - Decorators - Part 1.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/07 - Decorator Application - Timer.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/08 - Decorator Application - Logger, Stacked.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/09 - Decorator Application - Memoization.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/10 - Decorators - Part 2.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/11 - Decorator Application - Decorator Class.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/12 - Decorator Application (Decorating Classes).ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 07 - Scopes, Closures and Decorators/13 - Decorator Application - Single Dispatch.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 08 - Tuples as Data Records/01 - Tuples as Data Structures.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 08 - Tuples as Data Records/01 - Tuples as Data Structures.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 08 - Tuples as Data Records/02 - Named Tuples.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 08 - Tuples as Data Records/02 - Named Tuples.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 08 - Tuples as Data Records/04 - Named Tuples - Docstrings, DefaultValues.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 08 - Tuples as Data Records/04 - Named Tuples - Docstrings, DefaultValues.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 08 - Tuples as Data Records/05 - Named Tuples - Application - Alternative to Dictionaries.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 08 - Tuples as Data Records/05 - Named Tuples - Application - Alternative to Dictionaries.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 08 - Tuples as Data Records/06 - Named Tuples - Application - Returning Multiple Values.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 08 - Tuples as Data Records/06 - Named Tuples - Application - Returning Multiple Values.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 09 - Modules, Packages and Namespaces/01 - What is a Module.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 09 - Modules, Packages and Namespaces/01 - What is a Module.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python-deepdive/Part 1/Section 09 - Modules, Packages and Namespaces/08 - structuring_package_imports/common/validators/date.py" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive/Part 1/Section 09 - Modules, Packages and Namespaces/08 - structuring_package_imports/common/validators/date.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/get_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/market_data_test/test_get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/market_data_test/test_get_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/market_data_test/test_portfolio_symbol.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/market_data_test/test_portfolio_symbol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/pickle_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/pickle_stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/portfolio_symbol.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/portfolio_symbol.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/scripts/run_pickle_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/scripts/run_pickle_stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-02-14.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-02-14.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-02-18.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-02-18.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-02-19.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-02-19.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-02-20.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-02-20.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-02-21.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-02-21.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-02-24.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-02-24.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-02-25.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-02-25.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-02-26.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-02-26.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-02-27.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-02-27.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-02-28.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-02-28.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-02.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-02.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-03.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-03.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-04.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-04.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-05.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-05.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-06.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-06.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-09.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-09.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-10.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-10.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-11.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-11.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-12.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-12.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-13.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-13.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-16.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-16.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-17.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-17.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-18.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-18.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-19.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-19.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-20.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-20.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-23.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-23.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-24.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-24.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-25.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-25.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-26.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-26.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-27.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-27.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-30.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-30.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-03-31.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-03-31.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-01.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-01.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-02.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-02.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-03.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-03.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-06.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-06.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-07.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-07.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-08.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-08.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-09.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-09.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-13.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-13.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-14.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-14.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-15.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-15.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-16.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-16.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-17.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-17.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-20.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-20.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-21.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-21.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-22.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-22.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-23.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-23.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-24.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-24.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-27.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-27.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-28.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-28.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-29.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-29.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-04-30.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-04-30.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-01.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-01.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-04.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-04.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-05.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-05.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-06.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-06.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-07.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-07.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-08.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-08.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-11.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-11.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-12.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-12.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-13.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-13.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-14.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-14.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-15.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-15.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-18.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-18.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-19.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-19.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-20.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-20.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-21.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-21.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-22.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-22.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-26.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-26.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-27.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-27.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-28.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-28.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-05-29.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-05-29.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-01.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-01.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-02.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-02.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-03.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-03.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-04.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-04.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-05.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-05.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-08.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-08.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-09.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-09.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-10.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-10.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-11.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-11.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-12.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-12.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-15.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-15.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-16.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-16.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-17.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-17.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-18.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-18.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-19.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-19.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-22.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-22.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-23.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-23.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-24.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-24.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-25.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-25.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-26.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-26.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-29.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-29.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-06-30.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-06-30.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-01.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-01.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-02.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-02.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-06.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-06.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-07.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-07.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-08.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-08.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-09.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-09.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-10.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-10.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-13.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-13.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-14.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-14.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-15.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-15.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-16.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-16.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-17.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-17.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-20.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-20.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-21.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-21.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-22.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-22.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-23.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-23.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-24.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-24.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-27.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-27.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-28.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-28.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-29.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-29.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-30.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-30.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-07-31.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-07-31.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-03.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-03.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-04.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-04.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-05.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-05.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-06.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-06.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-07.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-07.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-10.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-10.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-11.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-11.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-12.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-12.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-13.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-13.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-14.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-14.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-17.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-17.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-18.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-18.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-19.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-19.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-20.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-20.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-08-21.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-08-21.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-08.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-08.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-09.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-09.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-10.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-10.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-11.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-11.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-14.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-14.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-15.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-15.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-16.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-16.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-17.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-17.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-18.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-18.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-21.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-21.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-22.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-22.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-23.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-23.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-24.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-24.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-25.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-25.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-28.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-28.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-29.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-29.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-09-30.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-09-30.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-01.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-01.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-02.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-02.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-05.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-05.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-06.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-06.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-07.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-07.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-08.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-08.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-09.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-09.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-12.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-12.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-13.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-13.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-14.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-14.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-15.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-15.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-16.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-16.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-19.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-19.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-20.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-20.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-21.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-21.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-22.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-22.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-23.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-23.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-26.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-26.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-27.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-27.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-28.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-28.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-29.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-29.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/2020-10-30.pk" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_pickles/bu/2020-10-30.pk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/plots/percent_change_bubble_chart_secind.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/plots/percent_change_bubble_chart_secind.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/plots/plot_percent_change_bubble.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/plots/plot_percent_change_bubble.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/plots/scripts/script_portfolio_bubble.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/plots/scripts/script_portfolio_bubble.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/portfolio/percent_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/portfolio/percent_change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/portfolio/percent_change_old.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/portfolio/porfolio_test/test_get_dfDaysAgo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/portfolio/porfolio_test/test_get_dfDaysAgo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/portfolio/porfolio_test/test_pecent_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/portfolio/porfolio_test/test_pecent_change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/portfolio/porfolio_test/test_portfolio.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/portfolio/portfolio_symbol.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/portfolio/portfolio_symbol.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/portfolio/scripts/pecent_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/portfolio/scripts/pecent_change.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +302,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/python-deepdive" />
   </component>
   <component name="ProjectId" id="1dICb5kCseoBiOHQCA3JRBDxSHr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -52,6 +311,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -88,6 +348,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>

@@ -16,27 +16,47 @@ portfolio,symbol
 5G,QRVO
 5G,SBAC
 5G,XLNX
+ARK ETFs,ARKF
+ARK ETFs,ARKG
+ARK ETFs,ARKK
+ARK ETFs,ARKQ
+ARK ETFs,ARKW
 ATACKX,IJR
 ATACKX,SCHA
 ATACKX,SPSM
 ATACKX,URTY
+Alternate Medicine,BKLLF
 Alternate Medicine,CMPS
 Alternate Medicine,EHVVF
+Alternate Medicine,FTRPF
+Alternate Medicine,GTSIF
+Alternate Medicine,HAVLF
+Alternate Medicine,HSTRF
 Alternate Medicine,MMEDF
+Alternate Medicine,MMNFF
+Alternate Medicine,MYCOF
+Alternate Medicine,PEMTF
 Alternate Medicine,RVVTF
-Artificial Inteligence,ADBE
-Artificial Inteligence,AMBA
-Artificial Inteligence,CNDT
-Artificial Inteligence,DMRC
-Artificial Inteligence,NUAN
-Basic Material,EGO
-Basic Material,FCX
-Basic Material,HBM
-Basic Material,LUNMF
-Basic Material,PALL
-Basic Material,PLG
-Basic Material,WPM
-Basic Material,WWR
+Alternate Medicine,SEEL
+Alternate Medicine,SHRMF
+Alternate Medicine,SPLIF
+Alternate Medicine,TRMNF
+Alternate Medicine,TRUFF
+Alternate Medicine,VEGGF
+AI,ADBE
+AI,AMBA
+AI,DMRC
+AI,NUAN
+Basic Materials,ALB
+Basic Materials,EGO
+Basic Materials,FCX
+Basic Materials,HBM
+Basic Materials,PALL
+Basic Materials,PLG
+Basic Materials,WPM
+Basic Materials,WWR
+Biotech Breakthough,INO
+Biotech Breakthough,NVAX
 Biotech Emerging,ACAD
 Biotech Emerging,ALGN
 Biotech Emerging,AMRN
@@ -46,12 +66,12 @@ Biotech Emerging,BIO
 Biotech Emerging,CRSP
 Biotech Emerging,DHR
 Biotech Emerging,HALO
-Biotech Emerging,INO
 Biotech Emerging,IOVA
 Biotech Emerging,MRNA
 Biotech Emerging,PKI
 Biotech Emerging,RGEN
 Biotech Emerging,SDGR
+Biotech Emerging,TXG
 Biotechnology,ABBV
 Biotechnology,AMGN
 Biotechnology,BMY
@@ -65,7 +85,9 @@ Biotechnology,NVS
 Biotechnology,PFE
 Biotechnology,REGN
 Bonds,BIL
+Bonds,CWB
 Bonds,EDV
+Bonds,ICVT
 Bonds,IEF
 Bonds,SHV
 Bonds,TLT
@@ -82,7 +104,6 @@ CEF,FPE
 CEF,HQH
 CEF,HQL
 CEF,PTY
-CEF,TDF
 CEF,THQ
 CEF,THW
 Cannabis,ACB
@@ -96,14 +117,16 @@ Cannabis,HEXO
 Cannabis,SMG
 Cannabis,TCNNF
 Cannabis,TLRY
+China,TCEHY
+China,TDF
 Cloud Enterprise Apps,CRWD
 Cloud Enterprise Apps,OKTA
-Cloud Enterprise Apps,TLND
 Cloud Enterprise Apps,TWLO
 Cloud Enterprise Apps,VEEV
 Cloud Enterprise Apps,ZS
 Cloud Retail Apps,AYX
 Cloud Retail Apps,DOCRF
+Cloud Retail Apps,FVRR
 Cloud Retail Apps,PAYC
 Cloud Retail Apps,PCTY
 Cloud Retail Apps,SHOP
@@ -111,7 +134,6 @@ Cloud Retail Apps,SQ
 Communication Services,BAND
 Communication Services,CDLX
 Communication Services,EVER
-Communication Services,FEDU
 Communication Services,FSLY
 Communication Services,NET
 Communication Services,VG
@@ -122,9 +144,6 @@ Corporate Bonds,FLDR
 Corporate Bonds,LQD
 Corporate Bonds,VCLT
 Corporate Bonds,VCSH
-Dividend,AGNC
-Dividend,ARR
-Dividend,DX
 Dividend,FFC
 Dividend,FLC
 ESG,EAGG
@@ -136,6 +155,8 @@ ESG,SUSB
 ESG,SUSC
 Electric Vehicles,BLNK
 Electric Vehicles,BYDDF
+Electric Vehicles,DDAIF
+Electric Vehicles,GM
 Electric Vehicles,LI
 Electric Vehicles,NIO
 Electric Vehicles,SOLO
@@ -148,17 +169,54 @@ Electricity,CLSK
 Electricity,FCEL
 Electricity,PLUG
 Electricity,SIEGY
-Emerging Markets,EEM
-Emerging Markets,EEMA
-Emerging Markets,EEMO
-Emerging Markets,EMQQ
-Emerging Markets,IEMG
-Emerging Markets,VWO
-Goldman Sachs,GBUY
-Goldman Sachs,GDAT
-Goldman Sachs,GDNA
-Goldman Sachs,GFIN
-Goldman Sachs,GMAN
+Electricity Solar,CSIQ
+Electricity Solar,DQ
+Electricity Solar,ENPH
+Electricity Solar,FSLR
+Electricity Solar,GNRC
+Electricity Solar,JKS
+Electricity Solar,RUN
+Electricity Solar,SEDG
+Electricity Solar,SPWR
+Electricity Solar,TAN
+Electricity Wind,BWEN
+Electricity Wind,DNNGY
+Electricity Wind,FAN
+Electricity Wind,GCTAF
+Electricity Wind,GCTAY
+Electricity Wind,HASI
+Electricity Wind,TPIC
+Electricity Wind,VWDRY
+Energy Renewable,AZRE
+Energy Renewable,BAM
+Energy Renewable,BEP
+Energy Renewable,BIP
+Energy Renewable,BPY
+Energy Renewable,CWEN
+Energy Renewable,NEE
+Energy Renewable,NEP
+Energy Renewable,ORA
+Energy Renewable,PZD
+ETF Strategies,FTCS
+ETF Strategies,FVC
+ETF Strategies,IFV
+ETF Strategies,QQQ
+ETF Strategies,RORO
+ETF Strategies,SPHB
+ETF Strategies,SPHD
+ETF Strategies,SPY
+ETF Strategies,SWAN
+ETF Strategies,VEGA
+Finance,AXP
+Finance,BAC
+Finance,C
+Finance,CNDT
+Finance,FUTU
+Finance,JPM
+Finance,LU
+Finance,LYG
+Finance,MA
+Finance,V
 Healthcare,ANTM
 Healthcare,CI
 Healthcare,CNC
@@ -180,14 +238,15 @@ Home Decor,HOME
 Home Decor,KBH
 Home Decor,KIRK
 Home Decor,RH
+Home Supplies,HD
 Home Supplies,LOW
 Home Supplies,ROCK
 Home Supplies,TTNDY
 Home Supplies,UFPI
 IOT,ALRM
 IOT,APH
-IOT,ARKW
 IOT,BOTZ
+IOT,CREE
 IOT,DGII
 IOT,DXCM
 IOT,HON
@@ -208,35 +267,29 @@ Insurance,DCT
 Insurance,LMND
 Mega Capital,AAPL
 Mega Capital,AMZN
-Mega Capital,BABA
-Mega Capital,DIS
+Mega Capital,GE
 Mega Capital,GOOG
-Mega Capital,HD
 Mega Capital,MRK
 Mega Capital,MSFT
+Mega Capital,VUG
+REIT,AGNC
 REIT,AMT
+REIT,ARR
 REIT,BEKE
 REIT,CCI
-REIT,CONE
+REIT,DX
 REIT,EQIX
 REIT,FTHM
 REIT,JLL
 REIT,NLY
+REIT,ORC
 REIT,SLG
-Renewalbe Energy,AY
-Renewalbe Energy,AZRE
-Renewalbe Energy,BAM
-Renewalbe Energy,BEP
-Renewalbe Energy,BIP
-Renewalbe Energy,BPY
-Renewalbe Energy,CWEN
-Renewalbe Energy,NEE
-Renewalbe Energy,NEP
-Renewalbe Energy,ORA
-Renewalbe Energy,PZD
+REIT,TWO
+REIT,UDR
 Semiconductors,AMD
 Semiconductors,AMKR
 Semiconductors,KLAC
+Semiconductors,INTC
 Semiconductors,LRCX
 Semiconductors,MU
 Semiconductors,NVDA
@@ -250,24 +303,36 @@ Shipping,CMRE
 Shipping,CPLP
 Shipping,DAC
 Shipping,GSL
-Shipping,PSHG
 Shipping,PXS
-Solar Energy,CSIQ
-Solar Energy,DQ
-Solar Energy,ENPH
-Solar Energy,FSLR
-Solar Energy,GNRC
-Solar Energy,JKS
-Solar Energy,RUN
-Solar Energy,SEDG
-Solar Energy,SPWR
-Solar Energy,TAN
+Shipping,SALT
+Shipping,SBLK
+Stock Markets Asia,EIDO
+Stock Markets Asia,EWT
+Stock Markets Asia,EWY
+Stock Markets Asia,GXC
+Stock Markets Asia,INDA
+Stock Markets Asia,THD
+Stock Markets Emerging,EEM
+Stock Markets Emerging,EEMA
+Stock Markets Emerging,EEMO
+Stock Markets Emerging,EMQQ
+Stock Markets Emerging,IEMG
+Stock Markets Emerging,VWO
+Stock Markets Europe,EDEN
+Stock Markets Europe,EFNL
+Stock Markets Europe,EIRL
+Stock Markets Europe,EWK
+Stock Markets Europe,EWN
+Stock Markets Europe,EWUS
+Stock Markets Europe,EWO
 Travel,BKNG
 Travel,CCL
 Travel,DAL
+Travel,DIS
 Travel,EXPE
 Travel,JETS
 Travel,LUV
+Travel,MGM
 Travel,MMYT
 Travel,NCLH
 Travel,RCL
@@ -275,20 +340,4 @@ Travel,SABR
 Travel,TRIP
 Travel,TZOO
 Travel,UAL
-Wind Energy,BWEN
-Wind Energy,DNNGY
-Wind Energy,FAN
-Wind Energy,GCTAF
-Wind Energy,GCTAY
-Wind Energy,HASI
-Wind Energy,PBW
-Wind Energy,SWI
-Wind Energy,TPIC
-Wind Energy,VWDRY
-World Stock Markets,EDEN
-World Stock Markets,EFNL
-World Stock Markets,EIRL
-World Stock Markets,EWK
-World Stock Markets,EWN
-World Stock Markets,EWO
 
