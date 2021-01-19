@@ -11,27 +11,20 @@ half = (15,2)
 quarter = (8,1)
 period ,interval = quarter
 
-dfall = pf.getSymPortPercPeriodsLowVty(period,interval)
-pl.plotSymPercPerdiod(dfall,account,'bubble')
+dfall = pf.getSymPortPercPeriodsFltrd(period, interval)
+title = 'Seeking Alpha'
+pl.plotSymPercPerdiod(dfall,title,'bubble')
 df = pf.aggregateOnPortfolio(dfall)
-pl.plotPortPercPeriods(df,account,'bar')
+pl.plotPortPercPeriods(df,title,'bar')
 
-account='Fidelity'
+account = 'fidelity'
 df = pf.filterdfbyAccountSymbols(dfall,account)
 pl.plotSymPercPerdiod(df,account,'bubble')
-pl.plotSymPercPerdiod(df,account,'barsymbol')
 
-account='Folio'
+account = 'm1finance'
 df = pf.filterdfbyAccountSymbols(dfall,account)
 pl.plotSymPercPerdiod(df,account,'bubble')
-pl.plotSymPercPerdiod(df,account,'barsymbol')
 
-account='M1'
+account = 'folio'
 df = pf.filterdfbyAccountSymbols(dfall,account)
 pl.plotSymPercPerdiod(df,account,'bubble')
-pl.plotSymPercPerdiod(df,account,'barsymbol')
-
-account='Schwab'
-df = pf.filterdfbyAccountSymbols(dfall,account)
-pl.plotSymPercPerdiod(df,account,'bubble')
-pl.plotSymPercPerdiod(df,account,'barsymbol')

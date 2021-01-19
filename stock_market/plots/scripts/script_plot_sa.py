@@ -11,7 +11,7 @@ half = (15,3)
 quarter = (8,1)
 period ,interval = one
 account='Seeking Alpha'
-dfall = pf.getSymPortPercPeriodsLowVty(period,interval,account)
+dfall = pf.getSymPortPercPeriodsFltrd(period, interval, account)
 pl.plotSymPercPerdiod(dfall,account,'bubble')
 df = pf.aggregateOnPortfolio(dfall)
 pl.plotPortPercPeriods(df,account,'bar')

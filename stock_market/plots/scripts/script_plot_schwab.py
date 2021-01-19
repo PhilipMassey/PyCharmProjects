@@ -11,6 +11,6 @@ half = (15,1)
 quarter = (8,2)
 period ,interval = half
 account='Schwab'
-dfa = pf.getSymPortPercPeriodsLowVty(period,interval,account)
+dfa = pf.getSymPortPercPeriodsFltrd(period, interval, account)
 pl.plotSymPercPerdiod(dfa,account,'bubble')
 pl.plotSymPercPerdiod(dfa,account,'barsymbol')

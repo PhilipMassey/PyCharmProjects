@@ -61,6 +61,7 @@ def plotSymPercPerdiod(dfa,title,barorbubble):
     fig["layout"].pop("updatemenus") # optional, drop animation buttons
 
     fig.show()
+    fig.update_layout(title_text='Your title', title_x=0.5)
 
 def plotPercentVolPortfolio(dfa,title,barorbubble):
     dfa.sort_values(by='percent', ascending=ascending, inplace=True)

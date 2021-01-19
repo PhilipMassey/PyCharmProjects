@@ -15,6 +15,7 @@ portfolio,symbol
 5G,NXPI
 5G,QRVO
 5G,SBAC
+5G,WUGI
 5G,XLNX
 ARK ETFs,ARKF
 ARK ETFs,ARKG
@@ -32,6 +33,7 @@ Alternate Medicine,FTRPF
 Alternate Medicine,GTSIF
 Alternate Medicine,HAVLF
 Alternate Medicine,HSTRF
+Alternate Medicine,LKYSF
 Alternate Medicine,MMEDF
 Alternate Medicine,MMNFF
 Alternate Medicine,MYCOF
@@ -47,9 +49,12 @@ AI,ADBE
 AI,AMBA
 AI,DMRC
 AI,NUAN
+Basic Materials,AG
 Basic Materials,ALB
+Basic Materials,COPX
 Basic Materials,EGO
 Basic Materials,FCX
+Basic Materials,GLD
 Basic Materials,HBM
 Basic Materials,PALL
 Basic Materials,PLG
@@ -106,17 +111,16 @@ CEF,HQL
 CEF,PTY
 CEF,THQ
 CEF,THW
-Cannabis,ACB
-Cannabis,APHA
 Cannabis,CGC
+Cannabis,CRLBF
 Cannabis,CRON
 Cannabis,CURLF
-Cannabis,GRWG
 Cannabis,GTBIF
 Cannabis,HEXO
-Cannabis,SMG
+Cannabis,NXGB
+Cannabis,OGI
 Cannabis,TCNNF
-Cannabis,TLRY
+Cannabis,VREOF
 China,TCEHY
 China,TDF
 Cloud Enterprise Apps,CRWD
@@ -126,6 +130,7 @@ Cloud Enterprise Apps,VEEV
 Cloud Enterprise Apps,ZS
 Cloud Retail Apps,AYX
 Cloud Retail Apps,DOCRF
+Cloud Retail Apps,ETSY
 Cloud Retail Apps,FVRR
 Cloud Retail Apps,PAYC
 Cloud Retail Apps,PCTY
@@ -156,6 +161,8 @@ ESG,SUSC
 Electric Vehicles,BLNK
 Electric Vehicles,BYDDF
 Electric Vehicles,DDAIF
+Electric Vehicles,FSR
+Electric Vehicles,FUV
 Electric Vehicles,GM
 Electric Vehicles,LI
 Electric Vehicles,NIO

@@ -25,9 +25,10 @@ def getSymPortPercPeriods(period,interval):
         df = df.rename(columns={'index':'symbol'})
         dfa = pd.concat([dfa,df])
         dfa.sort_values(by=['date', 'portfolio'], ascending=[False,True], inplace=True)
+        dfa.dropna(inplace=True)
     return dfa
 
-def getSymPortPercPeriodsLowVty(period,interval,volatile=True):
+def getSymPortPercPeriodsFltrd(period, interval, volatile=True):
     dfa = getSymPortPercPeriods(period,interval)
     if volatile is False:
         symbols = md.getVolatileStocks()

@@ -1,5 +1,6 @@
 import pandas as pd
 import portfolio as pf
+import market_data as md
 import robin_stocks as r
 import rh
 r = rh.r
@@ -16,10 +17,10 @@ def getEarningsCurrentMonth(symbol,year,month):
             #print(symbol,year_month_date)
             return symbol,year_month_date[0]
 
-df_port = pf.getPortfolios()
-symbols = pf.getPortfoliosSymbols()
-year = '2020'
-month = '11'
+df_port = md.getPortfolios()
+symbols = md.getPortfoliosSymbols()
+year = '2021'
+month = '01'
 
 earnings = [getEarningsCurrentMonth(e,year,month) for e in symbols]
 symbols_earnings = [e for e in earnings if e != None]
@@ -32,4 +33,4 @@ df_port_earnings.rename(columns={'index':'symbol','portfolio':'portfolio'},inpla
 df_port_earnings.dropna(inplace=True)
 df_port_earnings=df_port_earnings[['earnings','portfolio','symbol']]
 pd.set_option('display.max_rows', 500)
-print(df_port_earnings.sort_values(by=['earnings',['portfolio']))
+print(df_port_earnings.sort_values(by=['earnings','portfolio']))

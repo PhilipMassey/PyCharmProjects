@@ -35,11 +35,3 @@ def getPortfoliosSymbols():
     df_port = getPortfolios()
     return list(df_port.symbol.values)
 
-
-def getStockPickleDirectory():
-    path = '/Users/philipmassey/PycharmProjects/stock_market/market_data/stock_pickles'
-    return path
-
-def getPickleName(rdate):
-    ppath = getStockPickleDirectory()
-    return ppath+'/'+rdate+'.pk'
