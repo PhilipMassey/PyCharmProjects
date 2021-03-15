@@ -7,7 +7,7 @@ def testndays(ndays):
     print(start,end)
 
 def testrowndays(ndays):
-    symbols = md.getPortfoliosSymbols()
+    symbols = md.getAllPortfoliosSymbols()
     df = md.getRowNDaysAgo(ndays,symbols)
     print(df)
 

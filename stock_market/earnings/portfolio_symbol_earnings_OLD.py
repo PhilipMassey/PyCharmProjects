@@ -17,8 +17,8 @@ def getEarningsCurrentMonth(symbol,year,month):
             #print(symbol,year_month_date)
             return symbol,year_month_date[0]
 
-df_port = md.getPortfolios()
-symbols = md.getPortfoliosSymbols()
+df_port = md.getPortfoliosAndSymbols()
+symbols = md.getAllPortfoliosSymbols()
 year = '2021'
 month = '01'
 

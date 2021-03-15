@@ -1,19 +1,24 @@
 import market_data as md
+from pymongo import MongoClient
 
-import pandas as pd
 import rh
 r = rh.r
 
-df_options = pd.DataFrame(r.options.get_open_option_positions())
-if len(df_options) == 0:
-    print('No Options')
-else:
-    positions = df_options['chain_symbol']
-    #positions = ['MOMO']
-    rh.getEarnings(positions)
+def getEarningsFromRH():
+    symbols = md.getAllPortfoliosSymbols()
+    year,month,day = rh.getYearMonthDay()
+    current_month_dates = rh.getEarnings(symbols,year,month)
+    current_month_dates = filter(lambda x:x[1][8:10] >= day,current_month_dates)
+    return current_month_dates
+def getCurrentMonthEarningsMdb():
+    client = MongoClient()
+    db = client['stock_market']
+    earnings_col = db['market_data_earnings']
+    mongo_data = earnings_col.find({})
+    df = md.MdbToDataframe(mongo_data)
+    df.drop(['_id.$oid'], axis=1, inplace=True)
+    return list(df.to_records(index=False))
 
-
-symbols = md.getPortfoliosSymbols()
-current_year_dates = rh.getEarnings(symbols)
-for e in current_year_dates:
+earnings = getCurrentMonthEarningsMdb()
+for e in earnings:
     print(e[0], '\t', e[1])

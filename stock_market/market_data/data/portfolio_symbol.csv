@@ -1,0 +1,352 @@
+portfolio,symbol
+5G,ADTN
+5G,AVGO
+5G,AVNW
+5G,CALX
+5G,CEVA
+5G,ERIC
+5G,IIVI
+5G,INFN
+5G,IPGP
+5G,IPHI
+5G,LITE
+5G,MRVL
+5G,MXL
+5G,NXPI
+5G,QRVO
+5G,SBAC
+5G,XLNX
+Alternate Medicine,BKLLF
+Alternate Medicine,CMPS
+Alternate Medicine,EHVVF
+Alternate Medicine,FTRPF
+Alternate Medicine,GTSIF
+Alternate Medicine,HAVLF
+Alternate Medicine,HSTRF
+Alternate Medicine,LKYSF
+Alternate Medicine,MMEDF
+Alternate Medicine,MMNFF
+Alternate Medicine,MYCOF
+Alternate Medicine,PEMTF
+Alternate Medicine,RVVTF
+Alternate Medicine,SEEL
+Alternate Medicine,SHRMF
+Alternate Medicine,SPLIF
+Alternate Medicine,TRMNF
+Alternate Medicine,TRUFF
+Alternate Medicine,VEGGF
+AI Vision,AMBA
+AI Vision,HIMAX
+Basic Materials,ALB
+Basic Materials,COPX
+Basic Materials,FCX
+Basic Materials,GLD
+Basic Materials,HBM
+Basic Materials,PALL
+Basic Materials,PLG
+Basic Materials,SLV
+Basic Materials,WPM
+Basic Materials,WWR
+Battery Lithium,ARYMF
+Battery Lithium,BATT
+Battery Lithium,BCLMF
+Battery Lithium,CRECF
+Battery Lithium,DMNXF
+Battery Lithium,LIT
+Battery Lithium,LTHHF
+Battery Lithium,NTTHF
+Battery Lithium,PLL
+Battery Lithium,SGMLF
+Battery Lithium,LTHM
+Biotechonology GNOM,BEAM
+Biotechonology GNOM,CRSP
+Biotechonology GNOM,FATE
+Biotechonology GNOM,GNOM
+Biotechonology GNOM,IBB
+Biotechonology GNOM,IDNA
+Biotechonology GNOM,NTLA
+Biotechnology Clinical,DGX
+Biotechnology Clinical,DRNA
+Biotechnology Clinical,LH
+Biotechnology Clinical,RGEN
+Biotechnology Clinical,TMO
+Biotechnology Clinical,WAT
+Bonds,BIL
+Bonds,CWB
+Bonds,EDV
+Bonds,IEF
+Bonds,SHV
+Bonds,TLT
+Bonds,USHY
+Bonds,VGSH
+Bonds,ZROZ
+CEF,AOD
+CEF,BME
+CEF,CHY
+CEF,CRF
+CEF,DFP
+CEF,EVT
+CEF,FPE
+CEF,HQH
+CEF,HQL
+CEF,PTY
+CEF,THQ
+CEF,THW
+Cannabis,CRLBF
+Cannabis,GTBIF
+Cannabis,JAZZ
+Cannabis,OGI
+Cannabis,TCNNF
+China,TCEHY
+China,TDF
+Cloud Enterprise Apps,CRWD
+Cloud Enterprise Apps,FIVN
+Cloud Enterprise Apps,OKTA
+Cloud Enterprise Apps,TWLO
+Cloud Enterprise Apps,ZS
+Cloud Retail,CHWY
+Cloud Retail,CVNA
+Cloud Retail,ETSY
+Cloud Retail,FTCH
+Cloud Retail,MELI
+Cloud Retail,W
+Cloud Retail Apps,SHOP
+Cloud Retail Apps,SQ
+Communication Services,BAND
+Communication Services,EVER
+Communication Services,NET
+Communication Services,TWTR
+Communication Services,ZM
+Corporate Bonds,ANGL
+Corporate Bonds,FDHY
+Corporate Bonds,FLDR
+Corporate Bonds,ICVT
+Corporate Bonds,LQD
+Corporate Bonds,VCLT
+Corporate Bonds,VCSH
+Electric Vehicles,BYDDF
+Electric Vehicles,FSR
+Electric Vehicles,FUV
+Electric Vehicles,GM
+Electric Vehicles,LI
+Electric Vehicles,NIO
+Electric Vehicles,SOLO
+Electric Vehicles,TSLA
+Electric Vehicles,WKHS
+Electric Vehicles,XPEV
+Elective Vehicles 2,DDAIF
+Elective Vehicles 2,HMC
+Elective Vehicles 2,TM
+Elective Vehicles 2,VLKAF
+Elective Vehicles 2,DRIV
+Elective Vehicles 2,HAIL
+Elective Vehicles 2,IDRV
+Elective Vehicles 2,KARS
+Electricity,BE
+Electricity,SIEGY
+Electricity Solar,CSIQ
+Electricity Solar,DQ
+Electricity Solar,ENPH
+Electricity Solar,FSLR
+Electricity Solar,JKS
+Electricity Solar,RUN
+Electricity Solar,SEDG
+Electricity Solar,SPWR
+Electricity Solar,TAN
+Electricity Wind,BWEN
+Electricity Wind,DNNGY
+Electricity Wind,FAN
+Electricity Wind,GCTAF
+Electricity Wind,GCTAY
+Electricity Wind,HASI
+Electricity Wind,PBW
+Electricity Wind,TPIC
+Electricity Wind,VWDRY
+Electronic Manufacturing,BHE
+Electronic Manufacturing,CTS
+Electronic Manufacturing,DAIO
+Electronic Manufacturing,FLEX
+Electronic Manufacturing,FN
+Electronic Manufacturing,JBL
+Electronic Manufacturing,KE
+Electronic Manufacturing,MEI
+Electronic Manufacturing,NEON
+Electronic Manufacturing,PLXS
+Electronic Manufacturing,RFIL
+Electronic Manufacturing,SANM
+Electronic Manufacturing,SMTX
+Electronic Manufacturing,TEL
+Electronic Manufacturing,TTMI
+Energy Renewable,AY
+Energy Renewable,BAM
+Energy Renewable,BEP
+Energy Renewable,CWEN
+Energy Renewable,FF
+Energy Renewable,NEE
+Energy Renewable,NEP
+Energy Renewable,NFE
+Energy Renewable,PZD
+ETF Strategies,FTCS
+ETF Strategies,FSD
+ETF Strategies,FVC
+ETF Strategies,IFV
+ETF Strategies,QQQ
+ETF Strategies,RORO
+ETF Strategies,SPHB
+ETF Strategies,SPHD
+ETF Strategies,SPY
+ETF Strategies,SWAN
+Finance,AXP
+Finance,BAC
+Finance,C
+Finance,CNDT
+Finance,FTFT
+Finance,FUTU
+Finance,JPM
+Finance,LU
+Finance,MA
+Finance,RY
+Finance,TD
+Finance,V
+Healthcare,AMN
+Healthcare,ANTM
+Healthcare,CI
+Healthcare,CNC
+Healthcare,FHLC
+Healthcare,THC
+Healthcare,UNH
+Home Construction,BLD
+Home Construction,BLDR
+Home Construction,DHI
+Home Construction,ITB
+Home Construction,LEN
+Home Construction,MAS
+Home Construction,NVR
+Home Construction,PHM
+Home Construction,SSD
+Home Construction,TOL
+Home Decor,FND
+Home Decor,HOME
+Home Decor,KBH
+Home Decor,KIRK
+Home Decor,RH
+Home Supplies,HD
+Home Supplies,LOW
+Home Supplies,ROCK
+Home Supplies,TTNDY
+Home Supplies,UFPI
+Hydrogen,NAV
+Hydrogen,PLUG
+Industrials,BA
+Industrials,EMR
+Industrials,FTV
+Industrials,GE
+Industrials,IEX
+Industrials,TXT
+Infrastructure,ALSN
+Infrastructure,BIRDF
+Infrastructure,CAT
+Infrastructure,CMI
+Infrastructure,CNHI
+Infrastructure,CX
+Infrastructure,DE
+Infrastructure,KMTUY
+Infrastructure,LECO
+Infrastructure,MLM
+Infrastructure,PCAR
+Infrastructure,RXN
+Infrastructure,TEX
+Infrastructure,TKR
+Infrastructure,URI
+Infrastructure,VMC
+IOT,ALRM
+IOT,DMRC
+IOT,DXCM
+IOT,IPHI
+IOT,LTRX
+IOT,MPWR
+IOT,PI
+IOT,SNSR
+IOT,SWIR
+REIT,AGNC
+REIT,AMT
+REIT,ARR
+REIT,BEKE
+REIT,CCI
+REIT,DX
+REIT,FTHM
+REIT,JLL
+REIT,MPW
+REIT,LEJU
+REIT,ORC
+REIT,SLG
+REIT,UDR
+SA Top Rated,COF
+SA Top Rated,COWN
+SA Top Rated,DAC
+SA Top Rated,ENVA
+SA Top Rated,HIBB
+SA Top Rated,IMPUY
+SA Top Rated,MT
+SA Top Rated,NHYDY
+SA Top Rated,NLS
+SA Top Rated,MU
+SA Top Rated,OMI
+SA Top Rated,SBSW
+SA Top Rated,VALE
+SA Top Rated,VSTO
+Semiconductors,AMD
+Semiconductors,AMKR
+Semiconductors,KLAC
+Semiconductors,INTC
+Semiconductors,LRCX
+Semiconductors,MU
+Semiconductors,NVDA
+Semiconductors,QCOM
+Semiconductors,STX
+Semiconductors,SWKS
+Semiconductors,TSM
+Semiconductors,TXN
+Shipping,ATCO
+Shipping,BDRY
+Shipping,CMRE
+Shipping,DAC
+Shipping,GNK
+Shipping,GSL
+Shipping,NMCI
+Shipping,SBLK
+Stock Markets Asia,EIDO
+Stock Markets Asia,EWT
+Stock Markets Asia,EWY
+Stock Markets Asia,GXC
+Stock Markets Asia,INDA
+Stock Markets Asia,THD
+Stock Markets Emerging,EEM
+Stock Markets Emerging,EEMA
+Stock Markets Emerging,EEMO
+Stock Markets Emerging,EMQQ
+Stock Markets Emerging,IEMG
+Stock Markets Emerging,VWO
+Stock Markets Europe,EDEN
+Stock Markets Europe,EFNL
+Stock Markets Europe,EIRL
+Stock Markets Europe,EWK
+Stock Markets Europe,EWN
+Stock Markets Europe,EWUS
+Stock Markets Europe,EWO
+Stock Markets Europe,VGK
+Travel,BKNG
+Travel,CCL
+Travel,DAL
+Travel,DIS
+Travel,EXPE
+Travel,JETS
+Travel,LUV
+Travel,MGM
+Travel,MMYT
+Travel,NCLH
+Travel,SABR
+Travel,TRIP
+Travel,TZOO
+Travel,UAL
+

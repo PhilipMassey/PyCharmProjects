@@ -1,6 +1,3 @@
-import portfolio as pf
-import market_data as md
-import pandas as pd
 import plotly.express as px
 
 def plotPortPercPeriods(dfa,title,barorbubble):

@@ -1,7 +1,10 @@
 import market_data as md
 
-df_port = md.getPortfolios()
-print(df_port)
-symbols = md.getPortfoliosSymbols()
+df_port = md.getPortfoliosAndSymbols()
+#print(df_port)
+symbols = md.getAllPortfoliosSymbols()
+#print(symbols)
+#print('Fidelity {}'.format(md.getFidelitySymbols()))
+
+symols = md.getLowVolatilityStocks()
 print(symbols)
-print('Fidelity {}'.format(md.getFidelitySymbols()))

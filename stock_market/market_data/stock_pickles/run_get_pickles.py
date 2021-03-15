@@ -15,7 +15,7 @@ import multiprocessing
 if __name__ == '__main__':
      for i in range(361,377):
          p = multiprocessing.Process(target=getRow, args=(i,))
-         #t = threading.Thread(target=getRow, args=(i,))
+         #bWLwgP.css = threading.Thread(target=getRow, args=(i,))
          p.start()
          p.join() # this line allows you to wait for processes
 

@@ -2,36 +2,26 @@ import portfolio as pf
 import market_data as md
 import pandas as pd
 
-def getPortPercPeriods(period, interval,account):
-    dfa = pd.DataFrame()
-    for ndays in range(1,period,interval):
-        dfg,dt = pf.getSymbolPortPercentVol(ndays, account)
-        dfg = dfg.groupby('portfolio').agg(['mean'])
-        dfg.columns = ['percent','volume']
-        dfg.reset_index(inplace = True)
-        dfg = dfg.rename(columns={'index':'portfolio'})
-        dfg['date'] = md.getNBusDateFromNdays(ndays)
-        dfa = pd.concat([dfa,dfg])
-        dfa.sort_values(by=['date', 'portfolio'], ascending=[False, True], inplace=True)
-    return dfa
-
-
-def getSymPortPercPeriods(period,interval):
+def getTodaySymPortPercPeriods(period, interval):
     dfa = pd.DataFrame()
     for ndays in range(1, period, interval):
-        df, dt = pf.getSymbolPortPercentVol(ndays)
+        start, end = md.getNDateAndToday(ndays)
+        df, dt = pf.getSymbolPortPercentVol(start,end)
         df['date'] = md.getNBusDateFromNdays(ndays)
-        df.reset_index(inplace = True)
-        df = df.rename(columns={'index':'symbol'})
+        #df.reset_index(inplace = True)
+        #df = df.rename(columns={'index':'symbol'})
         dfa = pd.concat([dfa,df])
-        dfa.sort_values(by=['date', 'portfolio'], ascending=[False,True], inplace=True)
-        dfa.dropna(inplace=True)
+    dfa.sort_values(by=['date', 'portfolio'], ascending=[False,True], inplace=True)
+    dfa.dropna(inplace=True)
     return dfa
 
-def getSymPortPercPeriodsFltrd(period, interval, volatile=True):
-    dfa = getSymPortPercPeriods(period,interval)
-    if volatile is False:
-        symbols = md.getVolatileStocks()
+def getTodaySymPortPercPeriodsFltrd(period, interval, excl_vol=False, excl_low_vol=False):
+    dfa = getTodaySymPortPercPeriods(period, interval)
+    if excl_vol is True:
+        symbols = md.getHighVolatilityStocks()
+        dfa = dfa[~dfa.symbol.isin(symbols)]
+    if excl_low_vol is True:
+        symbols = md.getLowVolatilityStocks()
         dfa = dfa[~dfa.symbol.isin(symbols)]
     return dfa
 
@@ -42,3 +32,27 @@ def aggregateOnPortfolio(dfall):
     df.columns = df.columns.get_level_values(0)
     df.reset_index(inplace=True)
     return df
+
+def getPeriodIntervalSymPortPerc(period, interval):
+    dfa = pd.DataFrame()
+    for ndays in range(1, period, interval):
+        end = md.getNBusDateFromNdays(ndays)
+        start = md.getNBusDateFromNdays(ndays + interval)
+        df, dt = pf.getSymbolPortPercentVol(start,end)
+        df['date'] = md.getNBusDateFromNdays(ndays)
+        df.reset_index(inplace = True)
+        df = df.rename(columns={'index':'symbol'})
+        dfa = pd.concat([dfa,df])
+    dfa.sort_values(by=['date', 'portfolio'], ascending=[False,True], inplace=True)
+    dfa.dropna(inplace=True)
+    return dfa
+
+def getPeriodIntervalSymPortPercFltrd(period, interval, excl_vol=False, excl_low_vol=False):
+    dfa = getPeriodIntervalSymPortPerc(period, interval)
+    if excl_vol is True:
+        symbols = md.getHighVolatilityStocks()
+        dfa = dfa[~dfa.symbol.isin(symbols)]
+    if excl_low_vol is True:
+        symbols = md.getLowVolatilityStocks()
+        dfa = dfa[~dfa.symbol.isin(symbols)]
+    return dfa

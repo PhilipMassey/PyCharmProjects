@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 import calendar
 import trading_calendars as tc
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 xnys = tc.get_calendar("XNYS")
 
 def getNBusDaysFromDateStr(ymd_date):

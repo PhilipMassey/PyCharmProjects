@@ -2,7 +2,7 @@ import market_data as md
 
 # Check unigue symbols
 def checkSymbolsUnique():
-    df_port = md.getPortfolios()
+    df_port = md.getPortfoliosAndSymbols()
     usymbols = list(df_port.symbol.unique())
     usymbols.sort()
     symbols = list(df_port.symbol.values)
