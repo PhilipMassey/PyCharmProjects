@@ -56,28 +56,6 @@ def getSymbolPortPercentVol(start,end):
     endDt = md.getDescriptiveDate(dfCloseEnd)
     return df_stock, endDt
 
-
-# def getTodaySymbolPortPercent(ndays):
-#     start, end = md.getNDateAndToday(ndays)
-#     dfCloseStart, dfVolStart = md.getMdbRowsCloseVol(start)
-#     dfCloseEnd, dfVolEnd = md.getMdbRowsCloseVol(end)
-#     df_stock = getStockPercent(dfCloseStart,dfCloseEnd)
-#     df_stock['volume'] = getStockVol(dfVolEnd)
-#     df_stock = md.addPortfolioTodf_stock(df_stock)
-#     endDt = md.getDescriptiveDate(dfCloseEnd)
-#     return df_stock, endDt
-#
-# def getPeriodSymbolPortPercentVol(ndays,interval):
-#     end = md.getNBusDateFromNdays(ndays)
-#     start = md.getNBusDateFromNdays(ndays + interval)
-#     dfCloseStart, dfVolStart = md.getMdbRowsCloseVol(start)
-#     dfCloseEnd, dfVolEnd = md.getMdbRowsCloseVol(end)
-#     df_stock = getStockPercent(dfCloseStart, dfCloseEnd)
-#     df_stock['volume'] = getStockVol(dfVolEnd)
-#     df_stock = md.addPortfolioTodf_stock(df_stock)
-#     endDt = md.getDescriptiveDate(dfCloseEnd)
-#     return df_stock, endDt
-
 def filterdfbyAccountSymbols(dfall,account):
     if account == 'fidelity':
         symbols = md.getFidelitySymbols()

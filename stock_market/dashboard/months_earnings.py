@@ -3,7 +3,7 @@ import dash_html_components as html
 import dash_core_components as dcc
 import market_data as md
 from pymongo import MongoClient
-
+import numpy as np
 
 def getCurrentMonthEarnings():
     client = MongoClient()
@@ -12,7 +12,7 @@ def getCurrentMonthEarnings():
     mongo_data= earnings_col.find({})
     df = md.MdbToDataframe(mongo_data)
     df.drop(['_id.$oid'], axis=1, inplace=True)
-    return list(df.to_records(index=False))
+    return np.sort(list(df.to_records(index=False)), order=['earnings_date', 'symbol'])
 
 
 app = dash.Dash(__name__)

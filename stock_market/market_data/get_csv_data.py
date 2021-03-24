@@ -3,7 +3,7 @@ import pandas as pd
 homedir = '/Users/philipmassey/PycharmProjects/stock_market/market_data/data/'
 
 def getdfPortfolioSymbol(cvsfile):
-    path = homedir+cvsfile
+    path = homedir+cvsfile+'.csv'
     df = pd.read_csv(path)
     return df
 

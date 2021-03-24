@@ -1,21 +1,13 @@
 portfolio,symbol
-5G,ADTN
-5G,AVGO
-5G,AVNW
-5G,CALX
-5G,CEVA
-5G,ERIC
-5G,IIVI
-5G,INFN
-5G,IPGP
-5G,IPHI
-5G,LITE
-5G,MRVL
-5G,MXL
-5G,NXPI
-5G,QRVO
-5G,SBAC
-5G,XLNX
+Additive Manufacturing,DDD
+Additive Manufacturing,DM
+Additive Manufacturing,FARO
+Additive Manufacturing,NNDM
+Additive Manufacturing,ONVO
+Additive Manufacturing,PRLB
+Additive Manufacturing,SSYS
+Additive Manufacturing,VJET
+Additive Manufacturing,XONE
 Alternate Medicine,BKLLF
 Alternate Medicine,CMPS
 Alternate Medicine,EHVVF
@@ -23,6 +15,7 @@ Alternate Medicine,FTRPF
 Alternate Medicine,GTSIF
 Alternate Medicine,HAVLF
 Alternate Medicine,HSTRF
+Alternate Medicine,JAZZ
 Alternate Medicine,LKYSF
 Alternate Medicine,MMEDF
 Alternate Medicine,MMNFF
@@ -40,11 +33,9 @@ AI Vision,HIMAX
 Basic Materials,ALB
 Basic Materials,COPX
 Basic Materials,FCX
-Basic Materials,GLD
 Basic Materials,HBM
+Basic Materials,IMPUY
 Basic Materials,PALL
-Basic Materials,PLG
-Basic Materials,SLV
 Basic Materials,WPM
 Basic Materials,WWR
 Battery Lithium,ARYMF
@@ -58,19 +49,25 @@ Battery Lithium,NTTHF
 Battery Lithium,PLL
 Battery Lithium,SGMLF
 Battery Lithium,LTHM
-Biotechonology GNOM,BEAM
-Biotechonology GNOM,CRSP
-Biotechonology GNOM,FATE
-Biotechonology GNOM,GNOM
-Biotechonology GNOM,IBB
-Biotechonology GNOM,IDNA
-Biotechonology GNOM,NTLA
 Biotechnology Clinical,DGX
 Biotechnology Clinical,DRNA
 Biotechnology Clinical,LH
 Biotechnology Clinical,RGEN
 Biotechnology Clinical,TMO
 Biotechnology Clinical,WAT
+Biotechnoloy Emerging,BNTX
+Biotechnoloy Emerging,HALO
+Biotechnoloy Emerging,MRNA
+Biotechnoloy Emerging,NTRA
+Biotechnoloy Emerging,ONVO
+Biotechnoloy Emerging,SDGR
+Biotechnoloy Emerging,TXG
+Biotechnology GNOM,BEAM
+Biotechnology GNOM,CRSP
+Biotechnology GNOM,EDIT
+Biotechnology GNOM,FATE
+Biotechnology GNOM,GNOM
+Biotechnology GNOM,NTLA
 Bonds,BIL
 Bonds,CWB
 Bonds,EDV
@@ -94,11 +91,9 @@ CEF,THQ
 CEF,THW
 Cannabis,CRLBF
 Cannabis,GTBIF
-Cannabis,JAZZ
 Cannabis,OGI
 Cannabis,TCNNF
-China,TCEHY
-China,TDF
+Cannabis,TRSSF
 Cloud Enterprise Apps,CRWD
 Cloud Enterprise Apps,FIVN
 Cloud Enterprise Apps,OKTA
@@ -110,13 +105,45 @@ Cloud Retail,ETSY
 Cloud Retail,FTCH
 Cloud Retail,MELI
 Cloud Retail,W
-Cloud Retail Apps,SHOP
-Cloud Retail Apps,SQ
-Communication Services,BAND
-Communication Services,EVER
-Communication Services,NET
-Communication Services,TWTR
-Communication Services,ZM
+Cloud Retail,SHOP
+Cloud Retail,SQ
+Comminications,CNET
+Comminications,CURI
+Comminications,DISCA
+Comminications,FLNT
+Comminications,INSE
+Comminications,MCHX
+Comminications,MOXC
+Comminications,MTSL
+Comminications,NCTY
+Comminications,SSTK
+Comminications,WOW
+Comminications,XNET
+Communication Serices,ATVI
+Communication Serices,BAND
+Communication Serices,CDLX
+Communication Serices,EVER
+Communication Serices,NET
+Communication Serices,TWTR
+Communication Serices,ZDGE
+Communication Serices,ZM
+Communications 5G,ADTN
+Communications 5G,AVGO
+Communications 5G,AVNW
+Communications 5G,CALX
+Communications 5G,CEVA
+Communications 5G,ERIC
+Communications 5G,IIVI
+Communications 5G,INFN
+Communications 5G,IPGP
+Communications 5G,IPHI
+Communications 5G,LITE
+Communications 5G,MRVL
+Communications 5G,MXL
+Communications 5G,NXPI
+Communications 5G,QRVO
+Communications 5G,SBAC
+Communications 5G,XLNX
 Corporate Bonds,ANGL
 Corporate Bonds,FDHY
 Corporate Bonds,FLDR
@@ -125,16 +152,16 @@ Corporate Bonds,LQD
 Corporate Bonds,VCLT
 Corporate Bonds,VCSH
 Electric Vehicles,BYDDF
-Electric Vehicles,FSR
 Electric Vehicles,FUV
-Electric Vehicles,GM
 Electric Vehicles,LI
 Electric Vehicles,NIO
 Electric Vehicles,SOLO
 Electric Vehicles,TSLA
-Electric Vehicles,WKHS
 Electric Vehicles,XPEV
+Electric Vehicles 2,CIIC
 Elective Vehicles 2,DDAIF
+Electric Vehicles 2,FSR
+Electric Vehicles 2,GM
 Elective Vehicles 2,HMC
 Elective Vehicles 2,TM
 Elective Vehicles 2,VLKAF
@@ -142,6 +169,8 @@ Elective Vehicles 2,DRIV
 Elective Vehicles 2,HAIL
 Elective Vehicles 2,IDRV
 Elective Vehicles 2,KARS
+Elective Vehicles 2,VOLAF
+Elective Vehicles 2,VWAGY
 Electricity,BE
 Electricity,SIEGY
 Electricity Solar,CSIQ
@@ -174,7 +203,6 @@ Electronic Manufacturing,NEON
 Electronic Manufacturing,PLXS
 Electronic Manufacturing,RFIL
 Electronic Manufacturing,SANM
-Electronic Manufacturing,SMTX
 Electronic Manufacturing,TEL
 Electronic Manufacturing,TTMI
 Energy Renewable,AY
@@ -184,7 +212,6 @@ Energy Renewable,CWEN
 Energy Renewable,FF
 Energy Renewable,NEE
 Energy Renewable,NEP
-Energy Renewable,NFE
 Energy Renewable,PZD
 ETF Strategies,FTCS
 ETF Strategies,FSD
@@ -225,23 +252,28 @@ Home Construction,NVR
 Home Construction,PHM
 Home Construction,SSD
 Home Construction,TOL
+Home Decor,BSET
 Home Decor,FND
 Home Decor,HOME
 Home Decor,KBH
 Home Decor,KIRK
+Home Decor,MHK
 Home Decor,RH
+Home Decor,TPX
 Home Supplies,HD
 Home Supplies,LOW
 Home Supplies,ROCK
 Home Supplies,TTNDY
 Home Supplies,UFPI
-Hydrogen,NAV
-Hydrogen,PLUG
 Industrials,BA
+Industrials,BDVSY
+Industrials,CSL
 Industrials,EMR
-Industrials,FTV
 Industrials,GE
-Industrials,IEX
+Industrials,HON
+Industrials,IEP
+Industrials,MMM
+Industrials,SIEGY
 Industrials,TXT
 Infrastructure,ALSN
 Infrastructure,BIRDF
@@ -281,20 +313,27 @@ REIT,LEJU
 REIT,ORC
 REIT,SLG
 REIT,UDR
-SA Top Rated,COF
-SA Top Rated,COWN
-SA Top Rated,DAC
-SA Top Rated,ENVA
-SA Top Rated,HIBB
-SA Top Rated,IMPUY
-SA Top Rated,MT
-SA Top Rated,NHYDY
-SA Top Rated,NLS
-SA Top Rated,MU
-SA Top Rated,OMI
-SA Top Rated,SBSW
-SA Top Rated,VALE
-SA Top Rated,VSTO
+SA Quant Rating,BCEI
+SA Quant Rating,CBRE
+SA Quant Rating,CNHI
+SA Quant Rating,CSIQ
+SA Quant Rating,DLX
+SA Quant Rating,IIIN
+SA Quant Rating,IIVI
+SA Quant Rating,KLIC
+SA Quant Rating,LPX
+SA Quant Rating,MATX
+SA Quant Rating,MX
+SA Quant Rating,NXST
+SA Quant Rating,ON
+SA Quant Rating,PRIM
+SA Quant Rating,R
+SA Quant Rating,RCII
+SA Quant Rating,RUSHA
+SA Quant Rating,UGI
+SA Quant Rating,VICI
+SA Quant Rating,VIVO
+SA Quant Rating,VSTO
 Semiconductors,AMD
 Semiconductors,AMKR
 Semiconductors,KLAC
@@ -311,6 +350,9 @@ Shipping,ATCO
 Shipping,BDRY
 Shipping,CMRE
 Shipping,DAC
+Shipping,DSSI
+Shipping,DSX
+Shipping,EGLE
 Shipping,GNK
 Shipping,GSL
 Shipping,NMCI

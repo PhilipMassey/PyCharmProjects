@@ -16,6 +16,9 @@ def strdfidxDate(df):
     return pd.to_datetime(str(dt)) .strftime('%Y-%m-%d')
 
 def addRowToMdb(df,db_coll):
+    df = df.copy(deep=True)
+    df.drop_duplicates(inplace=True)
+    df.reset_index(inplace=True)
     data_dict = df.to_dict("records")
     result = db_coll.insert_many(data_dict)
     print(len(result.inserted_ids))
@@ -39,11 +42,14 @@ def getMdbRowForDate(adate,db_coll):
         print('index error',adate)
         ndays = md.getNBusDaysFromDateStr(adate.strftime("%Y-%m-%d"))
         df = md.getRowNDaysAgo(ndays, md.getAllPortfoliosSymbols())
-        addRowToMdb(df['Close'],db['market_data_close'])
-        addRowToMdb(df['Volume'],db['market_data_volume'])
-        mdb_data = db_coll.find({'Date': adate})[0]
+        mdb_data = addCloseVolumeRowToMdb(df,db_coll)
     return md.MdbToDataframeForPercent(mdb_data)
 
+def addCloseVolumeRowToMdb(df,db_coll):
+    addRowToMdb(df['Close'], db['market_data_close'])
+    addRowToMdb(df['Volume'], db['market_data_volume'])
+    mdb_data = db_coll.find({'Date': adate})[0]
+    return mdb_data
 
 def getMdbRowsCloseVol(strdate):
     adate = getMdbDateFromStrDate(strdate)
@@ -67,12 +73,35 @@ def MdbToDataframeForPercent(mongo_data):
     df.drop(['Date.$date', '_id.$oid'], axis=1, inplace=True)
     return df
 
-def getNdaysRowFromMdb(ndays, db_coll):
+def oldgetNdaysRowFromMdb(ndays, db_coll):
     adate = getMdbDateFromNdays(ndays)
     mdb_data = db_coll.find({'Date': adate})[0]
     df = MdbToDataframe(mdb_data)
     df['Date'] = datetime.utcfromtimestamp(float(df['Date.$date'] / 1e3))
     df.set_index('Date', inplace=True)
     df.drop(['Date.$date', '_id.$oid'], axis=1, inplace=True)
+    return df
+
+def newgetNdaysRowFromMdb(ndays, db_coll):
+    adate = getMdbDateFromNdays(ndays)
+    cursor = db_coll.find({'Date': adate})
+    df = pd.DataFrame({})
+    if cursor.next:
+        mdb_data = db_coll.find({'Date': adate})[0]
+        df = MdbToDataframe(mdb_data)
+        df['Date'] = datetime.utcfromtimestamp(float(df['Date.$date'] / 1e3))
+        df.set_index('Date', inplace=True)
+        df.drop(['Date.$date', '_id.$oid'], axis=1, inplace=True)
+    return df
+
+def getNdaysRowFromMdb(ndays, db_coll):
+    adate = getMdbDateFromNdays(ndays)
+    df = pd.DataFrame({})
+    if db_coll.count_documents({'Date': adate}) > 0:
+        mdb_data = db_coll.find({'Date': adate})[0]
+        df = MdbToDataframe(mdb_data)
+        df['Date'] = datetime.utcfromtimestamp(float(df['Date.$date'] / 1e3))
+        df.set_index('Date', inplace=True)
+        df.drop(['Date.$date', '_id.$oid'], axis=1, inplace=True)
     return df
 

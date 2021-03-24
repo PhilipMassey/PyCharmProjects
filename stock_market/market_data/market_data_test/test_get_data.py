@@ -6,5 +6,5 @@ symbols = md.getAllPortfoliosSymbols()
 #print(symbols)
 #print('Fidelity {}'.format(md.getFidelitySymbols()))
 
-symols = md.getLowVolatilityStocks()
-print(symbols)
+df = md.getdfPortfolioSymbol('sa_ratings')
+print(df)

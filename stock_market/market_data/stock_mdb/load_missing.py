@@ -1,6 +1,5 @@
 import market_data as md
 import pandas as pd
-from datetime import datetime
 from pymongo import MongoClient
 
 import trading_calendars as tc
@@ -12,21 +11,28 @@ db = client['stock_market']
 
 
 def getMissingMarketRow(ndays, db_coll, symbols):
+    dbaction = None
     df = md.getNdaysRowFromMdb(ndays, db_coll)
-    dfs = set(df.columns)
-    missing_symbols = set(symbols).difference(dfs)
-    if len(missing_symbols) > 0:
-        return md.getRowNDaysAgo(ndays, missing_symbols)
+    if df.size == 0: #missing whole row of data, missing all symbole
+        missing_symbols = md.getAllPortfoliosSymbols()
+        dbaction = 'ADD'
     else:
-        return pd.DataFrame({})
+        dfs = set(df.columns)
+        missing_symbols = set(symbols).difference(dfs)
+        dbaction = 'UPDATE'
+    if len(missing_symbols) > 0:
+        return (md.getRowNDaysAgo(ndays, missing_symbols),dbaction)
+    else:
+        return (pd.DataFrame({}),dbaction)
 
 
 def updateMdbWithRow(ndays, df_m, db_coll):
     if df_m.size > 1:
-        df_m = df_m.dropna(axis='columns')
-        df_m.reset_index(inplace=True)
-        df_m.drop(columns=['Date'], inplace=True)
-        data_dict = df_m.to_dict("records")
+        df_mc = df_m.copy(deep=True)
+        df_mc = df_mc.dropna(axis='columns')
+        df_mc.reset_index(inplace=True)
+        df_mc.drop(columns=['Date'], inplace=True)
+        data_dict = df_mc.to_dict("records")
         # print(data_dict)
         newvalues = {"$set": data_dict[0]}
         dt = md.getMdbDateFromNdays(ndays)
@@ -35,19 +41,22 @@ def updateMdbWithRow(ndays, df_m, db_coll):
         print(ndays, len(data_dict[0]), result.matched_count, result.modified_count)
 
 
-def updateRowWithMissing(ndays, db_coll, symbols):
-    df_m = md.getMissingMarketRow(ndays, symbols)
-    updateMdbWithRow(df_m, db_coll)
-
-
 def updateMdbWithMissingRow(ndays, symbols):
-    print(ndays)
+    start, end = md.getNDateAndToday(ndays)
+    print(ndays,start,end)
     db_coll = db["market_data_close"]
-    df_m = getMissingMarketRow(ndays, db_coll, symbols)
+    df_m,dbaction = getMissingMarketRow(ndays, db_coll, symbols)
     if df_m.size > 0:
-        updateMdbWithRow(ndays, df_m['Close'], db_coll)
-        db_coll = db["market_data_volume"]
-        # df_m = getMissingMarketRow(ndays,df_col)
-        updateMdbWithRow(ndays, df_m['Volume'], db_coll)
+        if dbaction == 'ADD':
+            md.addCloseVolumeRowToMdb(df_m,db_coll)
+        else:
+            updateMdbWithRow(ndays, df_m['Close'], db_coll)
+            db_coll = db["market_data_volume"]
+            updateMdbWithRow(ndays, df_m['Volume'], db_coll)
 
 
+#
+# def updateRowWithMissing(ndays, db_coll, symbols):
+#     df_m = md.getMissingMarketRow(ndays, symbols)
+#     updateMdbWithRow(df_m, db_coll)
+#

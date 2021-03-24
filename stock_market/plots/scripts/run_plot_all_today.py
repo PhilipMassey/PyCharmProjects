@@ -9,7 +9,7 @@ two = (60,10)
 month = (20, 5)
 fortnight = (10,2)
 week = (5,1)
-period ,interval = week
+period ,interval = month
 
 dfall = pf.getTodaySymPortPercPeriodsFltrd(period, interval, excl_vol=True, excl_low_vol=True)
 title = 'Seeking Alpha Periods Ending Today'
