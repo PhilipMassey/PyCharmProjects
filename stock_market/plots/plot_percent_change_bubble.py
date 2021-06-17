@@ -1,4 +1,4 @@
-import portfolio as pf
+import performance as pf
 import plotly.express as px
 
 def plotPercentVolPortfolio(df_stock,ndays,endDt,ascending):

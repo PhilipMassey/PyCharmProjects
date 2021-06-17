@@ -6,3 +6,211 @@ Dash is running on http://127.0.0.1:8050/
    WARNING: This is a development server. Do not use it in a production deployment.
    Use a production WSGI server instead.
  * Debug mode: on
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+starting
+starting
+starting
+starting
+starting
+starting
+starting
+starting
+Traceback (most recent call last):
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/scripts/run_monthly_earnings.py", line 2, in <module>
+    from dashboard import months_earnings
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/__init__.py", line 1, in <module>
+    from .months_earnings import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/months_earnings.py", line 4, in <module>
+    import market_data as md
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/__init__.py", line 4, in <module>
+    from .stock_mdb import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/stock_mdb/__init__.py", line 1, in <module>
+    from .mdb_in_out import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/stock_mdb/mdb_in_out.py", line 49
+    $return md.MdbToDataframeForPercent(mdb_data)
+    ^
+SyntaxError: invalid syntax
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+starting
+starting
+starting
+Traceback (most recent call last):
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/scripts/run_monthly_earnings.py", line 2, in <module>
+    from dashboard import months_earnings
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/__init__.py", line 1, in <module>
+    from .months_earnings import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/months_earnings.py", line 4, in <module>
+    import market_data as md
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/__init__.py", line 2, in <module>
+    from .get_csv_data import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/get_csv_data.py", line 24
+    df_port = getAllPortfoliosAndSymbols(incl=)
+                                              ^
+SyntaxError: invalid syntax
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+starting
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/scripts/run_monthly_earnings.py", line 5, in <module>
+    months_earnings.app.run_server(debug=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dash/dash.py", line 1716, in run_server
+    self.server.run(host=host, port=port, debug=debug, **flask_run_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/werkzeug/serving.py", line 1030, in run_simple
+    s.bind(server_address)
+OSError: [Errno 48] Address already in use
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/scripts/run_monthly_earnings.py", line 5, in <module>
+    months_earnings.app.run_server(debug=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dash/dash.py", line 1716, in run_server
+    self.server.run(host=host, port=port, debug=debug, **flask_run_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/werkzeug/serving.py", line 1030, in run_simple
+    s.bind(server_address)
+OSError: [Errno 48] Address already in use
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/scripts/run_monthly_earnings.py", line 5, in <module>
+    months_earnings.app.run_server(debug=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dash/dash.py", line 1716, in run_server
+    self.server.run(host=host, port=port, debug=debug, **flask_run_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/werkzeug/serving.py", line 1030, in run_simple
+    s.bind(server_address)
+OSError: [Errno 48] Address already in use
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+Traceback (most recent call last):
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/scripts/run_monthly_earnings.py", line 5, in <module>
+    months_earnings.app.run_server(debug=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dash/dash.py", line 1716, in run_server
+    self.server.run(host=host, port=port, debug=debug, **flask_run_options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/flask/app.py", line 990, in run
+    run_simple(host, port, self, **options)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/werkzeug/serving.py", line 1030, in run_simple
+    s.bind(server_address)
+OSError: [Errno 48] Address already in use
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+starting
+Traceback (most recent call last):
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/scripts/run_monthly_earnings.py", line 2, in <module>
+    from dashboard import months_earnings
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/__init__.py", line 1, in <module>
+    from .months_earnings import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/months_earnings.py", line 4, in <module>
+    import market_data as md
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/__init__.py", line 2, in <module>
+    from .get_csv_data import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/get_csv_data.py", line 25
+    return df_port
+         ^
+IndentationError: expected an indented block
+Traceback (most recent call last):
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/scripts/run_monthly_earnings.py", line 2, in <module>
+    from dashboard import months_earnings
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/__init__.py", line 1, in <module>
+    from .months_earnings import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/months_earnings.py", line 4, in <module>
+    import market_data as md
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/__init__.py", line 2, in <module>
+    from .get_csv_data import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/get_csv_data.py", line 25
+    return df_port
+         ^
+IndentationError: expected an indented block
+starting
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app "dashboard.months_earnings" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+starting
+Traceback (most recent call last):
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/scripts/run_monthly_earnings.py", line 2, in <module>
+    from dashboard import months_earnings
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/__init__.py", line 1, in <module>
+    from .months_earnings import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/dashboard/months_earnings.py", line 4, in <module>
+    import market_data as md
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/__init__.py", line 2, in <module>
+    from .get_csv_data import *
+  File "/Users/philipmassey/PycharmProjects/stock_market/market_data/get_csv_data.py", line 9, in <module>
+    dfall =  pd.concat([dfall, portfolio_from_file(file)],axis=0)
+NameError: name 'portfolio_from_file' is not defined

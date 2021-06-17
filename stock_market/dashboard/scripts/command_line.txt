@@ -1,0 +1,1 @@
+/Users/philipmassey/PycharmProjects/stock_market/dashboard/scripts/run_montly_earnings.zsh

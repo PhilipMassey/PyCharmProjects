@@ -10,7 +10,7 @@ def getCurrentMonthEarnings():
     db = client['stock_market']
     earnings_col = db['market_data_earnings']
     mongo_data= earnings_col.find({})
-    df = md.MdbToDataframe(mongo_data)
+    df = md.mdb_to_df(mongo_data)
     df.drop(['_id.$oid'], axis=1, inplace=True)
     return list(df.to_records(index=False))
 

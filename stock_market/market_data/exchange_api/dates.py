@@ -4,6 +4,7 @@ import pandas as pd
 import calendar
 import trading_calendars as tc
 import warnings
+import math
 warnings.simplefilter(action='ignore', category=FutureWarning)
 xnys = tc.get_calendar("XNYS")
 
@@ -40,7 +41,51 @@ def getNBusDateFromNdays(ndays,skip=False):
         #print('ndays {:d} bdate {}'.format(ndays,dt))
     return str(dt)
 
-def getNDateAndToday(ndays):
-    end = getNBusDateFromNdays(0)
-    start = getNBusDateFromNdays(ndays)
-    return start,end
+def get_dates_ndays_and_today(ndays):
+    t0day = getNBusDateFromNdays(0)
+    nday = getNBusDateFromNdays(ndays+1)
+    return nday,t0day
+
+
+def getNDateAndPrevDate(ndays,step):
+    pday = getNBusDateFromNdays(ndays+step)
+    day = getNBusDateFromNdays(ndays)
+    return pday,day
+
+def get_ndays_to(strdate='2020-04-01'):
+    """
+    :parmam default: trading day for 2020 bottom
+    :return: ndays from
+    """
+    ndays = getNBusDaysFromDateStr(strdate)
+    return ndays
+
+
+def get_period_interval(ndays=0):
+    """
+        :Defaults to trading ndays from 2020 bottom
+        :return:
+        """
+
+    if ndays == 0:
+        ndays = get_ndays_to()
+    steps = 10
+    step = ndays/steps
+    if step < 1:
+        step = 1
+    return ndays,math.floor(step)
+    # nweeks = int(ndays/5)
+    # nmonths = int(ndays/20)-1
+    # start,end = getNDateAndToday(ndays)
+    # print('ndays ',ndays,start,end,' nmonths ',nmonths,' nweeks ',nweeks)
+    # if nmonths > 6:
+    #     step = nmonths
+    # elif nweeks > 20:
+    #     step = nweeks
+    # else:
+    #     step = 1
+    # return ndays,step
+
+
+
+

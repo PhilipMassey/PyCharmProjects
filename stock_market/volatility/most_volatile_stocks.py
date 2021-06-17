@@ -10,7 +10,7 @@ from matplotlib import pyplot as plt
 plt.style.use('ggplot')
 
 pd.set_option('display.max_rows',400)
-pd.set_option)('display.max_columns',400)
+pd.set_option('display.max_columns',400)
 
 
 df = pd.read_csv('cs-1.csv')
@@ -21,16 +21,16 @@ data1 = data_by_asset.get_group('AAL')[['date','open','high','low','close']]
 data1['date'] = data1['date'].apply(mp1_dates.date2num)
 data1 = data1.astype(float)
 
-fig,ax = plt.subplots()
-candlestick_ohlc(ax,data1.values,width=0.6,colorup='green',colordown='read',alpha-0.8)
-ax.set_xlabel('Date')
-ax.set_ylabel('Price')
-fig.suptitle('Daily Candlestick Chart of S&P 500')
-date_format = mp1_dates.DateFortmatter('%d-%m-%Y')
-ax.axis.set_major_formatter(date_format)
-fig.autofmt_xdate()
-fig.tight_layout()
-plt.show()
+# fig, ax = plt.subplots()
+# candlestick_ohlc(ax,data1.values,width=0.6,colorup='green',colordown='read',alpha-0.8)
+# ax.set_xlabel('Date')
+# ax.set_ylabel('Price')
+# fig.suptitle('Daily Candlestick Chart of S&P 500')
+# date_format = mp1_dates.DateFortmatter('%d-%m-%Y')
+# ax.axis.set_major_formatter(date_format)
+# fig.autofmt_xdate()
+# fig.tight_layout()
+# plt.show()
 
 cound_df=pd.DataFrame(df.Name,value_counts()[:470],columns=['Name','Count']).reset_index()
 list_value_shares=list(count_df['index'])

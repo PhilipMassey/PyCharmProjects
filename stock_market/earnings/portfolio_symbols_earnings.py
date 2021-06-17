@@ -5,7 +5,7 @@ import rh
 r = rh.r
 
 def getEarningsFromRH():
-    symbols = md.getAllPortfoliosSymbols()
+    symbols = md.get_symbols(incl='ALL')
     year,month,day = rh.getYearMonthDay()
     current_month_dates = rh.getEarnings(symbols,year,month)
     current_month_dates = filter(lambda x:x[1][8:10] >= day,current_month_dates)
@@ -15,7 +15,7 @@ def getCurrentMonthEarningsMdb():
     db = client['stock_market']
     earnings_col = db['market_data_earnings']
     mongo_data = earnings_col.find({})
-    df = md.MdbToDataframe(mongo_data)
+    df = md.mdb_to_df(mongo_data)
     df.drop(['_id.$oid'], axis=1, inplace=True)
     return list(df.to_records(index=False))
 
