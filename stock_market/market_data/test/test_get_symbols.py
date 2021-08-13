@@ -1,5 +1,5 @@
 import market_data as md
 
 
-symbols = md.get_symbols(incl=md.all)
-print(symbols)
+symbols = md.get_symbols(incl=md.test)
+print(len(symbols),'  ', symbols)

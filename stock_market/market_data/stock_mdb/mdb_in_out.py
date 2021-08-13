@@ -24,8 +24,9 @@ def add_df_to_db(df, db_coll_name, dropidx=False):
     if dropidx == True:
         df.drop(columns={'index'},inplace=True)
     data_dict = df.to_dict("records")
+    #print(data_dict)
     result = db_coll.insert_many(data_dict)
-    print('Added {:d} of {:d}'.format(len(result.inserted_ids),len(df.index)))
+    #print('Inserted {:d} into {}' .format(len(result.inserted_ids),db_coll_name))   #,len(df.index)))
     return result
 
 
@@ -46,18 +47,11 @@ def get_date_for_mdb(ndays):
     return datetime.strptime(strDate, '%Y-%m-%d')
 
 
-def addCloseVolumeRowToMdb(df):
-    add_df_to_db(df['Close'], 'market_data_close')
-    add_df_to_db(df['Volume'], 'market_data_volume')
- #   adate = df.index[0]
- #   mdb_data = db_coll.find({'Date': adate})[0]
-    return df
-
-def getMdbRowsCloseVol(strdate,incl='ALL'):
+def getMdbRowsCloseVol(strdate,incl=md.all):
     adate = getMdbDateFromStrDate(strdate)
-    dbcoll_name = 'market_data_close'
+    dbcoll_name = md.db_close
     dfClose = md.get_mdb_row_for_date(adate, dbcoll_name,addtodb=True)
-    dbcoll_name = 'market_data_volume'
+    dbcoll_name = md.db_volume
     dfVol = md.get_mdb_row_for_date(adate, dbcoll_name,addtodb=True)
     if incl != md.all:
         dfClose = pf.filteredbySymbols(dfClose, incl, colorrow='col')
@@ -65,17 +59,19 @@ def getMdbRowsCloseVol(strdate,incl='ALL'):
     return dfClose,dfVol
 
 
-def mdb_to_df(mongo_data):
+def mdb_to_df(mongo_data, dateidx=False):
     sanitized = json.loads(json_util.dumps(mongo_data))
     normalized = json_normalize(sanitized)
     df = pd.DataFrame(normalized)
+    if dateidx == True:
+        replace_date_date(df)
     return df
 
-def mdb_todf_with_date_index(mongo_data):
-    df = mdb_to_df(mongo_data)
-    df['Date'] = datetime.utcfromtimestamp(float(df['Date.$date'] / 1e3))
+
+def replace_date_date(df):
+    #df['Date'] = datetime.utcfromtimestamp(float(df['Date.$date'] / 1e3))
+    df['Date'] = df['Date.$date'].apply(lambda x: datetime.utcfromtimestamp(float(x / 1e3)))
     df.set_index('Date', inplace=True)
     df.drop(['Date.$date', '_id.$oid'], axis=1, inplace=True)
-    return df
 
 

@@ -10,11 +10,27 @@ client = MongoClient()
 db = client['stock_market']
 
 
+def update_mdb_with_missing_row(ndays, symbols):
+    strdate = md.getNBusDateFromNdays(ndays)
+    print('ndays {} is the {}'.format(ndays,strdate), end=', ')
+    df_m,dbaction = get_missing_market_row(ndays, symbols)
+    if df_m.size > 0:
+        print(df_m.size/2,dbaction)
+    if df_m.size > 0:
+        if dbaction == 'ADD':
+            md.addCloseVolumeRowToMdb(df_m)
+        else:
+            update_mdb_with_dfrow(ndays, df_m['Close'], md.db_close)
+            update_mdb_with_dfrow(ndays, df_m['Volume'], md.db_volume)
+    print()
+
 def get_missing_market_row(ndays, symbols):
     dbaction = None
     db_coll_name = md.db_close
-    df = md.get_df_from_mdb(ndays, db_coll_name)
+    #df = md.get_df_from_mdb(ndays, db_coll_name)
+    df = md.get_mdb_row_for_nday(ndays,db_coll_name,symbols)
     if df.size == 0: #missing whole row of data, missing all symbole
+        #missing_symbols = symbols   #TESTING
         missing_symbols = md.get_symbols(incl=md.all)
         dbaction = 'ADD'
     else:
@@ -22,14 +38,26 @@ def get_missing_market_row(ndays, symbols):
         missing_symbols = set(symbols).difference(dfs)
         dbaction = 'UPDATE'
     if len(missing_symbols) > 0:
-        return (md.get_yahoo_ndays_ago(ndays, missing_symbols), dbaction)
+        print(missing_symbols)
+        df = md.get_yahoo_ndays_ago(ndays, missing_symbols)
+        df = df.dropna(axis=1, how='all')
+        return (df, dbaction)
     else:
         return (pd.DataFrame({}),dbaction)
 
 
+def addCloseVolumeRowToMdb(df):
+    md.add_df_to_db(df['Close'], md.db_close)
+    md.add_df_to_db(df['Volume'], md.db_volume)
+ #   adate = df.index[0]
+ #   mdb_data = db_coll.find({'Date': adate})[0]
+    return df
+
+
 def update_mdb_with_dfrow(ndays, df_m, coll_name):
     db_coll = db[coll_name]
-    if df_m.size > 1:
+    print('update_mdb', df_m)
+    if df_m.size > 0:
         df_mc = df_m.copy(deep=True)
         df_mc = df_mc.dropna(axis='columns')
         df_mc.reset_index(inplace=True)
@@ -42,18 +70,6 @@ def update_mdb_with_dfrow(ndays, df_m, coll_name):
         result = db_coll.update_one(query, newvalues)
         #print(ndays, len(data_dict[0]), result.matched_count, result.modified_count)
 
-
-def update_mdb_with_missing_row(ndays, symbols):
-    start, end = md.get_dates_ndays_and_today(ndays)
-    print(ndays,start,end)
-    df_m,dbaction = get_missing_market_row(ndays, symbols)
-    if df_m.size > 0:
-        if dbaction == 'ADD':
-            md.addCloseVolumeRowToMdb(df_m)
-        else:
-            update_mdb_with_dfrow(ndays, df_m['Close'], md.db_close)
-            db_coll = db["market_data_volume"]
-            update_mdb_with_dfrow(ndays, df_m['Volume'], md.db_vol)
 
 
 #

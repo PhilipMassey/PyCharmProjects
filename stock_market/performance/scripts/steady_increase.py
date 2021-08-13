@@ -2,6 +2,8 @@ import sys; sys.path.extend(['/Users/philipmassey/PycharmProjects/stock_market']
 sys.path.extend(['/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages'])
 import performance as pf
 import market_data as md
+
+print('{} steady increase'.format(md.get_date_for_mdb(0)))
 print(md.db_5days_up)
 week = (5,1)
 period_interval = week
@@ -21,7 +23,7 @@ print(md.db_9days_up)
 period_interval = (10,1)
 count = 9
 nstart = 0
-df_9days_up = pf.get_df_steady_increase(nstart, period_interval, count, incl='ALL')
+df_9days_up = pf.get_df_steady_increase(nstart, period_interval, count, incl=md.all)
 symbols = sorted(df_9days_up.symbol.unique())
 print(', '.join(symbols))
 md.add_dfup_to_db(df_9days_up, md.db_9days_up)
@@ -33,7 +35,7 @@ weekly = (25,5)
 period_interval = weekly
 count = 5
 nstart = 0
-dfwkly = pf.get_df_steady_increase(nstart,period_interval,count,incl='ALL')
+dfwkly = pf.get_df_steady_increase(nstart,period_interval,count,incl=md.all)
 symbols = sorted(dfwkly.symbol.unique())
 print(', '.join(symbols))
 md.add_dfup_to_db(dfwkly,md.db_5weeks_up)

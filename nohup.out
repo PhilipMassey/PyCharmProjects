@@ -214,3 +214,49 @@ Traceback (most recent call last):
   File "/Users/philipmassey/PycharmProjects/stock_market/market_data/get_csv_data.py", line 9, in <module>
     dfall =  pd.concat([dfall, portfolio_from_file(file)],axis=0)
 NameError: name 'portfolio_from_file' is not defined
+2021-06-30 00:00:00 steady increase
+5days_up
+BLD, EDIT, ETSY, EVC, GNOM, HUYA, IONS, JCI, KARS, NTLA, ROKU, SPOT, SPY, SWAN, TT, TX, UHAL, XLY
+Added 18 of 18
+9days_up
+ARKK, BEAM, CLOU, CMLS, ETSY, GNOM, IONS, KARS, NFLX, ROKU, SPOT, XLY
+Added 12 of 12
+5weeks_up
+ARKG, ARKK, ARKW, ARLP, AVID, BYDDY, BZ, CDMO, CDXS, CLOU, CMLS, DIIBF, DOCU, DRNA, EVC, HUYA, IOVA, NEP, NIO, NM, NVDA, PEYUF, PINS, PLTR, PTR, PYPL, QYLD, REGN, RXRX, SPOT, SPT, SYNA, TLND, TSP, TWTR, VTI, XLC, ZM
+Added 38 of 38
+-5.875454545454545 5.461818181818181
+-5.21 37.93
+-1.1077083333333337 6.410400000000001
+['DIA' 'Markets ETF' 'Sector XL ETF' 'Thematic ETF']
+DIA
+-4.34 16.03
+Markets ETF
+-1.32 1.92
+Sector XL ETF
+-2.66 2.19
+Thematic ETF
+-2.44 5.88
+-7.760000000000001 3.391818181818182
+-8.987499999999999 1.5576666666666668
+-3.595681818181818 -0.2927659574468084
+['DIA' 'Markets ETF' 'Sector XL ETF' 'Thematic ETF']
+DIA
+-9.33 4.17
+Markets ETF
+-2.71 1.7
+Sector XL ETF
+-3.47 1.88
+Thematic ETF
+-3.89 2.38
+-7.7525 2.9149999999999996
+-11.692499999999997 1.9188888888888889
+-4.656500000000001 0.2873684210526316
+['DIA' 'Markets ETF' 'Sector XL ETF' 'Thematic ETF']
+DIA
+-4.23 4.35
+Markets ETF
+-4.91 1.32
+Sector XL ETF
+-5.53 1.77
+Thematic ETF
+-4.52 0.95

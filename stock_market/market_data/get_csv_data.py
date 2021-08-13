@@ -25,10 +25,13 @@ def get_dir_port_symbols(subdir):
 def get_port_and_symbols(incl):
     df_all = pd.DataFrame(columns=('portfolio','symbol'))
     if incl == md.all:
-        # SA
         df = get_dir_port_symbols(md.sa)
         df_all = pd.concat([df_all, df], axis=0)
         df = get_dir_port_symbols(md.watching)
+        df_all =  pd.concat([df_all, df],axis=0)
+        df = get_dir_port_symbols(md.ark)
+        df_all = pd.concat([df_all, df], axis=0)
+        df = get_dir_port_symbols(md.etf)
         df_all =  pd.concat([df_all, df],axis=0)
     elif incl == md.sa:
         df = get_dir_port_symbols(md.sa)
@@ -36,6 +39,15 @@ def get_port_and_symbols(incl):
     elif incl == md.watching:
         df = get_dir_port_symbols(md.watching)
         df_all =  pd.concat([df_all, df],axis=0)
+    elif incl == md.ark:
+        df = get_dir_port_symbols(md.ark)
+        df_all = pd.concat([df_all,df])
+    elif incl == md.etf:
+        df = get_dir_port_symbols(md.etf)
+        df_all = pd.concat([df_all,df])
+    elif incl == md.test:
+        df = get_dir_port_symbols(md.test)
+        df_all = df
     return df_all
 
 def getPortfolios(incl):

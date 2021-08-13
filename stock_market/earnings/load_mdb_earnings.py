@@ -6,7 +6,7 @@ import rh
 
 earnings_col = 'market_data_earnings'
 
-symbols = md.get_symbols(incl='ALL')
+symbols = md.get_symbols(incl=md.all)
 #symbols = ['HD','LOW','BEP','LU']
 year,month,day = rh.getYearMonthDay()
 year,month,day =('2021', '05', '01')

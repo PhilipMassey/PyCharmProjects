@@ -5,7 +5,7 @@ import rh
 r = rh.r
 
 def getEarningsFromRH():
-    symbols = md.get_symbols(incl='ALL')
+    symbols = md.get_symbols(incl=md.all)
     year,month,day = rh.getYearMonthDay()
     current_month_dates = rh.getEarnings(symbols,year,month)
     current_month_dates = filter(lambda x:x[1][8:10] >= day,current_month_dates)

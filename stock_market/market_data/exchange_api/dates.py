@@ -43,7 +43,7 @@ def getNBusDateFromNdays(ndays,skip=False):
 
 def get_dates_ndays_and_today(ndays):
     t0day = getNBusDateFromNdays(0)
-    nday = getNBusDateFromNdays(ndays+1)
+    nday = getNBusDateFromNdays(ndays)
     return nday,t0day
 
 

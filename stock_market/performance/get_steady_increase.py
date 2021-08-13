@@ -1,7 +1,8 @@
 import pandas as pd
+import market_data as md
 import performance as pf
 
-def get_df_steady_increase(nstart, period_interval, count, percent=0, incl='ALL'):
+def get_df_steady_increase(nstart, period_interval, count, percent=0, incl=md.all):
     dfall = pf.getPrevDaySymPortPercPeriods(nstart, period_interval, incl)
     dfall = dfall.drop(['index', 'portfolio'], axis=1)
     dfall = dfall.drop_duplicates()
