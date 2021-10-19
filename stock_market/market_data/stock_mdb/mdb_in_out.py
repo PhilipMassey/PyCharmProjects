@@ -2,8 +2,6 @@ import market_data as md
 import performance as pf
 import pandas as pd
 from datetime import datetime
-import trading_calendars as tc
-xnys = tc.get_calendar("XNYS")
 from pymongo import MongoClient
 from bson import json_util
 from pandas import json_normalize
@@ -11,10 +9,6 @@ import json
 
 client = MongoClient()
 db = client['stock_market']
-
-def strdfidxDate(df):
-    dt = df.index.values[0]
-    return pd.to_datetime(str(dt)) .strftime('%Y-%m-%d')
 
 def add_df_to_db(df, db_coll_name, dropidx=False):
     db_coll = db[db_coll_name]
@@ -30,25 +24,34 @@ def add_df_to_db(df, db_coll_name, dropidx=False):
     return result
 
 
+def update_mdb_with_dfrow(df_m, coll_name):
+    db_coll = db[coll_name]
+    dt = md.df_idxdate_to_mdbdate(df_m)
+    #print('update_mdb', df_m)
+    if df_m.size > 0:
+        df_mc = df_m.copy(deep=True)
+        df_mc = df_mc.dropna(axis='columns')
+        df_mc.reset_index(inplace=True)
+        df_mc.drop(columns=['Date'], inplace=True)
+        data_dict = df_mc.to_dict("records")
+        # print(data_dict)
+        newvalues = {"$set": data_dict[0]}
+        query = {'Date': dt}
+        result = db_coll.update_one(query, newvalues)
+        #print(ndays, len(data_dict[0]), result.matched_count, result.modified_count)
+
+
+
 def add_dfup_to_db(dfup, db_coll_name):
     dt = max(dfup.date.values)
-    dt = md.getMdbDateFromStrDate(dt)
+    dt = md.get_mdbdate_from_strdate(dt)
     df = pd.DataFrame(columns=['Date', 'symbol'])
     df['symbol'] = dfup.symbol.unique()
     df['Date'] = dt
     md.add_df_to_db(df, db_coll_name, dropidx=True)
 
-
-def getMdbDateFromStrDate(strDate):
-    return datetime.strptime(strDate, '%Y-%m-%d')
-
-def get_date_for_mdb(ndays):
-    strDate = md.getNBusDateFromNdays(ndays)
-    return datetime.strptime(strDate, '%Y-%m-%d')
-
-
 def getMdbRowsCloseVol(strdate,incl=md.all):
-    adate = getMdbDateFromStrDate(strdate)
+    adate = get_mdbdate_from_strdate(strdate)
     dbcoll_name = md.db_close
     dfClose = md.get_mdb_row_for_date(adate, dbcoll_name,addtodb=True)
     dbcoll_name = md.db_volume
