@@ -1,12 +1,13 @@
 
-data_dir = '/Users/philipmassey/PycharmProjects/stock_market/market_data/data'
-sa = 'seeking_alpha'
-watching = 'watching'
-etf = 'etf'
-ark = 'ark'
 
+data_dir = '/Users/philipmassey/PycharmProjects/stock_market/market_data/data'
 all = 'ALL'
+ark = 'ark'
+etf = 'etf'
+holding = 'holding'
+sa = 'seeking_alpha'
 test = 'test'
+watching = 'watching'
 db_client = 'stock_market'
 db_close = 'market_data_close'
 #db_close = 'test_data_close'

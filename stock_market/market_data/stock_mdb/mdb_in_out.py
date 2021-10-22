@@ -50,7 +50,7 @@ def add_dfup_to_db(dfup, db_coll_name):
     df['Date'] = dt
     md.add_df_to_db(df, db_coll_name, dropidx=True)
 
-def getMdbRowsCloseVol(strdate,incl=md.all):
+def get_mdb_rows_close_vol(strdate, incl=md.all):
     adate = get_mdbdate_from_strdate(strdate)
     dbcoll_name = md.db_close
     dfClose = md.get_mdb_row_for_date(adate, dbcoll_name,addtodb=True)

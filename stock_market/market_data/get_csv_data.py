@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-from os.path import isfile, join
+from os.path import isfile, join, isdir
 from os import listdir
 
 import market_data as md
@@ -25,29 +25,25 @@ def get_dir_port_symbols(subdir):
 def get_port_and_symbols(incl):
     df_all = pd.DataFrame(columns=('portfolio','symbol'))
     if incl == md.all:
-        df = get_dir_port_symbols(md.sa)
+        dirs = [d for d in listdir(md.data_dir) if isdir(join(md.data_dir, d))]
+        for dir in dirs:
+            df = get_dir_port_symbols(dir)
+            df_all = pd.concat([df_all, df], axis=0)
+    else:
+        df = get_dir_port_symbols(incl)
         df_all = pd.concat([df_all, df], axis=0)
-        df = get_dir_port_symbols(md.watching)
-        df_all =  pd.concat([df_all, df],axis=0)
-        df = get_dir_port_symbols(md.ark)
-        df_all = pd.concat([df_all, df], axis=0)
-        df = get_dir_port_symbols(md.etf)
-        df_all =  pd.concat([df_all, df],axis=0)
-    elif incl == md.sa:
-        df = get_dir_port_symbols(md.sa)
-        df_all = pd.concat([df_all, df], axis=0)
-    elif incl == md.watching:
-        df = get_dir_port_symbols(md.watching)
-        df_all =  pd.concat([df_all, df],axis=0)
-    elif incl == md.ark:
-        df = get_dir_port_symbols(md.ark)
-        df_all = pd.concat([df_all,df])
-    elif incl == md.etf:
-        df = get_dir_port_symbols(md.etf)
-        df_all = pd.concat([df_all,df])
-    elif incl == md.test:
-        df = get_dir_port_symbols(md.test)
-        df_all = df
+    # elif incl == md.watching:
+    #     df = get_dir_port_symbols(md.watching)
+    #     df_all =  pd.concat([df_all, df],axis=0)
+    # elif incl == md.ark:
+    #     df = get_dir_port_symbols(md.ark)
+    #     df_all = pd.concat([df_all,df])
+    # elif incl == md.etf:
+    #     df = get_dir_port_symbols(md.etf)
+    #     df_all = pd.concat([df_all,df])
+    # elif incl == md.test:
+    #     df = get_dir_port_symbols(md.test)
+    #     df_all = df
     return df_all
 
 def getPortfolios(incl):

@@ -30,6 +30,8 @@ def get_mdb_row_for_nday(ndays, coll_name, symbols='', incl='', dateidx=True):
 def get_df_mdb_rows_between_days(ndays_ago, dbcol_name, symbols='', incl=md.all, start=0):
     db_coll = db[dbcol_name]
     start_date = md.get_date_for_mdb(ndays_ago)
+    if not 'Date' in symbols:
+        symbols.append('Date')
     df = pd.DataFrame({})
     if start==0:
         mdb_data = db_coll.find({'Date': {'$gte':start_date}},symbols)
@@ -79,7 +81,7 @@ def get_df_mdb_nrows_step(start,days_step, coll_name,symbols='', incl=md.all):
     dfa = pd.DataFrame(columns=['Date'])
     for ndays in range(start,start+days,step):
         df = get_mdb_row_for_nday(ndays, coll_name, symbols)
-        df = df.reset_index().rename({'index':'Date'})
+        df = df.reset_index().rename(columns={'index':'Date'})
         dfa = pd.concat([dfa,df])
     dfa.sort_values(by=['Date'], ascending=[True], inplace=True)
     return dfa

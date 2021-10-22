@@ -1,9 +1,11 @@
 import market_data as md
 import pandas as pd
+import numpy as np
 from datetime import datetime
 
 def df_idxdate_tostr(df):
-    return df.index.values[0].strftime('%Y-%m-%d')
+    d = df.index.values[0]
+    return np.datetime_as_string(d, timezone='UTC')[:10]
 
 def df_idxdate_to_mdbdate(df):
     ts = df.index.values[0]

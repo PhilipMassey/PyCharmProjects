@@ -8,7 +8,7 @@ def getTodaySymPortPercPeriods(period_interval,incl):
     for ndays in range(0, period, interval):
         start, end = md.get_dates_ndays_and_today(ndays)
         #print(start,end)
-        df, dt = pf.getSymbolPortPercentVol(start,end,incl)
+        df, dt = pf.get_symbol_port_perc_vol(start, end, incl)
         df['date'] = md.getNBusDateFromNdays(ndays)
         df.reset_index(inplace = True)
         dfa = pd.concat([dfa,df])
@@ -30,7 +30,7 @@ def getPrevDaySymPortPercPeriods(nstart,period_interval,incl):
     dfa = pd.DataFrame()
     for ndays in range(nstart, period, interval):
         start, end = md.getNDateAndPrevDate(ndays, interval)
-        df, dt = pf.getSymbolPortPercentVol(start,end,incl)
+        df, dt = pf.get_symbol_port_perc_vol(start, end, incl)
         df['date'] = md.getNBusDateFromNdays(ndays)
         df.reset_index(inplace = True)
         dfa = pd.concat([dfa,df])

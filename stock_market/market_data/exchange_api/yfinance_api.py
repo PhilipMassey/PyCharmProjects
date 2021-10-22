@@ -1,3 +1,4 @@
+import pandas as pd
 import yfinance as yf
 import market_data as md
 
@@ -22,4 +23,7 @@ def get_yahoo_ndays_ago(ndays, symbols):
         df = df.head(1)
         df.drop('FB', axis=1, level=1, inplace=True, errors='ignore')
         df = df.dropna(axis=1, how='all')
-    return df[['Close', 'Volume']]
+    if df.size == 0:
+        return pd.DataFrame({})
+    else:
+        return df[['Close', 'Volume']]
