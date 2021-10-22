@@ -2,33 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95a45075-3636-4e0b-a23c-304d5991ece2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/data/etf/Water ETF.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/data/holding/robinhood.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc - Homebuilding.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Health Care - Life Sciences Tools and Services.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Industrials - Electrical Components and Equipment.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Inf Tech - Semiconductors.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Top Stocks in Renewable Electricity.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/dates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-deepdive" beforeDir="false" afterPath="$PROJECT_DIR$/python-deepdive" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ark/ARKG.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ark/ARKG.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Alternative Medicine.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Alternative Medicine.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc-Auto Manu.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc-Auto Manu.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc-Home Furnish &amp; Retail.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc-Home Furnish &amp; Retail.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Staples.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Staples.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Health Care - Wall St.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Health Care - Wall St.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Heatlth Care-Alternative Medicine.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Heatlth Care-Alternative Medicine.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Materials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Materials.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/test/test_symbols.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/test/test_symbols.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Electic Vehicle 2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Electic Vehicle 2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/exchange_api/dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/exchange_api/dates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/exchange_api/yfinance_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/exchange_api/yfinance_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stock_market/market_data/scripts/mdb_missing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/scripts/mdb_missing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/load_missing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/load_missing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/mdb_in_out.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/mdb_in_out.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/test/test_get_symbols.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_get_symbols.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
