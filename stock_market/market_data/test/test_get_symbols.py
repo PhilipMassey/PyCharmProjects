@@ -5,4 +5,4 @@ import market_data as md
 #print(len(port_sym),'  ', port_sym)
 
 symbol = md.get_symbols(incl=md.all)
-print(len(symbol),'  ', sorted(symbol))
+print(len(symbol),'  ', symbol)

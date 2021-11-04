@@ -19,7 +19,13 @@ app.layout = dbc.Container([
 
 @callback(Output('tbl_out', 'children'), Input('tbl', 'active_cell'))
 def update_graphs(active_cell):
-  return str(active_cell)
+    value = ''
+    if active_cell is not None:
+         print(active_cell['row'],active_cell['column'])
+         rv = int(active_cell['row'])
+         cv = int(active_cell['column'])
+         value = df.iloc[rv,cv]
+    return str(active_cell) + ' ' + str(value)
 
 if __name__ == "__main__":
     app.run_server(debug=True)

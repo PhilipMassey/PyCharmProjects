@@ -10,7 +10,7 @@ import re
 
 rpath = '/Users/philipmassey/Downloads/Investing/Firefox/'
 budir = join(rpath,'bu')
-wpath = join(md.data_dir, 'seeking_alpha')
+wpath = join(md.data_dir, 'Seeking_Alpha')
 
 def conform_to_spec(tkrs):
     tkrs = tkrs[:12]

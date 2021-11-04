@@ -4,7 +4,7 @@ import plotly.express as px
 def plotPercentVolPortfolio(df_stock,ndays,endDt,ascending):
     df_stock.dropna(inplace=True)
     df_stock.reset_index(inplace=True)
-    df_stock = df_stock.rename(columns={'index': 'name'})
+    df_stock.rename(columns={'index': 'name'}, inplace=True)
     df_stock.sort_values(by='percent', ascending=ascending, inplace=True)
     #df_stock=df_stock[:qty]
     df_stock.sort_values(by='portfolio',inplace=True)

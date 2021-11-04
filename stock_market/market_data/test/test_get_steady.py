@@ -17,12 +17,12 @@ df = md.get_df_for_symbol('DZSI',md.db_5days_up)
 print(df)
 
 
-#df = md.get_mdb_row_for_nday(ndays,md.db_5days_up)
+#df = md.get_df_from_mdb_for_nday(ndays,md.db_5days_up)
 #df = md.getdf_ndays_mdb_row(ndays,db_coll_close)
 #print(df.symbol.values)
 
 def get_mdb_steady(ndays,db_colln):
-    df = md.get_mdb_row_for_nday(ndays, db_colln)
+    df = md.get_df_from_mdb_for_nday(ndays, db_colln)
     return df.symbol.values
 
 symbols = get_mdb_steady(ndays, md.db_5days_up)

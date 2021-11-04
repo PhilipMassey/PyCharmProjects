@@ -22,9 +22,13 @@ def get_missing_market_row(ndays, symbols):
     dbaction = None
     df_missing = pd.DataFrame({})
     missing_symbols = []
-    df_mdb = md.get_mdb_row_for_nday(ndays,md.db_close,symbols)
-    if df_mdb.size == 0: #missing whole row of data, missing all symbole
-        dbaction = 'ADD'
+    df_mdb = md.get_df_from_mdb_for_nday(ndays, md.db_close, symbols)
+    if df_mdb.size == 0: #missing whole row of data or missing symbols missing values 'Nan'
+        count = md.mdb_document_count(ndays,md.db_close)
+        if count == 0:
+            dbaction = 'ADD'
+        else:
+            dbaction = 'UPDATE'
         missing_symbols = symbols
     else:
         mdb_columns = set(df_mdb.columns)

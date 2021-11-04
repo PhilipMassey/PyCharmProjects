@@ -2,30 +2,121 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="796b1994-18ab-463f-9413-7bfd5753db1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/DashProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_date.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Deep Dive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Deep Dive/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plotting/.idea/Plotting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Plotting/.idea/Plotting.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Plotting/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Plotting/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/.idea/stock_market.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/.idea/stock_market.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/conditional_formatting/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/drop_downs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/drop_downs/drop_down.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/drop_downs/dropdown_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/drop_downs/dropdown_to_row.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/drop_downs/dynamic_options.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/drop_downs/update_output.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/drop_downs/update_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/examples/add_row.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/examples/doc_store.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/sorting_filtering/backend_paging_with_sort_filtering.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plotly_examples/sorting_filtering/sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/dropdowns_table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/sorting.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/percent/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/percent/folders_portfolios.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/percent/percent_period.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/earnings/scripts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_load_missing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/performance/performance_test/test_get_perc_for_range.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plotly_examples/callbacks.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotly_examples/callbacks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plotly_examples/format_conditional.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotly_examples/conditional_formatting/format_conditional.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/drop_down_df.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/drop_down_df.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/drop_down_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/drop_down_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/drop_down_list_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/drop_down_list_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/months_earnings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/months_earnings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/plot_close.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/plot_close.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/print_earnings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/print_earnings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/scripts/command_line.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/earnings/scripts/command_line.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/scripts/run_monthly_earnings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/earnings/scripts/run_monthly_earnings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/scripts/run_montly_earnings.zsh" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/earnings/scripts/run_montly_earnings.zsh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stock_market/market_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/exchange_api/yfinance_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/exchange_api/yfinance_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/get_csv_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/get_csv_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/get_portfolio.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/get_portfolio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ark/ARK.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARK.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ark/ARKF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ark/ARKG.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKG.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ark/ARKK.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKK.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ark/ARKQ.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKQ.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ark/ARKW.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKW.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ark/ARKX.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKX.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/etf/DIA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/etf/Markets ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Markets ETF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/etf/Sector XL ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Sector XL ETF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/etf/Thematic ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Thematic ETF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/etf/Water ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Water ETF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/holding/robinhood.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Robinhood.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Alternative Medicine.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Alternative Medicine.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Comm Services - Comm Equip.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Comm Services - Comm Equip.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Comm Services.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Comm Services.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc - Homebuilding.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Consumer Disc - Homebuilding.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc-Auto Manu.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Consumer Disc-Auto Manu.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc-Home Building.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Consumer Disc-Home Building.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc-Home Furnish &amp; Retail.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Consumer Disc-Home Furnish &amp; Retail.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc-Internet &amp; Direct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Consumer Disc-Internet &amp; Direct.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Disc.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Consumer Disc.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Consumer Staples.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Consumer Staples.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/FinancIals.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/FinancIals.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Health Care - Growth.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care - Growth.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Health Care - Life Sciences Tools and Services.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care - Life Sciences Tools and Services.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Health Care - Momentum.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care - Momentum.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Health Care - Wall St.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care - Wall St.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Health Care-Pharmaceuticals Momentum.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care-Pharmaceuticals Momentum.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Health Care.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Heatlth Care-Alternative Medicine.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Heatlth Care-Alternative Medicine.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Industrials - Container Ships.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials - Container Ships.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Industrials - Dry Buik.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials - Dry Buik.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Industrials - Electrical Components and Equipment.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials - Electrical Components and Equipment.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Industrials - Marine.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials - Marine.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Industrials-Trucking.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials-Trucking.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Industrials-Value.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials-Value.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Industrials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Inf Tech - Semiconductors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Inf Tech - Semiconductors.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Inf Tech.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Inf Tech.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Materials-Lumber.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Materials-Lumber.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Materials-Steel.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Materials-Steel.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Materials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Materials.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Real Estate Services.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Real Estate Services.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Top REITs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top REITs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Top Stocks in Renewable Electricity.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Stocks in Renewable Electricity.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Utilities-Renewable Energy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Utilities-Renewable Energy.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/seeking_alpha/Utilities.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Utilities.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/test/test_symbols.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/test/Test_symbols.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/volatile_stock.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Additive Manufacturing.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Additive Manufacturing.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Biotechnology GNOM.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Biotechnology GNOM.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Cloud Enterprise Apps.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Cloud Enterprise Apps.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Electic Vehicle 2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Electic Vehicle 2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Electric Vehicle.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Electric Vehicle.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Electriv Vehicle China.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Electriv Vehicle China.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Stock Market Asia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Stock Market Asia.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Stock Market Emerging.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Stock Market Emerging.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/watching/Stock Market Europe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Stock Market Europe.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/excel/xls_to_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/excel/xls_to_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/exchange_api/dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/exchange_api/dates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/get_csv_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/csv_data_defs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/get_portfolio.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/portfolio_defs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stock_market/market_data/scripts/mdb_missing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/scripts/mdb_missing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/dates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/get_mdb_rows.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/get_mdb_rows.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/mdb_in_out.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/mdb_in_out.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/performance/calc_percent_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/calc_percent_change.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/performance/get_period_interval.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/get_period_interval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/performance/performance_test/test_pecent_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/performance_test/test_pecent_change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/get_mdb_rows.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/df_from_mdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/get_mdb_steady.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/load_missing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/load_missing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/test/test_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/test/test_getNDaysAgo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/test/test_get_mdb_rows.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_get_mdb_rows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/test/test_get_steady.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_get_steady.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/test/test_get_symbols.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_get_symbols.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/test/test_ndays_busdate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/performance/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/performance/get_period_interval.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/period_interval_df.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/performance/get_steady_increase.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/steady_increase_df.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/performance/port_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/port_filter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/plots/plot_percent_change_bubble.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/plots/plot_percent_change_bubble.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/plots/scripts/plot_all_today.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/plots/scripts/plot_all_today.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +148,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/plotly_examples/conditional_formatting" />
       <recent name="$PROJECT_DIR$/plotly_examples/datatable_heigth" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.row_ids">
-    <configuration name="filter_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.update_table">
+    <configuration name="dropdown_table" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DashProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -69,11 +161,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/sorting_filtering" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/drop_downs" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/sorting_filtering/filter_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/drop_downs/dropdown_table.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,7 +174,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="format_helper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dropdown_to_row" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DashProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,11 +182,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/conditional_formatting" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/drop_downs" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/conditional_formatting/format_helper.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/drop_downs/dropdown_to_row.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -103,7 +195,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="highligh_max_value_in_row" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dynamic_options" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DashProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,11 +203,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/conditional_formatting" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/drop_downs" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/conditional_formatting/highligh_max_value_in_row.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/drop_downs/dynamic_options.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -145,7 +237,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="row_ids" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="update_output" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DashProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -153,11 +245,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/conditional_formatting" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/drop_downs" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/conditional_formatting/row_ids.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/drop_downs/update_output.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,7 +258,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sort_filter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="update_table" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DashProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -174,11 +266,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/sorting_filtering" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/drop_downs" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/sorting_filtering/sort_filter.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/drop_downs/update_table.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -189,11 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.row_ids" />
-        <item itemvalue="Python.filter_2" />
-        <item itemvalue="Python.sort_filter" />
-        <item itemvalue="Python.format_helper" />
-        <item itemvalue="Python.highligh_max_value_in_row" />
+        <item itemvalue="Python.update_table" />
+        <item itemvalue="Python.dropdown_table" />
+        <item itemvalue="Python.update_output" />
+        <item itemvalue="Python.dropdown_to_row" />
+        <item itemvalue="Python.dynamic_options" />
       </list>
     </recent_temporary>
   </component>

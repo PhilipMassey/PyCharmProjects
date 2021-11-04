@@ -1,8 +1,8 @@
-from datetime import datetime
 import numpy as np
 import pandas as pd
 import pandas_market_calendars as mcal
-
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
 cme = mcal.get_calendar("NYSE")
 
 def get_busdate_ndays_ago(ndays):
@@ -10,12 +10,33 @@ def get_busdate_ndays_ago(ndays):
     dt = np.busday_offset(dates=strdate, offsets=-ndays, roll='backward', holidays=cme.holidays().holidays)
     return str(dt)
 
-def get_nbusdays_from_datestr(prev_date):
+
+def get_nbusdays_from_datestr(datestr):
     dtnow = '{:%Y-%m-%d}'.format(datetime.now())
     bus_dtnow = np.busday_offset(dates=dtnow, offsets=0, roll='backward',holidays=cme.holidays().holidays)
     dt = str(bus_dtnow)
-    nbdays =  np.busday_count(prev_date, dt,holidays=cme.holidays().holidays)
+    nbdays =  np.busday_count(datestr, dt, holidays=cme.holidays().holidays)
     return nbdays
+
+
+def get_nbusdays_from_date(date):
+    datestr = f'{date:%Y-%m-%d}'
+    dtnow = '{:%Y-%m-%d}'.format(datetime.now())
+    bus_dtnow = np.busday_offset(dates=dtnow, offsets=0, roll='backward',holidays=cme.holidays().holidays)
+    dt = str(bus_dtnow)
+    nbdays =  np.busday_count(datestr, dt, holidays=cme.holidays().holidays)
+    return nbdays
+
+def get_perc_change_ndays():
+    now = datetime.now()
+    yr1 = get_nbusdays_from_date(now - relativedelta(years=1))
+    mnth6 = get_nbusdays_from_date(now - relativedelta(months=6))
+    mnth3 = get_nbusdays_from_date(now - relativedelta(months=3))
+    mnth1 = get_nbusdays_from_date(now - relativedelta(months=1))
+    wks2 = get_nbusdays_from_date(now- relativedelta(weeks=2))
+    wks1 = get_nbusdays_from_date(now - relativedelta(weeks=1))
+    return wks1 + 1, wks2 + 1, mnth1 + 1, mnth3 + 1, mnth6 + 1, yr1 + 1
+
 
 def get_desc_date(dfRow):
     date = pd.to_datetime(dfRow.index.values[0])

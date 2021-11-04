@@ -9,6 +9,6 @@ def filteredbySymbols(df, incl,colorrow='row'):
 
 
 def filteredbyPortfolios(df,incl):
-    portfolios = md.getPortfolios(incl)
+    portfolios = md.get_portfolios(incl)
     return df[df.portfolio.isin(portfolios)]
 

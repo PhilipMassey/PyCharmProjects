@@ -17,7 +17,7 @@ for bucket in [md.sa,md.watching,md.ark]:
     df = pf.aggregateOnPortfolio(dfall)
     pl.plotPortPercPeriods(df,title,'bar','portfolio')
 
-# dfall = pf.getTodaySymPortPercPeriodsFltrd(ndays_step, incl=md.watching)
+# dfall = pf.getTodaySymPortPercPeriodsFltrd(ndays_step, incl=md.Watching)
 # title = 'Watching up to today'
 # title = '{} days,{} step - {}'.format(ndays_step[0],ndays_step[1],title)
 # df = pf.aggregateOnPortfolio(dfall)
