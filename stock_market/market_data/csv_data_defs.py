@@ -22,33 +22,33 @@ def get_dir_port_symbols(subdir):
     dfall.reset_index(drop=True, inplace=True)
     return dfall
 
-def get_port_and_symbols(incl):
+def get_port_and_symbols(directories):
     df_all = pd.DataFrame(columns=('portfolio','symbol'))
-    if incl == md.all:
+    if directories == md.all:
         dirs = [d for d in listdir(md.data_dir) if isdir(join(md.data_dir, d))]
         for dir in dirs:
             df = get_dir_port_symbols(dir)
             df_all = pd.concat([df_all, df], axis=0)
     else:
-        df = get_dir_port_symbols(incl)
+        df = get_dir_port_symbols(directories)
         df_all = pd.concat([df_all, df], axis=0)
     return df_all
 
-def get_portfolios(incl):
-    df_port = get_port_and_symbols(incl)
-    return set(df_port.portfolio.values)
+def get_portfolios(directory):
+    df_port = get_port_and_symbols(directory)
+    return list(set(df_port.portfolio.values))
 
-def get_symbols(incl='',port=[]):
-    if len(incl) > 0:
-        df = get_port_and_symbols(incl)
+def get_symbols(directory='', ports=[]):
+    if len(directory) > 0:
+        df = get_port_and_symbols(directory)
+        symbols = list(set(df.symbol.values))
     else:
-        df = get_symbols_for_portfolio(port)
-    return list(set(df.symbol.values))
+        symbols = get_symbols_for_portfolios(ports)
+    return symbols
 
-def get_symbols_for_portfolio(portfolios):
+def get_symbols_for_portfolios(portfolios):
     port_symbols = md.get_port_and_symbols(md.all)
-    port_symbols
-    return port_symbols[port_symbols['portfolio'].isin(portfolios)]
+    return list(port_symbols[port_symbols['portfolio'].isin(portfolios)].symbol.values)
 
 
 def getHighVolatilityStocks():

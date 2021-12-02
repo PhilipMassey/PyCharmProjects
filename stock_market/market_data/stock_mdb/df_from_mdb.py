@@ -24,8 +24,21 @@ def get_df_from_mdb_for_nday(ndays, coll_name, symbols='', incl='', dateidx=True
         else:
             mdb_data = db_coll.find({'Date': adate})
         df = md.mdb_to_df(mdb_data, dateidx)
-    print('mdb records {} for {} symbols on {}'.format(df.size,len(symbols),adate),end=', ')
+    #print('mdb records {} for {} symbols on {}'.format(df.size,len(symbols),adate),end=', ')
     return df
+
+
+def get_df_from_mdb(ndays,db_coll_name,columns='',query_field='Date'):
+    adate = md.get_date_for_mdb(ndays)
+    db_coll = db[db_coll_name]
+    if len(columns) == 0:
+        mdb_data = db_coll.find({query_field: adate})
+    else:
+        mdb_data = db_coll.find({query_field: adate},columns)
+    df = md.mdb_to_df(mdb_data)
+    return df
+
+
 
 def get_df_from_mdb_between_days(ndays_ago, dbcol_name, symbols='', incl=md.all, start=0):
     db_coll = db[dbcol_name]
@@ -55,7 +68,7 @@ def get_df_from_mdb_between_days(ndays_ago, dbcol_name, symbols='', incl=md.all,
 #         print('{} mdb index error - no records for {}.'.format(db_coll_name, adate))
 #         if addtodb == True:
 #             ndays = md.getNBusDaysFromDateStr(adate.strftime("%Y-%m-%d"))
-#             df = md.get_yahoo_ndays_ago(ndays, md.get_symbols(incl=md.all))
+#             df = md.get_yahoo_ndays_ago(ndays, md.get_symbols(directory=md.all))
 #             df = df.dropna(axis=1, how='all')
 #             md.addCloseVolumeRowToMdb(df,db_coll)
 #             mdb_data = db_coll.find({db_coll: adate})
@@ -86,15 +99,6 @@ def get_df_mdb_nrows_step(start,days_step, coll_name,symbols='', incl=md.all):
     dfa.sort_values(by=['Date'], ascending=[True], inplace=True)
     return dfa
 
-def get_df_from_mdb(ndays,db_coll_name,columns='',query_field='Date'):
-    adate = md.get_date_for_mdb(ndays)
-    db_coll = db[db_coll_name]
-    if len(columns) == 0:
-        mdb_data = db_coll.find({query_field: adate})
-    else:
-        mdb_data = db_coll.find({query_field: adate},columns)
-    df = md.mdb_to_df(mdb_data)
-    return df
 
 def mdb_document_count(ndays, db_coll_name):
     adate = md.get_date_for_mdb(ndays)

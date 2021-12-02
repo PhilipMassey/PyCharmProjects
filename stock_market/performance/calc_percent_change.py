@@ -19,7 +19,7 @@ def get_symbol_port_perc_vol(start, end, incl):
     dfCloseEnd, dfVolEnd = md.get_mdb_rows_close_vol(end, incl)
     df_stock = get_percent_change(dfCloseStart, dfCloseEnd)
     df_stock['volume'] = get_stock_vol(dfVolEnd)
-    df_stock = md.addPortfolioTodf_stock(df_stock,incl)
+    df_stock = md.add_portfolio_to_df_stock(df_stock,incl)
     endDt = md.getDescriptiveDate(dfCloseEnd)
     return df_stock, endDt
 

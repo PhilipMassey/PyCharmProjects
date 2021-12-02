@@ -63,7 +63,7 @@ def update_table(d1, d2):
 
     if(d2 != None):  # and d2 != None):
          #df_filtered = df[(df["symbol"]==d2)] # & (df["Address"]==d2)]
-         df_filtered = pf.df_percents_for_range(ndays_range, port=[d2])
+         df_filtered = pf.df_percents_for_range(ndays_range, ports=[d2])
     else:
         df_filtered = df
     return [dt.DataTable(

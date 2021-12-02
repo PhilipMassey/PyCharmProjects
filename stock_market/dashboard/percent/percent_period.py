@@ -5,7 +5,7 @@ import dash
 from dash import dash_table
 
 ndays_range = md.get_perc_change_ndays()
-df = pf.df_percents_for_range(ndays_range,port=[md.sector_xl_etf])
+df = pf.df_percents_for_range(ndays_range, ports=[md.sector_xl_etf])
 print()
 
 app = dash.Dash(__name__)

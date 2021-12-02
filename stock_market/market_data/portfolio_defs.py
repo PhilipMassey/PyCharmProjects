@@ -11,7 +11,7 @@ def add_portfolio_to_df_stock(df_stock, incl):
 def get_df_symbol_portfolios(symbols):
     df = pd.DataFrame({})
     df['symbol'] = symbols
-    df_port = md.get_port_and_symbols(incl=md.all)
+    df_port = md.get_port_and_symbols(directories=md.all)
     return df.merge(df_port).sort_values(by=['portfolio'])
 
 
@@ -21,7 +21,7 @@ def index_to_column(df, column):
 
 
 def get_md_port_mangle():
-    portfolios = sorted(md.get_portfolios(incl=md.all))
+    portfolios = sorted(md.get_portfolios(directory=md.all))
     for op in portfolios:
         p = op.lower()
         p = p.replace(' ', '_')

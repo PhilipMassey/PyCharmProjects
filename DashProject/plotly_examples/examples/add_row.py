@@ -1,7 +1,7 @@
 import copy
 import dash
 from dash.dependencies import Input, Output, State
-#from dash import dash_table_experiments as dt
+#from dash examples import dash_table_experiments as dt
 from dash import dash_table as dt
 from dash import dcc
 from dash import html

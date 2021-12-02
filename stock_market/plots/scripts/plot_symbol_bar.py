@@ -8,7 +8,7 @@ ndays_step=md.get_period_interval(30)
 print(ndays_step)
 
 portfolio = md.sa
-dfall = pf.getTodaySymPortPercPeriodsFltrd(ndays_step, incl=portfolio)
+dfall = pf.get_today_sym_port_perc_fltrd(ndays_step, incl=portfolio)
 portfolio = 'Health Care-Pharmaceuticals Momentum'
 
 portfolio
