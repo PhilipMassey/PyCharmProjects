@@ -2,27 +2,6 @@ import performance as pf
 import market_data as md
 import pandas as pd
 
-def df_percents_for_range(ndays_range, symbols='', incl='', ports=[]):
-    if len(incl) > 0:
-        symbols = md.get_symbols(incl)
-    elif len(ports) > 0:
-        symbols = md.get_symbols(ports=ports)
-    elif len(symbols) == 0:
-        symbols = md.get_symbols(directory=md.all)
-    symbols = sorted(symbols)
-    dfAll = pd.DataFrame({})
-    end_ndays = 1
-    df1 = md.get_df_from_mdb_for_nday(end_ndays,md.db_close,symbols)
-    for ndays in ndays_range:
-        dfe = md.get_df_from_mdb_for_nday(ndays,md.db_close,symbols)
-        dfp = pf.get_percent_change_dfs(dfe,df1)
-        dfp[str(ndays) + ' days'] = dfp['percent']
-        dfp.drop(columns=('percent'),inplace=True)
-        dfAll = pd.concat([dfAll,dfp],axis=1)
-    dfAll.reset_index(inplace=True)
-    dfAll.rename(columns=({'index': 'symbol'}), inplace=True)
-    return dfAll
-
 
 def df_dir_ports_means_for_range(ndays_range, directory):
     ports = md.get_portfolios(directory)

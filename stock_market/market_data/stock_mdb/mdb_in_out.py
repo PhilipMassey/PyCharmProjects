@@ -40,6 +40,10 @@ def update_mdb_with_dfrow(df_m, coll_name):
         result = db_coll.update_one(query, newvalues)
         #print(ndays, len(data_dict[0]), result.matched_count, result.modified_count)
 
+def update_mdb_with_dfrows(df,db_coll_name):
+    for index, row in df.iterrows():
+        dfrow = pd.DataFrame({index:row}).T.rename_axis('Date')
+        md.update_mdb_with_dfrow(dfrow, md.db_test_close)
 
 
 def add_dfup_to_db(dfup, db_coll_name):

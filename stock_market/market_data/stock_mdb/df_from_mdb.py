@@ -40,16 +40,16 @@ def get_df_from_mdb(ndays,db_coll_name,columns='',query_field='Date'):
 
 
 
-def get_df_from_mdb_between_days(ndays_ago, dbcol_name, symbols='', incl=md.all, start=0):
+def get_df_from_mdb_between_days(ndays_ago, dbcol_name, symbols='', incl=md.all, last_day=1):
     db_coll = db[dbcol_name]
     start_date = md.get_date_for_mdb(ndays_ago)
     if not 'Date' in symbols:
         symbols.append('Date')
     df = pd.DataFrame({})
-    if start==0:
+    if last_day==1:     #last instert
         mdb_data = db_coll.find({'Date': {'$gte':start_date}},symbols)
     else:
-        end_date = md.get_date_for_mdb(ndays_to)
+        end_date = md.get_date_for_mdb(start)
         mdb_data = db_coll.find({'Date': {'$lte':end_date, '$gte':start_date}},symbols)
     df = md.mdb_to_df(mdb_data, dateidx=True)
     return df
