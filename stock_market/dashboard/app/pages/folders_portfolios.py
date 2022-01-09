@@ -1,16 +1,19 @@
-import pandas as pd
 import dash
+from dash import Dash, dcc, html, Input, Output, callback
 from dash import dash_table as dt
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output, State
-import market_data as md
-import performance as pf
 from os.path import isfile, join, isdir
 from os import listdir
 from datetime import datetime
+import market_data as md
+import performance as pf
+
 
 dirs = sorted(d for d in listdir(md.data_dir) if isdir(join(md.data_dir, d)))
+#dash.register_page(__name__)
+dash.register_page(__name__, path="/")
 
 app = dash.Dash()
 application = app.server
@@ -37,14 +40,13 @@ dropdown = html.Div([
 
 final_table = html.Div(id="final_table")
 
-app.layout = html.Div([date_div, dropdown, final_table])
+layout = html.Div([date_div, dropdown, final_table])
 
 
 #callback to update second dropdown based on first dropdown
-@app.callback(Output('dropdown_d2', 'options'),
-          [
-            Input('dropdown_d1', 'value'),
-          ])
+@app.callback(
+    Output('dropdown_d2', 'options'),
+    [Input('dropdown_d1', 'value')])
 def update_dropdown_2(d1):
     print(d1)
     if(d1 != None):
@@ -54,11 +56,11 @@ def update_dropdown_2(d1):
         return []
 
 
-@app.callback(Output('final_table', 'children'),
-          [
-            Input('dropdown_d1', 'value'),
-            Input('dropdown_d2', 'value'),
-          ])
+@app.callback(
+    Output('final_table', 'children'),
+    [Input('dropdown_d1', 'value'),
+     Input('dropdown_d2', 'value'),
+    ])
 def update_table(d1, d2):
     ndays_range = md.get_ndays_range_perc_days()
     if d1 != None and d2 == None:
@@ -77,6 +79,3 @@ def update_table(d1, d2):
         data=df_filtered.to_dict('records'),
         sort_action='native')]
 
-
-if __name__ == "__main__":
-    app.run_server(debug=True, port=8050)

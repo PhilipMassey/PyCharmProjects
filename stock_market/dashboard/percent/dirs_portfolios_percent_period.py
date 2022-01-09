@@ -6,31 +6,45 @@ from dash import html
 from dash.dependencies import Input, Output, State
 import market_data as md
 import performance as pf
-from os.path import isfile, join, isdir
-from os import listdir
 from datetime import datetime
 
 
 app = dash.Dash()
 application = app.server
 
-radio_value = 'MEAN'
-aradio = html.Div([dcc.RadioItems(id='input-radio-button',
-                                options=[
+
+date_div = html.Div(id='date_div')
+
+radio_value_period = 'monthly'
+radio_period = html.Div([
+    dcc.RadioItems(
+        id='radio-button-period',
+        options=[
+            {'label': '5, 10, 21, 64, 128, 252', 'value': 'wfm3612'},
+            {'label': 'Monthly Percent', 'value': 'monthly'}
+                ],
+        labelStyle={'display': 'inline_block'},
+        value='monthly', ),
+    html.P(id = 'output-text-period')
+])
+
+radio_value_measure = 'MEAN'
+radio_measure = html.Div([dcc.RadioItems(id='radio-button-measure',
+                                           options=[
                                     {'label': 'Portfolio Mean', 'value': 'MEAN'},
                                     {'label': 'Symbol Percent', 'value': 'PERC'}
                                 ],
-                                labelStyle={'display': 'inline_block'},
-                                value='PERC',),
-                    html.P(id = 'output-text')])
+                                           labelStyle={'display': 'inline_block'},
+                                           value='PERC', ),
+                            html.P(id = 'output-text-measure')])
 
 
-dirs = sorted(d for d in listdir(md.data_dir) if isdir(join(md.data_dir, d)))
+dirs = md.get_portfolio_dirs()
 today = f'Date: {datetime.now():%m-%d-%Y}'
 dropdown = html.Div([
-    html.P([today,' ', html.Br()]),
     html.Label('Directories'),
     dcc.Dropdown(id='dropdown_d1', options=[{'label': i, 'value': i} for i in dirs], value=None),
+    radio_measure,
     html.Label('Portfolio'),
     dcc.Dropdown(id='dropdown_d2', options=[], value=None),
     dcc.Interval(
@@ -44,25 +58,31 @@ dropdown = html.Div([
 #its better to have a Div here so that you can update the entire div in the callback and add the necessary properties in the callback
 final_table = html.Div(id="final_table")
 
-app.layout = html.Div([aradio, dropdown, final_table])
 
-#callback on radio button
-@app.callback(Output('output-text', 'children'),
-              [Input('input-radio-button', 'value')])
+app.layout = html.Div([date_div, dropdown, radio_period, final_table])
+
+
+#callback on radio-button-measure
+@app.callback(Output('output-text-measure', 'children'),
+              [Input('radio-button-measure', 'value')])
+def radio_value_measure(value):
+    global radio_value_measure
+    radio_value_measure = value
+    return radio_value_measure
+
+
+#callback on radiobutton-period
+@app.callback(Output('output-text-period', 'children'),
+              [Input('radio-button-period', 'value')])
 def update_graph(value):
-    print()
-    global radio_value
-    radio_value = value
-    return f'The selected value is {radio_value}'
-
+    global radio_value_period
+    radio_value_period = value
+    return ''
 
 #callback to update second dropdown based on first dropdown
 @app.callback(Output('dropdown_d2', 'options'),
-          [
-            Input('dropdown_d1', 'value'),
-          ])
+          [Input('dropdown_d1', 'value')])
 def update_dropdown_2(d1):
-    print(d1)
     if(d1 != None):
         df_port_symbols = md.get_dir_port_symbols(d1)
         return [{'label': i, 'value': i} for i in sorted(df_port_symbols["portfolio"].unique())]
@@ -79,25 +99,34 @@ def update_dropdown_2(d1):
 def update_table(d1, d2):
     global today
     today = f'Date: {datetime.now():%m-%d-%Y}'
-    ndays_range = md.get_perc_change_ndays()
-    if radio_value == 'PERC':
-        if d1 != None and d2 == None:
-            dfd = md.get_dir_port_symbols(d1)
-            symbols = list(dfd['symbol'].values)
-            df_filtered = pf.df_percents_for_range(ndays_range, symbols=symbols)
-        elif (d2 != None):  # and d2 != None):
-             df_filtered = pf.df_percents_for_range(ndays_range, ports=[d2])
-        else:
-            #df_filtered = df
-            df_filtered = pf.df_percents_for_range(ndays_range)
+    if radio_value_period == 'monthly':
+        ndays_periods = md.get_period_ndays()
+        df_filtered = pf.df_percents_between_days(ndays_periods, ports=[d2], db_coll_name=md.db_close)
     else:
-        df_filtered = pf.df_dir_ports_means_for_range(ndays_range, d1).round(decimals=2)
+        ndays_range = md.get_ndays_range_perc_days()
+        if radio_value_measure == 'PERC':
+            if d1 != None and d2 == None:
+                dfd = md.get_dir_port_symbols(d1)
+                symbols = list(dfd['symbol'].values)
+                df_filtered = pf.df_percents_for_range(ndays_range, symbols=symbols)
+            elif (d2 != None):  # and d2 != None):
+                 df_filtered = pf.df_percents_for_range(ndays_range, ports=[d2])
+            else:
+                #df_filtered = df
+                df_filtered = pf.df_percents_for_range(ndays_range)
+        else:
+            df_filtered = pf.df_dir_ports_means_for_range(ndays_range, d1).round(decimals=2)
     return [dt.DataTable(
-        id='table',
-        columns=[{"name": i, "id": i} for i in df_filtered.columns],
-        data=df_filtered.to_dict('records'),
-        sort_action='native')]
+    id='table',
+    columns=[{"name": i, "id": i} for i in df_filtered.columns],
+    data=df_filtered.to_dict('records'),
+    style_cell={
+        'font_family': 'arial',
+        'font_size': '20px',
+        'text_align': 'center'
+    },
+    sort_action='native')]
 
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=8055)
+    app.run_server(debug=True, port=8050)

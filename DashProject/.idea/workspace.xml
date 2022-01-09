@@ -1,183 +1,218 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="796b1994-18ab-463f-9413-7bfd5753db1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/cs50/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/flask_session/0b6a963810bf9c6fe0aa7c00b20e928c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/flask_session/2029240f6d1128be89ddc32729463129" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/httpserverone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/api/blink.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/api/blue.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/api/green.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/api/off.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/api/on.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/api/red.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/autocomplete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/background.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/blink.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/css0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/css1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/css2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/css3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/css4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/css5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/css5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/geolocation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/harvard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/headings.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/hello0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/hello1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/hello2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/hello3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/hello4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/hello4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/hello5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/image.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/large.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/link0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/link1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/link2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/link3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/paragraphs0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/paragraphs1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/paragraphs2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/responsive.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/size.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src8/table.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims0/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims0/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims0/templates/failure.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims0/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims0/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims0/templates/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims1/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims1/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims1/templates/failure.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims1/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims1/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims1/templates/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims2/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims2/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims2/templates/failure.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims2/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims2/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims2/templates/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims3/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims3/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims3/static/cat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims3/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims3/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims3/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims3/templates/registrants.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims4/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims4/froshims.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims4/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims4/templates/failure.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims4/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims4/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims4/templates/registrants.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims5/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims5/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims5/templates/failure.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims5/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims5/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/froshims5/templates/success.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello0/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello0/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello0/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello1/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello1/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello1/templates/greet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello1/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello2/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello2/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello2/templates/greet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello2/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello2/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello3/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello3/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello3/templates/greet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello3/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello3/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello4/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello4/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello4/templates/greet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello4/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/hello4/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/login/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/login/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/login/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/login/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/login/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows0/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows0/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows0/shows.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows0/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows0/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows0/templates/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows1/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows1/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows1/shows.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows1/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows1/templates/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows2/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows2/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows2/shows.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/shows2/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/store/application.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/store/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/store/store.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/store/templates/books.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/store/templates/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/src9/store/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs50/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plotly_examples/interval.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plotly_examples/radio_items2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plotly_examples/radioitems.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/ai/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/ai/predictive_learning/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/ai/predictive_learning/linear.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/ai/predictive_learning/stock_prediction.h5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/ai/predictive_learning/tensor1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/percent/dirs_portfolios_percent_period.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/scripts/nohup.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="796b1994-18ab-463f-9413-7bfd5753db1c" name="Changes" comment="ndays range percent">
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/fidelity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/analysis_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/filters_list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/holdings_ex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/httml_client_ex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/request_ex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/screener/filters list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/screener/get_details.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/screener/list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/screener/screeners_ex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/screener/screens list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/top_holdings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/apis/seeking_alpha/valuation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/app/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/app/pages/folders_portfolios.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/app/pages/heatmaps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/assets/bWLwgP.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/assets/custom.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/assets/custom.more" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/callbacks/time msg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/core components/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/core components/dcc interval/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/core components/dcc interval/date_update.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/core components/dcc interval/live_updates.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/core components/input.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/core components/inputs types.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/plots/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/radio items/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/tables/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/tables/layout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/tables/selected_cell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/tables/table_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/dashboard/percent/assets/table_of_percents_for_periods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_period_intervals.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plotly_examples/examples/add_row.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotly_examples/examples/add_row.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/../nohup.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/examples/dropdowns_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/dropdowns_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/flask_session/0b6a963810bf9c6fe0aa7c00b20e928c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/flask_session/2029240f6d1128be89ddc32729463129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/httpserverone.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/api/blink.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/api/blue.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/api/green.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/api/off.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/api/on.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/api/red.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/autocomplete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/blink.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/css0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/css1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/css2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/css3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/css4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/css5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/css5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/geolocation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/harvard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/headings.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/hello0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/hello1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/hello2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/hello3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/hello4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/hello4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/hello5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/large.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/link0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/link1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/link2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/link3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/paragraphs0.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/paragraphs1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/paragraphs2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/responsive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/size.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src8/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims0/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims0/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims0/templates/failure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims0/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims0/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims0/templates/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims1/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims1/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims1/templates/failure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims1/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims1/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims1/templates/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims2/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims2/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims2/templates/failure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims2/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims2/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims2/templates/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims3/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims3/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims3/static/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims3/templates/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims3/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims3/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims3/templates/registrants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims4/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims4/froshims.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims4/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims4/templates/failure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims4/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims4/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims4/templates/registrants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims5/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims5/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims5/templates/failure.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims5/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims5/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/froshims5/templates/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello0/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello0/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello0/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello1/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello1/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello1/templates/greet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello1/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello2/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello2/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello2/templates/greet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello2/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello2/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello3/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello3/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello3/templates/greet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello3/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello3/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello4/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello4/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello4/templates/greet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello4/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/hello4/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/login/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/login/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/login/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/login/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/login/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows0/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows0/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows0/shows.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows0/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows0/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows0/templates/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows1/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows1/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows1/shows.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows1/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows1/templates/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows2/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows2/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows2/shows.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/shows2/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/store/application.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/store/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/store/store.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/store/templates/books.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/store/templates/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/src9/store/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/templates/layout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs50/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plotly_examples/sorting_filtering/filter_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/plotly_examples/sorting_filtering/filter_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/assets/bWLwgP.css" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/percent/assets/bWLwgP.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/examples/drop_down_df.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/radio items/drop_down_df.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/examples/drop_down_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/radio items/drop_down_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/examples/drop_down_list_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/radio items/drop_down_list_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/examples/dropdowns_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/tables/dropdowns_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/examples/months_earnings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/examples/plot_close.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/examples/plots/plot_close.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/examples/print_earnings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/percent/dirs_portfolios_percent_period.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/percent/dirs_portfolios_percent_period.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/percent/folders_portfolios.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/percent/folders_portfolios.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stock_market/dashboard/percent/percent_period.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/dashboard/percent/percent_period.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/earnings/load_mdb_earnings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/earnings/load_mdb_earnings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/earnings/portfolio_symbols_earnings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/earnings/portfolio_symbols_earnings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/csv_data_defs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/csv_data_defs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKQ.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKQ.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Robinhood.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Additive Manufacturing.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Watching/Additive Manufacturing.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/test/Test_symbols.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/test/test_symbols.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKG.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKK.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKQ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKW.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ARK/ARKX.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Markets ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Markets ETF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Sector XL ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Sector XL ETF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Water ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Water ETF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Alternative Medicine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care - Growth.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care - Life Sciences Tools and Services.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care - Life Sciences Tools and Services.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care - Momentum.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care - Wall St.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Health Care-Pharmaceuticals Momentum.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Heatlth Care-Alternative Medicine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials - Container Ships.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials - Dry Buik.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials - Electrical Components and Equipment.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials - Electrical Components and Equipment.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials - Marine.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials-Value.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Industrials-Value.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Materials-Steel.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Real Estate Services.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/exchange_api/dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/exchange_api/dates.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stock_market/market_data/portfolio_defs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/portfolio_defs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stock_market/market_data/scripts/mdb_missing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/scripts/mdb_missing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/scripts/mdb_missing_ark&amp;etfs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/scripts/mdb_missing_ark.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/scripts/mdb_missing_five.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/scripts/run_mdb_missing.log" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/scripts/run_mdb_missing.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/df_from_mdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/stock_mdb/df_from_mdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/test/test_get_symbols.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_get_symbols.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/test/test_symbol_multi_portfolios.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_symbol_multi_portfolios.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/test/test_yahoo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/test/test_yahoo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/scripts/nohup.out" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../stock_market/performance/calc_percent_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/calc_percent_change.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stock_market/performance/performance_test/test_get_perc_for_range.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/performance_test/test_get_perc_for_range.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/performance/performance_test/test_pecent_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/performance_test/test_pecent_change.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/performance/performance_test/test_step_perc_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/performance_test/test_step_perc_change.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/performance/period_interval_df.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/performance/period_interval_df.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/plots/scripts/plot_all_today.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/plots/scripts/plot_all_today.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/plots/scripts/plot_symbol_bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/plots/scripts/plot_symbol_bar.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +242,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cs50_2/react examples" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
@@ -226,7 +261,7 @@
       <recent name="$PROJECT_DIR$/cs50" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.row_ids">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DashProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -269,7 +304,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="external js" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="filter_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DashProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -277,11 +312,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash examples/add js" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/sorting_filtering" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash examples/add js/external js.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/sorting_filtering/filter_2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -290,7 +325,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="format_conditional" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DashProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -298,11 +333,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash examples/multi page" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/conditional_formatting" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash examples/multi page/index.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/conditional_formatting/format_conditional.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -332,27 +367,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="override interpolate_index" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DashProject" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash examples/examples" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash examples/examples/override interpolate_index.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="radio_items2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="DashProject" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -374,13 +388,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="row_ids" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DashProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plotly_examples/conditional_formatting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotly_examples/conditional_formatting/row_ids.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.row_ids" />
+        <item itemvalue="Python.format_conditional" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.override interpolate_index" />
         <item itemvalue="Python.customize index template" />
-        <item itemvalue="Python.external js" />
-        <item itemvalue="Python.index" />
+        <item itemvalue="Python.filter_2" />
       </list>
     </recent_temporary>
   </component>
@@ -396,5 +431,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ndays range percent" />
+    <option name="LAST_COMMIT_MESSAGE" value="ndays range percent" />
   </component>
 </project>

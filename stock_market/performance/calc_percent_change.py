@@ -13,7 +13,7 @@ def get_percent_change_dfs(dfs, dfe):
     return df_stock
 
 
-def df_percents_for_range(ndays_range, symbols='', incl='', ports=[]):
+def df_percents_for_range(ndays_range, symbols='', incl='', ports=[], db_coll_name=md.db_close):
     if len(incl) > 0:
         symbols = md.get_symbols(incl)
     elif len(ports) > 0:
@@ -23,16 +23,55 @@ def df_percents_for_range(ndays_range, symbols='', incl='', ports=[]):
     symbols = sorted(symbols)
     df_all = pd.DataFrame({})
     end_ndays = ndays_range[0]
-    dfe = md.get_df_from_mdb_for_nday(end_ndays,md.db_test_close,symbols)
+    dfe = md.get_df_from_mdb_for_nday(end_ndays, db_coll_name, symbols)
     for ndays in ndays_range[1:]:
-        print(ndays)
-        dfs = md.get_df_from_mdb_for_nday(ndays,md.db_test_close,symbols)
+        dfs = md.get_df_from_mdb_for_nday(ndays, db_coll_name, symbols)
         dfp = get_percent_change_dfs(dfs,dfe)
         dfp[str(ndays) + ' days'] = dfp['percent']
         dfp.drop(columns=('percent'),inplace=True)
         df_all = pd.concat([df_all,dfp],axis=1)
     df_all.reset_index(inplace=True)
     df_all.rename(columns=({'index': 'symbol'}), inplace=True)
+    return df_all
+
+
+def df_percents_between_days(ndays_range, symbols='', incl='', ports=[], db_coll_name=md.db_close):
+    if len(incl) > 0:
+        symbols = md.get_symbols(incl)
+    elif len(ports) > 0:
+        symbols = md.get_symbols(ports=ports)
+    elif len(symbols) == 0:
+        symbols = md.get_symbols(directory=md.all)
+    symbols = sorted(symbols)
+    df_all = pd.DataFrame({})
+    end_ndays = ndays_range[0]
+    for ndays in ndays_range[1:]:
+        print('end_ndays ',end_ndays)
+        dfe = md.get_df_from_mdb_for_nday(end_ndays, db_coll_name, symbols)
+        dfs = md.get_df_from_mdb_for_nday(ndays, db_coll_name, symbols)
+        end_ndays = ndays
+        dfp = get_percent_change_dfs(dfs,dfe)
+        dfp[str(ndays) + ' days'] = dfp['percent']
+        dfp.drop(columns=('percent'),inplace=True)
+        df_all = pd.concat([df_all,dfp],axis=1)
+    df_all.reset_index(inplace=True)
+    df_all.rename(columns=({'index': 'symbol'}), inplace=True)
+    df_all['sum'] = round(df_all.loc[:, df_all.columns != 'symbol'].sum(axis = 1),2)
+    return df_all
+
+
+def df_symbols_in_percentile(df, ports, percentile, db_coll_name=md.db_close):
+    percentiles = df.describe().loc[percentile]
+    print(percentiles.tolist())
+    df_all = pd.DataFrame({})
+    for idx in range(1,len(df.columns)):
+        colname = df.columns[idx]
+        if percentile == '75%' or 'percentile == 50%':
+            s = df[df[colname] > percentiles[idx-1]].symbol
+        elif percentile == '25%':
+            s = df[df[colname] < percentiles[idx-1]].symbol
+        dfs = pd.DataFrame({colname:s}).reset_index().drop(columns=['index'])
+        df_all = pd.concat([df_all,dfs],axis = 1)
     return df_all
 
 
@@ -49,3 +88,4 @@ def get_symbol_port_perc_vol(start, end, incl):
     df_stock = md.add_portfolio_to_df_stock(df_stock,incl)
     endDt = md.getDescriptiveDate(dfCloseEnd)
     return df_stock, endDt
+

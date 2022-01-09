@@ -1,5 +1,11 @@
 import pandas as pd
 import market_data as md
+from os.path import isfile, join, isdir
+from os import listdir
+
+
+def get_portfolio_dirs():
+    return sorted(d for d in listdir(md.data_dir) if isdir(join(md.data_dir, d)))
 
 
 def add_portfolio_to_df_stock(df_stock, incl):

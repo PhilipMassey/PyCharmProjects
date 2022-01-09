@@ -54,8 +54,9 @@ def update_graphs(row_ids, selected_row_ids, active_cell):
     # Instead of setting `None` in here, you could also set
     # `derived_virtual_data=df.to_rows('dict')` when you initialize
     # the component.
+    #print(selected_row_ids)
     selected_id_set = set(selected_row_ids or [])
-
+    #print(active_cell)
     if row_ids is None:
         dff = df
         # pandas Series works enough like a list for this to be OK

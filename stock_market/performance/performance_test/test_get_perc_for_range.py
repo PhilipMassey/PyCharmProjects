@@ -2,9 +2,9 @@ import performance as pf
 import market_data as md
 import pandas as pd
 
-print(md.get_perc_change_ndays())
+print(md.get_ndays_range_perc_days())
 
-ndays_range = md.get_perc_change_ndays()
+ndays_range = md.get_ndays_range_perc_days()
 df = pf.df_percents_for_range(ndays_range, ports=[md.sector_xl_etf])
 print(df)
 

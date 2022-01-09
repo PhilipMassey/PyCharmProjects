@@ -27,7 +27,7 @@ def get_nbusdays_from_date(date):
     nbdays =  np.busday_count(datestr, dt, holidays=cme.holidays().holidays)
     return nbdays
 
-def get_perc_change_ndays():
+def get_ndays_range_perc_days(end = 1):
     now = datetime.now()
     yr1 = get_nbusdays_from_date(now - relativedelta(years=1))
     mnth6 = get_nbusdays_from_date(now - relativedelta(months=6))
@@ -35,7 +35,14 @@ def get_perc_change_ndays():
     mnth1 = get_nbusdays_from_date(now - relativedelta(months=1))
     wks2 = get_nbusdays_from_date(now- relativedelta(weeks=2))
     wks1 = get_nbusdays_from_date(now - relativedelta(weeks=1))
-    return wks1 + 1, wks2 + 1, mnth1 + 1, mnth3 + 1, mnth6 + 1, yr1 + 1
+    return end, wks1 + 1, wks2 + 1, mnth1 + 1, mnth3 + 1, mnth6 + 1, yr1 + 1
+
+def get_period_ndays(end = 1):
+    now = datetime.now()
+    periods = [1]
+    for idx in range(end + 1, 13,2):
+        periods.append(get_nbusdays_from_date(now - relativedelta(months = idx)) + 1)
+    return tuple(periods)
 
 
 def get_desc_date(dfRow):
