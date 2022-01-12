@@ -15,7 +15,7 @@ dirs = sorted(d for d in listdir(md.data_dir) if isdir(join(md.data_dir, d)))
 app = dash.Dash()
 application = app.server
 
-today = f'Date: {datetime.now():%m-%d-%Y}'
+results_date_value = f'Date: {datetime.now():%m-%d-%Y}'
 
 html.Br()
 date_div = html.Div(id='date-output')

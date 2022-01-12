@@ -43,7 +43,7 @@ radio_measure = html.Div([
 
 
 dirs = md.get_portfolio_dirs()
-today = f'Date: {datetime.now():%m-%d-%Y}'
+results_date_value = f'Date: {datetime.now():%m-%d-%Y}'
 dropdown = html.Div([
     html.Label('Directories'),
     dcc.Dropdown(id='dropdown_d1', options=[{'label': i, 'value': i} for i in dirs], value=None),
@@ -100,7 +100,7 @@ def update_dropdown_2(d1):
             Input('dropdown_d2', 'value'),
           ])
 def update_table(d1, d2):
-    global today
+    global results_date_value
     today = f'Date: {datetime.now():%m-%d-%Y}'
     if radio_value_period == 'monthly':
         ndays_periods = md.get_ndays_range_montlhly()

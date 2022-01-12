@@ -18,7 +18,7 @@ dash.register_page(__name__, path="/")
 app = dash.Dash()
 application = app.server
 
-today = f'Date: {datetime.now():%m-%d-%Y}'
+results_date_value = f'Date: {datetime.now():%m-%d-%Y}'
 
 html.Br()
 date_div = html.Div(id='date-output')

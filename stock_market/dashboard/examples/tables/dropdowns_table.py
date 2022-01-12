@@ -18,9 +18,9 @@ dirs = sorted(d for d in listdir(md.data_dir) if isdir(join(md.data_dir, d)))
 app = dash.Dash()
 application = app.server
 
-today = f'Date: {datetime.now():%m-%d-%Y}'
+results_date_value = f'Date: {datetime.now():%m-%d-%Y}'
 dropdown = html.Div([
-    html.P([today,' ', html.Br()]),
+    html.P([results_date_value, ' ', html.Br()]),
     html.Label('Directories'),
     dcc.Dropdown(id='dropdown_d1', options=[{'label': i, 'value': i} for i in dirs], value=None),
     html.Label('Portfolio'),
