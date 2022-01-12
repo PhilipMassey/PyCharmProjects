@@ -60,7 +60,7 @@ def update_dropdown_2(d1):
             Input('dropdown_d2', 'value'),
           ])
 def update_table(d1, d2):
-    ndays_range = md.get_ndays_range_perc_days()
+    ndays_range = md.get_ndays_range_wfm3612()
     if d1 != None and d2 == None:
         dfd = md.get_dir_port_symbols(d1)
         symbols = list(dfd['symbol'].values)

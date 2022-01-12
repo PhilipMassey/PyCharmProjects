@@ -19,3 +19,8 @@ def get_mdbdate_from_strdate(strDate):
 def get_date_for_mdb(ndays):
     strDate = md.get_busdate_ndays_ago(ndays)
     return datetime.strptime(strDate, '%Y-%m-%d')
+
+def get_date_for_ndays(ndays_list):
+    dt = get_date_for_mdb(ndays_list[0])
+    return f'{dt:%m-%d-%Y}'
+

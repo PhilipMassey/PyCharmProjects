@@ -11,7 +11,7 @@ from os import listdir
 from datetime import datetime
 
 #df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/solar.csv', header=0, encoding = 'utf8')
-ndays_range = md.get_ndays_range_perc_days()
+ndays_range = md.get_ndays_range_wfm3612()
 df = pf.df_percents_for_range(ndays_range)
 dirs = sorted(d for d in listdir(md.data_dir) if isdir(join(md.data_dir, d)))
 

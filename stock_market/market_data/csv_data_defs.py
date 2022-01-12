@@ -24,7 +24,7 @@ def get_dir_port_symbols(subdir):
 
 def get_port_and_symbols(directories):
     df_all = pd.DataFrame(columns=('portfolio','symbol'))
-    if directories == md.all:
+    if directories is None or directories == md.all:
         dirs = [d for d in listdir(md.data_dir) if isdir(join(md.data_dir, d))]
         for dir in dirs:
             df = get_dir_port_symbols(dir)

@@ -46,7 +46,7 @@ def df_percents_between_days(ndays_range, symbols='', incl='', ports=[], db_coll
     df_all = pd.DataFrame({})
     end_ndays = ndays_range[0]
     for ndays in ndays_range[1:]:
-        print('end_ndays ',end_ndays)
+        #print('end_ndays: ', end_ndays, 'ndays: ', ndays)
         dfe = md.get_df_from_mdb_for_nday(end_ndays, db_coll_name, symbols)
         dfs = md.get_df_from_mdb_for_nday(ndays, db_coll_name, symbols)
         end_ndays = ndays
@@ -62,7 +62,7 @@ def df_percents_between_days(ndays_range, symbols='', incl='', ports=[], db_coll
 
 def df_symbols_in_percentile(df, ports, percentile, db_coll_name=md.db_close):
     percentiles = df.describe().loc[percentile]
-    print(percentiles.tolist())
+    #print(percentiles.tolist())
     df_all = pd.DataFrame({})
     for idx in range(1,len(df.columns)):
         colname = df.columns[idx]

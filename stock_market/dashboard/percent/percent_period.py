@@ -4,7 +4,7 @@ import pandas as pd
 import dash
 from dash import dash_table
 
-ndays_range = md.get_ndays_range_perc_days()
+ndays_range = md.get_ndays_range_wfm3612()
 df = pf.df_percents_for_range(ndays_range, ports=[md.sector_xl_etf])
 print()
 

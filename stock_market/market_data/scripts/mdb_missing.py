@@ -5,7 +5,7 @@ import market_data as md
 
 incl = md.all
 start = 1   #180
-end = 10    #260
+end = 260
 symbols = md.get_symbols(incl)
 #symbols = ['TLT','EDV']
 for ndays in range(start, end):

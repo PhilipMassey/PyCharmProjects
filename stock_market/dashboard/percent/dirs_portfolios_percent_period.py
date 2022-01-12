@@ -20,23 +20,26 @@ radio_period = html.Div([
     dcc.RadioItems(
         id='radio-button-period',
         options=[
-            {'label': '5, 10, 21, 64, 128, 252', 'value': 'wfm3612'},
+            {'label': '5, 10, 21, 64, 128, 252', 'value': 'wfm3612_option'},
             {'label': 'Monthly Percent', 'value': 'monthly'}
-                ],
+            ],
         labelStyle={'display': 'inline_block'},
         value='monthly', ),
     html.P(id = 'output-text-period')
 ])
 
 radio_value_measure = 'MEAN'
-radio_measure = html.Div([dcc.RadioItems(id='radio-button-measure',
-                                           options=[
-                                    {'label': 'Portfolio Mean', 'value': 'MEAN'},
-                                    {'label': 'Symbol Percent', 'value': 'PERC'}
-                                ],
-                                           labelStyle={'display': 'inline_block'},
-                                           value='PERC', ),
-                            html.P(id = 'output-text-measure')])
+radio_measure = html.Div([
+    dcc.RadioItems(
+        id='radio-button-measure',
+        options=[
+            {'label': 'Portfolio Mean', 'value': 'MEAN'},
+            {'label': 'Symbol Percent', 'value': 'PERC'}
+            ],
+       labelStyle={'display': 'inline_block'},
+       value='PERC', ),
+    html.P(id = 'output-text-measure')
+])
 
 
 dirs = md.get_portfolio_dirs()
@@ -100,10 +103,10 @@ def update_table(d1, d2):
     global today
     today = f'Date: {datetime.now():%m-%d-%Y}'
     if radio_value_period == 'monthly':
-        ndays_periods = md.get_period_ndays()
+        ndays_periods = md.get_ndays_range_montlhly()
         df_filtered = pf.df_percents_between_days(ndays_periods, ports=[d2], db_coll_name=md.db_close)
     else:
-        ndays_range = md.get_ndays_range_perc_days()
+        ndays_range = md.get_ndays_range_wfm3612()
         if radio_value_measure == 'PERC':
             if d1 != None and d2 == None:
                 dfd = md.get_dir_port_symbols(d1)
