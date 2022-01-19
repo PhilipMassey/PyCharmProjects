@@ -1,5 +1,5 @@
 import sys;sys.path.extend(['/Users/philipmassey/PycharmProjects/stock_market'])
-from dashboard.examples import months_earnings
+from dash.examples import months_earnings
 
 print('starting')
 if __name__ == '__main__':
