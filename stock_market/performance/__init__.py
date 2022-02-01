@@ -5,9 +5,12 @@ from .steady_increase_df import *
 from .df_period_measure_options import *
 
 
-wfm3612_option = '5_20_21_64_128_252'
-monthly_option = 'monthly'
 mean_option = 'mean'
 perc_option = 'perc'
 
+calc_percent_year = '1_year'
+calc_percent_2monthly = '2_monthly'
+calc_percent_monthly = '1_monthly'
 
+calc_interval_overall = 'calc_overall'
+calc_interval_between = 'calc_between'

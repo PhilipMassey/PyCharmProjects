@@ -18,14 +18,14 @@ date_div = html.Div(id='date_div')
 radio_value_period = 'monthly'
 radio_period = html.Div([
     dcc.RadioItems(
-        id='radio-button-period',
+        id='radio-button-ndays_range',
         options=[
             {'label': '5, 10, 21, 64, 128, 252', 'value': 'wfm3612_option'},
             {'label': 'Monthly Percent', 'value': 'monthly'}
             ],
         labelStyle={'display': 'inline_block'},
         value='monthly', ),
-    html.P(id = 'output-text-period')
+    html.P(id = 'output-text-ndays_range')
 ])
 
 radio_value_measure = 'MEAN'
@@ -74,9 +74,9 @@ def radio_value_measure(value):
     return radio_value_measure
 
 
-#callback on radiobutton-period
-@app.callback(Output('output-text-period', 'children'),
-              [Input('radio-button-period', 'value')])
+#callback on radiobutton-ndays_range
+@app.callback(Output('output-text-ndays_range', 'children'),
+              [Input('radio-button-ndays_range', 'value')])
 def update_graph(value):
     global radio_value_period
     radio_value_period = value

@@ -1,4 +1,4 @@
 ./myrobinhood
 ./Deep Dive
-*.pyc
-*.csv
+.pyc
+.csv

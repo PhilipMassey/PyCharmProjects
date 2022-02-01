@@ -6,20 +6,7 @@ from dash.dependencies import Output, Input
 import market_data as md
 import performance as pf
 
-
-label_period = html.Label('Select Period', style={'font-size':'20px'})
-radio_period = html.Div([
-    dcc.RadioItems(
-        id='radio-period',
-        options=[
-            {'label': '5, 10, 21, 64, 128, 252 days', 'value': pf.wfm3612_option},
-            {'label': 'Monthly', 'value': pf.monthly_option}
-                ],
-        labelStyle={'display': 'block'},
-        value=pf.monthly_option, ),
-])
-
-label_perc_or_mean = html.Label('Select Percentage calculation',style={'font-size':'20px'})
+label_perc_or_mean = html.Label('Percent calculation',style={'font-size':'20px'})
 radio_perc_or_mean = html.Div([
     dcc.RadioItems(
         id='radio-perc-or-mean',
@@ -31,12 +18,40 @@ radio_perc_or_mean = html.Div([
        value=pf.perc_option, ),
 ])
 
-period_block = html.Div([label_period, radio_period],
-                        style={'width':'50%', 'float':'left'})
+
+label_ndays_range = html.Label('Select Period', style={'font-size': '20px'})
+radio_ndays_range = html.Div([
+    dcc.RadioItems(
+        id='radio-ndays-range',
+        options=[
+            {'label': '5, 10, 21, 64, 128, 252 days', 'value': pf.calc_percent_year},
+            {'label': '2 Months', 'value': pf.calc_percent_2monthly},
+            {'label': '1 Month', 'value': pf.calc_percent_monthly}
+        ],
+        labelStyle={'display': 'block'},
+        value=pf.calc_percent_year, ),
+])
+
+
+label_calc_percent = html.Label('Calc percent', style={'font-size':'20px'})
+radio_calc_percent = html.Div([
+    dcc.RadioItems(
+        id='radio-calc-percent',
+        options=[
+            {'label': 'Calc overall', 'value': pf.calc_interval_overall},
+            {'label': 'Calc between', 'value': pf.calc_interval_between}
+        ],
+        labelStyle={'display': 'block'},
+        value=pf.calc_interval_overall, ),
+])
+
 
 perc_or_mean_block = html.Div([label_perc_or_mean, radio_perc_or_mean],
-                         style = {'margin-left': '50%'})
-
+                         style = {'margin-left': '30%'})
+ndays_range_block = html.Div([label_ndays_range, radio_ndays_range],
+                             style={'width':'30%', 'float':'middle'})
+calc_interval_block = html.Div([label_calc_percent, radio_calc_percent],
+                               style = {'width':'30%', 'flost':'left'})
 
 dirs = md.get_portfolio_dirs()
 dropdowns = html.Div([
@@ -58,7 +73,7 @@ results_table = html.Div(id="results-table")
 
 
 app = dash.Dash(__name__)
-app.layout = html.Div([period_block, perc_or_mean_block, results_date, dropdowns, results_table])
+app.layout = html.Div([perc_or_mean_block, ndays_range_block, calc_interval_block, dropdowns, results_date, results_table])
 
 
 #callback on directory selection
@@ -77,21 +92,29 @@ def update_dropdown_ports(value):
 @app.callback(
     Output('results-date','children'),
     Output('results-table', 'children'),
-    Input('radio-period', 'value'),
+    Input('radio-calc-percent', 'value'),
+    Input('radio-ndays-range', 'value'),
     Input('radio-perc-or-mean', 'value'),
     Input('dropdown-dirs', 'value'),
     Input('dropdown-ports', 'value')
 )
-def update_table(period, perc_or_mean, directory, port):
+def update_table(calc_percent, ndays_range, perc_or_mean, directory, port):
     results_date_value = 'No results'
     import pandas as pd
-    df = pd.DataFrame({'options':[period, perc_or_mean], 'portfolios':[directory, port]})
-    results_date_value, df = pf.df_wfm3612_option(period, directory, port)
-    if period == pf.monthly_option:
-        results_date_value,df = pf.df_monthly_option(perc_or_mean, directory, port)
-    elif period == pf.wfm3612_option:
-        results_date_value, df = pf.df_wfm3612_option(perc_or_mean, directory, port)
-    return (results_date_value,
+    df = pd.DataFrame({'options':[ndays_range, calc_percent], 'portfolios':[directory, port]})
+    #ndays_range = md.get_ndays_periods(months=list(range(6,0,-1)))
+    if ndays_range == pf.calc_percent_2monthly:
+        ndays_range = md.get_ndays_periods(months=list(range(12, 0, -2)))
+    elif ndays_range == pf.calc_percent_monthly:
+        ndays_range = md.get_ndays_periods(months=list(range(6, 0, -1)))
+    elif ndays_range == pf.calc_percent_year:
+        ndays_range = md.get_ndays_periods(months=(12,6,3,1),weeks=(2,1))
+    if perc_or_mean == pf.perc_option:
+        df = pf.df_closing_percent_change(ndays_range, calc_percent, directory, port)
+    elif perc_or_mean == pf.mean_option:
+        df = pf.df_dir_ports_means_for_range(ndays_range, directory)
+    return (md.get_date_for_ndays(ndays_range[-1])
+,
             dt.DataTable(
             id='table',
             columns=[{"name": i, "id": i} for i in df.columns],

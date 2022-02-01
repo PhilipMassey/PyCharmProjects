@@ -10,7 +10,7 @@ import performance as pf
 label_period = html.Label('Select Period', style={'font-size':'20px'})
 radio_period = html.Div([
     dcc.RadioItems(
-        id='radio-period',
+        id='radio-ndays_range',
         options=[
             {'label': '5, 10, 21, 64, 128, 252 days', 'value': pf.wfm3612_option},
             {'label': 'Monthly', 'value': pf.monthly_option}
@@ -77,7 +77,7 @@ def update_dropdown_ports(value):
 @app.callback(
     Output('results-date','children'),
     Output('results-table', 'children'),
-    Input('radio-period', 'value'),
+    Input('radio-ndays_range', 'value'),
     Input('radio-perc-or-mean', 'value'),
     Input('dropdown-dirs', 'value'),
     Input('dropdown-ports', 'value')
@@ -88,7 +88,7 @@ def update_table(period, perc_or_mean, directory, port):
     df = pd.DataFrame({'options':[period, perc_or_mean], 'portfolios':[directory, port]})
     results_date_value, df = pf.df_wfm3612_option(period, directory, port)
     if period == pf.monthly_option:
-        #print(period, perc_or_mean, directory, port)
+        #print(ndays_range, perc_or_mean, directory, port)
         results_date_value,df = pf.df_monthly_option(perc_or_mean, directory, port)
         #print(results_date_value,df.head(2))
     elif period == pf.wfm3612_option:

@@ -38,11 +38,22 @@ def get_portfolios(directory):
     df_port = get_port_and_symbols(directory)
     return list(set(df_port.portfolio.values))
 
+# def get_symbols(directory='', ports=[]):
+#     if len(directory) > 0:
+#         df = get_port_and_symbols(directory)
+#         symbols = list(set(df.symbol.values))
+#     else:
+#         symbols = get_symbols_for_portfolios(ports)
+#     return symbols
+
 def get_symbols(directory='', ports=[]):
-    if len(directory) > 0:
+    symbols = []
+    if directory == None and len(ports) != 0:
+        symbols = get_symbols_for_portfolios(ports)
+    elif len(directory) != 0 and len(ports) == 0:
         df = get_port_and_symbols(directory)
         symbols = list(set(df.symbol.values))
-    else:
+    elif len(directory) != 0 and len(ports) != 0:
         symbols = get_symbols_for_portfolios(ports)
     return symbols
 

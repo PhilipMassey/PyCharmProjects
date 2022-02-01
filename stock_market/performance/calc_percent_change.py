@@ -1,4 +1,5 @@
 import market_data as md
+import performance as pf
 import pandas as pd
 
 
@@ -13,17 +14,17 @@ def get_percent_change_dfs(dfs, dfe):
     return df_stock
 
 
-def df_percents_for_range(ndays_range, symbols='', incl='', ports=[], db_coll_name=md.db_close):
-    if len(incl) > 0:
-        symbols = md.get_symbols(incl)
+def df_percents_for_range(ndays_range, symbols='', directory='', ports=[], db_coll_name=md.db_close):
+    if len(directory) > 0:
+        symbols = md.get_symbols(directory)
     elif len(ports) > 0:
         symbols = md.get_symbols(ports=ports)
     elif len(symbols) == 0:
         symbols = md.get_symbols(directory=md.all)
     symbols = sorted(symbols)
     df_all = pd.DataFrame({})
-    end_ndays = ndays_range[0]
-    dfe = md.get_df_from_mdb_for_nday(end_ndays, db_coll_name, symbols)
+    start_ndays = ndays_range[0]
+    dfe = md.get_df_from_mdb_for_nday(start_ndays, db_coll_name, symbols)
     for ndays in ndays_range[1:]:
         dfs = md.get_df_from_mdb_for_nday(ndays, db_coll_name, symbols)
         dfp = get_percent_change_dfs(dfs,dfe)
@@ -32,7 +33,7 @@ def df_percents_for_range(ndays_range, symbols='', incl='', ports=[], db_coll_na
         df_all = pd.concat([df_all,dfp],axis=1)
     df_all.reset_index(inplace=True)
     df_all.rename(columns=({'index': 'symbol'}), inplace=True)
-    return df_all
+    return df_all.sort_values(by=['symbol'])
 
 
 def df_percents_between_days(ndays_range, symbols='', incl='', ports=[], db_coll_name=md.db_close):
@@ -57,7 +58,7 @@ def df_percents_between_days(ndays_range, symbols='', incl='', ports=[], db_coll
     df_all.reset_index(inplace=True)
     df_all.rename(columns=({'index': 'symbol'}), inplace=True)
     df_all['sum'] = round(df_all.loc[:, df_all.columns != 'symbol'].sum(axis = 1),2)
-    return df_all
+    return df_all.sort_values(by=['symbol'])
 
 
 def df_symbols_in_percentile(df, ports, percentile, db_coll_name=md.db_close):
@@ -89,3 +90,31 @@ def get_symbol_port_perc_vol(start, end, incl):
     endDt = md.getDescriptiveDate(dfCloseEnd)
     return df_stock, endDt
 
+
+def df_closing_percent_change(ndays_range, calc_percent, directory, port):
+    symbols = md.get_symbols(directory=directory, ports=[port])
+    df_all = pd.DataFrame({})
+    for ndays in ndays_range:
+        df = md.get_df_from_mdb_for_nday(ndays,md.db_close,symbols)
+        df_all = pd.concat([df_all,df])
+    df_percents = pd.DataFrame({})
+    for symbol in symbols:
+        closings =  df_all[symbol].values
+        alist = []
+        for idx in range(1,len(ndays_range)):
+            if calc_percent == pf.calc_interval_overall:
+                perc = (closings[idx] - closings[0])/closings[0]
+            elif calc_percent == pf.calc_interval_between:
+                perc = (closings[idx] - closings[idx-1])/closings[idx-1]
+            alist.append((100*perc).round(2))
+
+        if calc_percent == pf.calc_interval_overall:
+            dates = [md.get_busdate_ndays_ago(ndays) for ndays in ndays_range[1:]]
+        elif calc_percent == pf.calc_interval_between:
+            perc = (closings[idx] - closings[0])/closings[0]
+            alist.append((100*perc).round(2))
+            dates = [md.get_busdate_ndays_ago(ndays) for ndays in ndays_range[1:]]
+            dates.append('Overall')
+        df = pd.DataFrame({symbol:alist}, index = dates)
+        df_percents = pd.concat([df_percents,df],axis=1)
+    return df_percents.T.reset_index().rename(columns={'index':'portfolio'})

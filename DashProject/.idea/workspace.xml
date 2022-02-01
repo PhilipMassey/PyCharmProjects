@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="796b1994-18ab-463f-9413-7bfd5753db1c" name="Changes" comment="ndays range percent">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Materials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Materials.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Stocks in Renewable Electricity.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Stocks in Renewable Electricity.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/test/test_symbols.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Markets ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Markets ETF.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Thematic ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/ETF/Thematic ETF.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

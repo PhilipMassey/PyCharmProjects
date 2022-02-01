@@ -25,7 +25,7 @@ LR.fit(train[list(range(1,11))],train['actual_stock_price'])
 
 # Make predictions on the test data.
 test['predictions'] = LR.predict(test[list(range(1,11))])
-# Visualize the actual stock price and the predicted stock price    # over the time period.
+# Visualize the actual stock price and the predicted stock price    # over the time ndays_range.
 plt.figure(figsize=(12,7))
 ax = test[['actual_stock_price','predictions']].plot(figsize=(12,8))
 plt.xlabel('Date', fontsize=12)
