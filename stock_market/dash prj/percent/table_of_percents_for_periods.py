@@ -6,7 +6,12 @@ from dash.dependencies import Output, Input
 import market_data as md
 import performance as pf
 
-label_perc_or_mean = html.Label('Percent calculation',style={'font-size':'20px'})
+label_size = '18px'
+
+results_date = html.Div('Current date',id='results-date',
+                        style={'width': '100%', 'text-align': 'center','font-size':label_size})
+
+label_perc_or_mean = html.Label('Perc or Mean',style={'font-size':label_size})
 radio_perc_or_mean = html.Div([
     dcc.RadioItems(
         id='radio-perc-or-mean',
@@ -19,7 +24,7 @@ radio_perc_or_mean = html.Div([
 ])
 
 
-label_ndays_range = html.Label('Select Period', style={'font-size': '20px'})
+label_ndays_range = html.Label('Select Period', style={'font-size':label_size})
 radio_ndays_range = html.Div([
     dcc.RadioItems(
         id='radio-ndays-range',
@@ -33,7 +38,7 @@ radio_ndays_range = html.Div([
 ])
 
 
-label_calc_percent = html.Label('Calc percent', style={'font-size':'20px'})
+label_calc_percent = html.Label('Calc percent', style={'font-size':label_size})
 radio_calc_percent = html.Div([
     dcc.RadioItems(
         id='radio-calc-percent',
@@ -47,11 +52,11 @@ radio_calc_percent = html.Div([
 
 
 perc_or_mean_block = html.Div([label_perc_or_mean, radio_perc_or_mean],
-                         style = {'margin-left': '30%'})
+                         style={'width': '33%', 'display': 'inline-block'})
 ndays_range_block = html.Div([label_ndays_range, radio_ndays_range],
-                             style={'width':'30%', 'float':'middle'})
+                             style={'width': '33%', 'display': 'inline-block'})
 calc_interval_block = html.Div([label_calc_percent, radio_calc_percent],
-                               style = {'width':'30%', 'flost':'left'})
+                               style={'width': '33%', 'display': 'inline-block', 'float': 'right'})
 
 dirs = md.get_portfolio_dirs()
 dropdowns = html.Div([
@@ -68,12 +73,11 @@ dropdowns = html.Div([
 
 ], style= {'width': '100%','display': 'inline-block'})
 
-results_date = html.Div('Current date',id='results-date')
 results_table = html.Div(id="results-table")
 
 
 app = dash.Dash(__name__)
-app.layout = html.Div([perc_or_mean_block, ndays_range_block, calc_interval_block, dropdowns, results_date, results_table])
+app.layout = html.Div([results_date, perc_or_mean_block, ndays_range_block, calc_interval_block, dropdowns, results_table])
 
 
 #callback on directory selection

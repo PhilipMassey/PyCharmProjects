@@ -53,7 +53,7 @@ def get_symbols(directory='', ports=[]):
     elif len(directory) != 0 and len(ports) == 0:
         df = get_port_and_symbols(directory)
         symbols = list(set(df.symbol.values))
-    elif len(directory) != 0 and len(ports) != 0:
+    elif len(ports) != 0:
         symbols = get_symbols_for_portfolios(ports)
     return symbols
 
