@@ -1,5 +1,5 @@
 import dash
-import dash_table
+from dash import dash_table
 import pandas as pd
 from collections import OrderedDict
 
@@ -40,9 +40,9 @@ app.layout = dash_table.DataTable(
     columns=[{'id': c, 'name': c} for c in df.columns],
     tooltip_data=[
         {
-            column: {'value': str(value), 'type': 'markdown'}
+            'Region': {'value': str(value), 'type': 'markdown'}
             for column, value in row.items()
-        } for row in df.to_dict('records')
+        } for row in df[['Ind']].to_dict('records')
     ],
 
     # Overflow into ellipsis
@@ -57,4 +57,4 @@ app.layout = dash_table.DataTable(
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=True, port=7001)

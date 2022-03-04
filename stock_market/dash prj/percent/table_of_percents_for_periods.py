@@ -31,10 +31,12 @@ radio_ndays_range = html.Div([
         options=[
             {'label': '5, 10, 21, 64, 128, 252 days', 'value': pf.calc_percent_year},
             {'label': '2 Months', 'value': pf.calc_percent_2monthly},
-            {'label': '1 Month', 'value': pf.calc_percent_monthly}
+            {'label': '1 Month', 'value': pf.calc_percent_monthly},
+            {'label': '2 Weeks', 'value': pf.calc_percent_2weekly},
+            {'label': '1 Week', 'value': pf.calc_percent_weekly}
         ],
         labelStyle={'display': 'block'},
-        value=pf.calc_percent_year, ),
+        value=pf.calc_percent_weekly, ),
 ])
 
 
@@ -47,7 +49,7 @@ radio_calc_percent = html.Div([
             {'label': 'Calc between', 'value': pf.calc_interval_between}
         ],
         labelStyle={'display': 'block'},
-        value=pf.calc_interval_overall, ),
+        value=pf.calc_interval_between, ),
 ])
 
 
@@ -76,6 +78,14 @@ dropdowns = html.Div([
 results_table = html.Div(id="results-table")
 
 
+dct_profile = md.dct_mdb_profile_directory_port()
+def get_tooltip(symbol):
+    if symbol in dct_profile:
+        return dct_profile[symbol][0]
+    else:
+        return 'No worries,mate!'
+
+
 app = dash.Dash(__name__)
 app.layout = html.Div([results_date, perc_or_mean_block, ndays_range_block, calc_interval_block, dropdowns, results_table])
 
@@ -102,33 +112,53 @@ def update_dropdown_ports(value):
     Input('dropdown-dirs', 'value'),
     Input('dropdown-ports', 'value')
 )
-def update_table(calc_percent, ndays_range, perc_or_mean, directory, port):
+def update_table(calc_percent, opt_ndays_range, perc_or_mean, directory, port):
     results_date_value = 'No results'
     import pandas as pd
-    df = pd.DataFrame({'options':[ndays_range, calc_percent], 'portfolios':[directory, port]})
-    #ndays_range = md.get_ndays_periods(months=list(range(6,0,-1)))
-    if ndays_range == pf.calc_percent_2monthly:
+    if directory is None:
         ndays_range = md.get_ndays_periods(months=list(range(12, 0, -2)))
-    elif ndays_range == pf.calc_percent_monthly:
-        ndays_range = md.get_ndays_periods(months=list(range(6, 0, -1)))
-    elif ndays_range == pf.calc_percent_year:
-        ndays_range = md.get_ndays_periods(months=(12,6,3,1),weeks=(2,1))
-    if perc_or_mean == pf.perc_option:
-        df = pf.df_closing_percent_change(ndays_range, calc_percent, directory, port)
-    elif perc_or_mean == pf.mean_option:
-        df = pf.df_dir_ports_means_for_range(ndays_range, directory)
-    return (md.get_date_for_ndays(ndays_range[-1])
-,
-            dt.DataTable(
-            id='table',
-            columns=[{"name": i, "id": i} for i in df.columns],
-            data=df.to_dict('records'),
-            style_cell={
-                'font_family': 'arial',
-                'font_size': '20px',
-                'text_align': 'center'
-            },
-            sort_action='native'))
+        df = pd.DataFrame({'directory':[directory], 'symbol':[port]})
+    else:
+        if opt_ndays_range == pf.calc_percent_2monthly:
+            ndays_range = md.get_ndays_periods(months=list(range(12, 0, -2)))
+        elif opt_ndays_range == pf.calc_percent_monthly:
+            ndays_range = md.get_ndays_periods(months=list(range(6, 0, -1)))
+        elif opt_ndays_range == pf.calc_percent_2weekly:
+            ndays_range = md.get_ndays_periods(weeks=list(range(12, 0, -2)))
+        elif opt_ndays_range == pf.calc_percent_weekly:
+            ndays_range = md.get_ndays_periods(weeks=list(range(6, 0, -1)))
+        elif opt_ndays_range == pf.calc_percent_year:
+            ndays_range = md.get_ndays_periods(months=(12,6,3,1),weeks=(2,1))
+        if perc_or_mean == pf.perc_option:
+            df = pf.df_closing_percent_change(ndays_range, calc_percent, directory, port)
+        elif perc_or_mean == pf.mean_option:
+            df = pf.df_dir_ports_means_for_range(ndays_range, calc_percent, directory)
+    return (md.get_date_for_ndays(ndays_range[-1]),
+        dt.DataTable(
+        id='table',
+        columns=[{"name": i, "id": i} for i in df.columns],
+        tooltip_data=[
+            {
+                    'symbol': {'value': get_tooltip(value), 'type': 'markdown'}
+                    for column, value in row.items()
+                } for row in df[['symbol']].to_dict('records')
+            ],
+        data=df.to_dict('records'),
+        export_format="csv",
+        style_cell={
+            'font_family': 'arial',
+            'font_size': '20px',
+            'text_align': 'right'
+        },
+        style_cell_conditional=[
+        {
+            'if': {'column_id': 'symbol'},
+            'textAlign': 'left'
+        },
+            {'if': {'column_id': 'symbol'},
+             'maxWidth': '250px'},
+        ],
+        sort_action='native'))
 
 if __name__ == "__main__":
     app.run_server(debug=True)

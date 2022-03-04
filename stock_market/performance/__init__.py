@@ -11,6 +11,7 @@ perc_option = 'perc'
 calc_percent_year = '1_year'
 calc_percent_2monthly = '2_monthly'
 calc_percent_monthly = '1_monthly'
-
+calc_percent_weekly = '1_week'
+calc_percent_2weekly = '2_week'
 calc_interval_overall = 'calc_overall'
 calc_interval_between = 'calc_between'

@@ -104,3 +104,37 @@ def mdb_document_count(ndays, db_coll_name):
     adate = md.get_date_for_mdb(ndays)
     db_coll = db[db_coll_name]
     return db_coll.count_documents({'Date': adate})
+
+
+def mdb_profile_get_symbols(symbols=[]) -> list:
+    """
+
+    :rtype: object
+    """
+    coll_name = md.db_symbol_profile
+    db_coll = db[coll_name]
+    if len(symbols) == 0:
+        mongo_data = db_coll.find()
+    else:
+        mongo_data = db_coll.find({"symbol": {"$in": symbols}})
+    sanitized = json.loads(json_util.dumps(mongo_data))
+    df = json_normalize(sanitized)
+    return list(df.symbol.values)
+
+
+def dct_mdb_profile_symbols(symbols=[]) -> dict:
+    coll_name = md.db_symbol_profile
+    db_coll = db[coll_name]
+    if len(symbols) == 0:
+        mongo_data = db_coll.find()
+    else:
+        mongo_data = db_coll.find({"symbol" : { "$in" : symbols}})
+    sanitized = json.loads(json_util.dumps(mongo_data))
+    df = json_normalize(sanitized)
+    df = df.set_index('symbol')
+    df.drop(columns='_id.$oid', inplace=True)
+    return df.T.to_dict('list')
+
+def dct_mdb_profile_directory_port(directory='', ports=[]):
+        symbols = md.get_symbols(directory, ports)
+        return dct_mdb_profile_symbols(symbols)

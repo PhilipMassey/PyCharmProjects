@@ -16,6 +16,8 @@ db_close = 'market_data_close'
 db_volume = 'market_data_volume'
 db_test_close = 'test_close'
 db_test_vol = 'test_volume'
+db_symbol_profile = 'symbol_profile'
+
 
 from .csv_data_defs import *
 from .portfolio_defs import *

@@ -11,6 +11,12 @@ from os import listdir
 from datetime import datetime
 
 dirs = sorted(d for d in listdir(md.data_dir) if isdir(join(md.data_dir, d)))
+dct_profile = md.dct_mdb_profile_directory_port()
+def get_tooltip(symbol):
+    if symbol in dct_profile:
+        return dct_profile[symbol][0]
+    else:
+        return 'No worries,mate!'
 
 app = dash.Dash()
 application = app.server
@@ -39,7 +45,6 @@ final_table = html.Div(id="final_table")
 
 app.layout = html.Div([date_div, dropdown, final_table])
 
-
 #callback to update second dropdown based on first dropdown
 @app.callback(Output('dropdown_d2', 'options'),
           [
@@ -59,24 +64,41 @@ def update_dropdown_2(d1):
             Input('dropdown_d1', 'value'),
             Input('dropdown_d2', 'value'),
           ])
-def update_table(d1, d2):
-    ndays_range = md.get_ndays_range_wfm3612()
-    if d1 != None and d2 == None:
-        dfd = md.get_dir_port_symbols(d1)
-        symbols = list(dfd['symbol'].values)
-        df_filtered = pf.df_percents_for_range(ndays_range, symbols=symbols)
-    elif (d2 != None):  # and d2 != None):
-         df_filtered = pf.df_percents_for_range(ndays_range, ports=[d2])
+def update_table(directory, port):
+    results_date_value = 'No results'
+    import pandas as pd
+    if port is None:
+        df = pd.DataFrame({'directory':[directory], 'symbol':[port]})
     else:
-        #df_filtered = df
-        df_filtered = pf.df_percents_for_range(ndays_range)
+        ndays_range = md.get_ndays_periods(months=list(range(12, 0, -2)))
+        calc_percent = pf.calc_interval_between
+        df = pf.df_closing_percent_change(ndays_range, calc_percent, directory, port)
+    return (dt.DataTable(
+            id='table',
+            columns=[{"name": i, "id": i} for i in df.columns],
+            tooltip_data=[
+                {
+                    'symbol': {'value': get_tooltip(value), 'type': 'markdown'}
+                    for column, value in row.items()
+                } for row in df[['symbol']].to_dict('records')
+            ],
 
-    return [dt.DataTable(
-        id='table',
-        columns=[{"name": i, "id": i} for i in df_filtered.columns],
-        data=df_filtered.to_dict('records'),
-        sort_action='native')]
-
+        data=df.to_dict('records'),
+            export_format="csv",
+            style_cell={
+                'font_family': 'arial',
+                'font_size': '20px',
+                'text_align': 'right'
+            },
+            style_cell_conditional=[
+            {
+                'if': {'column_id': 'portfolio'},
+                'textAlign': 'left'
+            },
+                {'if': {'column_id': 'portfolio'},
+                 'maxWidth': '250px'},
+            ],
+            sort_action='native'))
 
 if __name__ == "__main__":
-    app.run_server(debug=True, port=8050)
+    app.run_server(debug=True, port=8051)

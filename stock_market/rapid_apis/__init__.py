@@ -1,1 +1,1 @@
-from .seeking_alpha_apis import *
+from .seeking_alpha import *

@@ -92,7 +92,7 @@ def get_symbol_port_perc_vol(start, end, incl):
 
 
 def df_closing_percent_change(ndays_range, calc_percent, directory, port):
-    symbols = md.get_symbols(directory=directory, ports=[port])
+    symbols = md.get_symbols_dir_or_port(directory=directory, port=port)
     df_all = pd.DataFrame({})
     for ndays in ndays_range:
         df = md.get_df_from_mdb_for_nday(ndays,md.db_close,symbols)
@@ -109,12 +109,13 @@ def df_closing_percent_change(ndays_range, calc_percent, directory, port):
             alist.append((100*perc).round(2))
 
         if calc_percent == pf.calc_interval_overall:
-            dates = [md.get_busdate_ndays_ago(ndays) for ndays in ndays_range[1:]]
+            dates = [md.get_date_for_ndays(ndays) for ndays in ndays_range[1:]]
         elif calc_percent == pf.calc_interval_between:
             perc = (closings[idx] - closings[0])/closings[0]
             alist.append((100*perc).round(2))
-            dates = [md.get_busdate_ndays_ago(ndays) for ndays in ndays_range[1:]]
+            dates = [md.get_date_for_ndays(ndays) for ndays in ndays_range[1:]]
+            #dates = [ndays for ndays in ndays_range[1:]]
             dates.append('Overall')
         df = pd.DataFrame({symbol:alist}, index = dates)
         df_percents = pd.concat([df_percents,df],axis=1)
-    return df_percents.T.reset_index().rename(columns={'index':'portfolio'})
+    return df_percents.T.reset_index().rename(columns={'index':'symbol'})

@@ -24,6 +24,13 @@ def add_df_to_db(df, db_coll_name, dropidx=False):
     return result
 
 
+def add_dct_to_mdb(dct, db_coll_name):
+    db_coll = db[db_coll_name]
+    df = pd.DataFrame.from_dict(dct)
+    data = df.to_dict('records')
+    result = db_coll.insert_many(data)
+    return result
+
 def update_mdb_with_dfrow(df_m, coll_name):
     db_coll = db[coll_name]
     dt = md.df_idxdate_to_mdbdate(df_m)

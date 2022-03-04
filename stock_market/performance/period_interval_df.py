@@ -3,16 +3,30 @@ import market_data as md
 import pandas as pd
 
 
-def df_dir_ports_means_for_range(ndays_range, directory):
+# def df_dir_ports_means_for_range(ndays_range, directory):
+#     ports = md.get_portfolios(directory)
+#     dfall = pd.DataFrame({})
+#     for port in ports:
+#         df = pf.df_percents_for_range(ndays_range, ports=[port])
+#         dfs = df.describe()
+#         df = dfs.loc['mean'].to_frame().T.reset_index().rename(columns={'index':'portfolio'})
+#         df.replace('mean',port,inplace=True)
+#         dfall = pd.concat([dfall,df])
+#     return dfall.sort_values(by=['portfolio']).round(decimals=2)
+
+
+def df_dir_ports_means_for_range(ndays_range, calc_percent, directory):
     ports = md.get_portfolios(directory)
     dfall = pd.DataFrame({})
     for port in ports:
-        df = pf.df_percents_for_range(ndays_range, ports=[port])
+        df = pf.df_closing_percent_change(ndays_range, calc_percent, directory='',port=port)
         dfs = df.describe()
         df = dfs.loc['mean'].to_frame().T.reset_index().rename(columns={'index':'portfolio'})
         df.replace('mean',port,inplace=True)
         dfall = pd.concat([dfall,df])
-    return dfall.sort_values(by=['portfolio']).round(decimals=2)
+    dfall = dfall.sort_values(by=['portfolio']).round(decimals=2).rename(columns={'portfolio':'symbol'})
+    return dfall
+
 
 
 def df_dir_ports_means_between_days(ndays_range, directory):

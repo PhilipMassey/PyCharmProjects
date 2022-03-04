@@ -22,5 +22,5 @@ def get_date_for_mdb(ndays):
 
 def get_date_for_ndays(ndays):
     dt = get_date_for_mdb(ndays)
-    return f'{dt:%m-%d-%Y}'
+    return f'{dt:%b %-d}'
 
