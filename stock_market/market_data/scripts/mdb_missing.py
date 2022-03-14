@@ -4,7 +4,7 @@ sys.path.extend(['/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.
 import market_data as md
 
 incl = md.all
-start = 1   #180
+start = md.get_ndays_for_end()
 end = 260
 symbols = md.get_symbols(incl)
 #symbols = ['TLT','EDV']

@@ -3,32 +3,42 @@ import pandas as pd
 import pandas_market_calendars as mcal
 from datetime import datetime
 from dateutil.relativedelta import relativedelta
-cme = mcal.get_calendar("NYSE")
+
+import market_data
+
+nyse = mcal.get_calendar("NYSE")
 
 def get_busdate_ndays_ago(ndays):
     strdate = '{:%Y-%m-%d}'.format(datetime.now())
-    dt = np.busday_offset(dates=strdate, offsets=-ndays, roll='backward', holidays=cme.holidays().holidays)
+    dt = np.busday_offset(dates=strdate, offsets=-ndays, roll='backward', holidays=nyse.holidays().holidays)
     return str(dt)
 
 
 def get_nbusdays_from_datestr(datestr):
     dtnow = '{:%Y-%m-%d}'.format(datetime.now())
-    bus_dtnow = np.busday_offset(dates=dtnow, offsets=0, roll='backward',holidays=cme.holidays().holidays)
+    bus_dtnow = np.busday_offset(dates=dtnow, offsets=0, roll='backward', holidays=nyse.holidays().holidays)
     dt = str(bus_dtnow)
-    nbdays =  np.busday_count(datestr, dt, holidays=cme.holidays().holidays)
+    nbdays =  np.busday_count(datestr, dt, holidays=nyse.holidays().holidays)
     return nbdays
 
 
 def get_nbusdays_from_date(date):
     datestr = f'{date:%Y-%m-%d}'
     dtnow = '{:%Y-%m-%d}'.format(datetime.now())
-    bus_dtnow = np.busday_offset(dates=dtnow, offsets=0, roll='backward',holidays=cme.holidays().holidays)
+    bus_dtnow = np.busday_offset(dates=dtnow, offsets=0, roll='backward', holidays=nyse.holidays().holidays)
     dt = str(bus_dtnow)
-    nbdays =  np.busday_count(datestr, dt, holidays=cme.holidays().holidays)
+    nbdays =  np.busday_count(datestr, dt, holidays=nyse.holidays().holidays)
     return nbdays
 
 
-def get_ndays_periods(months=[],weeks=[],last_day=1):
+def get_ndays_for_end():
+    today = f'{datetime.now():%Y-%m-%d}'
+    days = nyse.valid_days(start_date=today, end_date=today)
+    return len(days)
+
+
+def get_ndays_periods(months=[],weeks=[]):
+    last_day = get_ndays_for_end()
     now = datetime.now()
     periods = []
     for idx in months:
@@ -54,7 +64,6 @@ def get_ndate_and_prevdate(ndays, step):
     pday = get_busdate_ndays_ago(ndays + step)
     day = get_busdate_ndays_ago(ndays)
     return pday,day
-
 
 
 

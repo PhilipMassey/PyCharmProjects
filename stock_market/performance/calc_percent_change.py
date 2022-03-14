@@ -35,6 +35,19 @@ def df_percents_for_range(ndays_range, symbols='', directory='', ports=[], db_co
     df_all.rename(columns=({'index': 'symbol'}), inplace=True)
     return df_all.sort_values(by=['symbol'])
 
+def get_ndays_range(opt_ndays_range):
+    if opt_ndays_range == pf.calc_percent_2monthly:
+        ndays_range = md.get_ndays_periods(months=list(range(12, 0, -2)))
+    elif opt_ndays_range == pf.calc_percent_monthly:
+        ndays_range = md.get_ndays_periods(months=list(range(6, 0, -1)))
+    elif opt_ndays_range == pf.calc_percent_2weekly:
+        ndays_range = md.get_ndays_periods(weeks=list(range(12, 0, -2)))
+    elif opt_ndays_range == pf.calc_percent_weekly:
+        ndays_range = md.get_ndays_periods(weeks=list(range(6, 0, -1)))
+    elif opt_ndays_range == pf.calc_percent_year:
+        ndays_range = md.get_ndays_periods(months=(12,6,3,1),weeks=(2,1))
+    return ndays_range
+
 
 def df_percents_between_days(ndays_range, symbols='', incl='', ports=[], db_coll_name=md.db_close):
     if len(incl) > 0:
@@ -91,8 +104,7 @@ def get_symbol_port_perc_vol(start, end, incl):
     return df_stock, endDt
 
 
-def df_closing_percent_change(ndays_range, calc_percent, directory, port):
-    symbols = md.get_symbols_dir_or_port(directory=directory, port=port)
+def df_closing_percent_change(ndays_range, calc_percent, symbols):
     df_all = pd.DataFrame({})
     for ndays in ndays_range:
         df = md.get_df_from_mdb_for_nday(ndays,md.db_close,symbols)
