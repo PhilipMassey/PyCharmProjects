@@ -1,0 +1,25 @@
+
+
+*{
+  font-family: Garamond;
+   font_size:20px;
+}
+@font-face {
+    font-family: 'FreeSerif-Italic';
+    src: url('FreeSerifItalic-KErA.otf');
+}
+
+body {
+    margin: 10%;
+    overflow-x: hidden;
+    text-align: center;
+    font-family: "FreeSerif-Italic";
+    font-size: 2.5rem;
+}
+body {
+    margin: 5%;
+    overflow-x: hidden;
+    text-align: center;
+    font-family: "Arial";
+    font-size: 2.5rem;
+}
