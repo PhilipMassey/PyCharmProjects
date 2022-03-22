@@ -39,6 +39,13 @@ def get_df_from_mdb(ndays,db_coll_name,columns='',query_field='Date'):
     return df
 
 
+def df_mdb_clossins_for_ndays_range(ndays_range, symbols):
+    df_all = pd.DataFrame({})
+    for ndays in ndays_range:
+            df = get_df_from_mdb_for_nday(ndays,md.db_close,symbols)
+            df_all = pd.concat([df_all,df])
+    return df_all
+
 
 def get_df_from_mdb_between_days(ndays_ago, dbcol_name, symbols='', incl=md.all, last_day=1):
     db_coll = db[dbcol_name]

@@ -36,6 +36,10 @@ def get_ndays_for_end():
     days = nyse.valid_days(start_date=today, end_date=today)
     return len(days)
 
+def isit_weekend():
+    return get_ndays_for_end() == 0
+
+
 
 def get_ndays_periods(months=[],weeks=[]):
     last_day = get_ndays_for_end()

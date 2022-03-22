@@ -48,7 +48,7 @@ def get_symbols(directory='', ports=[]):
 
 def get_symbols_dir_or_port(directory, port):
     symbols = []
-    if port != None:
+    if port != None and len(port) > 0:
         symbols = md.get_symbols_for_portfolios([port])
     elif directory != None:
         df = md.get_port_and_symbols(directory)
@@ -63,7 +63,7 @@ def get_symbols_for_portfolios(portfolios):
 
 
 def get_ports_for_directory(directory):
-    path = os.path.join(md.data_dir, subdir)
+    path = os.path.join(md.data_dir, directory)
     ports = [f for f in listdir(path) if isfile(join(path, f))]
     return [port[0:-4] for port in ports]
 

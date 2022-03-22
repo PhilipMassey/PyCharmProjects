@@ -46,7 +46,7 @@ def mdb_add_symbols_names_directory(directory):
         not_added_symbols = set(symbols).difference(set(mdb_symbols))
         print(len(not_added_symbols))
         if len(not_added_symbols) > 0:
-            print('not added symbols: ', not_added_symbols)
+            print('\t\t no name: ', not_added_symbols)
             symbol_name_dct = dct_symbol_name(list(not_added_symbols))
             data = {'symbol': symbol_name_dct.keys(), 'name': symbol_name_dct.values()}
             result = md.add_dct_to_mdb(data, md.db_symbol_profile)

@@ -24,3 +24,11 @@ def get_date_for_ndays(ndays):
     dt = get_date_for_mdb(ndays)
     return f'{dt:%b %-d}'
 
+def get_mdb_strdate_for_ndays(ndays):
+    dt = get_date_for_mdb(ndays)
+    return f'{dt:%Y-%m-%d}'
+
+def dateindex_as_ddmmm(dt):
+    strdt = np.datetime_as_string(dt, unit='D')
+    dt = datetime.strptime(strdt, '%Y-%m-%d')
+    return f'{dt:%b %-d}'

@@ -7,7 +7,7 @@ db = client['stock_market']
 
 
 def delete_row_for_day(ndays):
-    adate = md.getMdbDateFromNdays(ndays)
+    adate = md.get_date_for_mdb(ndays)
     db_coll = db[md.db_close]
     db_coll.delete_one({'Date': adate})
     db_coll = db[md.db_volume]

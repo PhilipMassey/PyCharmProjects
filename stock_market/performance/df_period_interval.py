@@ -19,7 +19,8 @@ def df_dir_ports_means_for_range(ndays_range, calc_percent, directory):
     ports = md.get_portfolios(directory)
     dfall = pd.DataFrame({})
     for port in ports:
-        df = pf.df_closing_percent_change(ndays_range, calc_percent, directory='',port=port)
+        symbols = md.get_symbols_dir_or_port(directory=None, port=port)
+        df = pf.df_closing_percent_change(ndays_range, calc_percent, symbols)
         dfs = df.describe()
         df = dfs.loc['mean'].to_frame().T.reset_index().rename(columns={'index':'portfolio'})
         df.replace('mean',port,inplace=True)

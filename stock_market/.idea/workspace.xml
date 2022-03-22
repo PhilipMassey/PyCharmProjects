@@ -3,18 +3,132 @@
   <component name="ChangeListManager">
     <list default="true" id="ad664d6c-8e2c-4ab6-9246-4df6f1c8022d" name="Default Changelist" comment="rapid_apis">
       <change beforePath="$PROJECT_DIR$/../nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/../nohup.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash prj/app/app.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash prj/app/pages/folders_portfolios.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash prj/app/pages/heatmaps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash prj/percent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash prj/percent/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash prj/percent/dirs_portfolios_percent_period.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash prj/percent/folders_portfolios.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash prj/percent/percent_period.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/Multipage_app lab/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/Multipage_app lab/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/Multipage_app lab/app2_with_sidebar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/Multipage_app lab/pages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/Multipage_app lab/pages/bar_charts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/Multipage_app lab/pages/heatmaps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/Multipage_app lab/pages/histograms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/Multipage_app lab/pages/not_found_404.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/app/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/app/pages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/app/pages/folders_portfolios.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/app/pages/heatmaps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/assets/bWLwgP.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/assets/column.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/assets/custom.more" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/buttons/button out.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/buttons/buttons.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/callbacks/time msg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/core components/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/core components/dcc interval/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/core components/dcc interval/date_update.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/core components/dcc interval/live_updates.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/core components/input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/core components/inputs types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/css layout/clomns.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/css layout/three column.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/dropdown/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/dropdown/drop_down_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/input/input_text.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/input/input_types.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/assets/app.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/assets/birds.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/assets/home.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/pages/historical_archive.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/pages/home.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/pages/not_found_404.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/pages/outlook.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/pages/query_string.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/multi-page-app-plugin/pages_plugin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/plots/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/plots/plot_close.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/radio items/radio items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/sorting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/dropdowns_table.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/hprelink.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/layout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/left align.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/selected_cell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/table_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/table_of_percents_for_periods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/tool tips dog.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/tool tips.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/examples/tables/tooltips.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent/assets/bWLwgP.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent/assets/table_of_percents_for_periods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent/table_of_percents_for_periods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent_app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent_app/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent_app/pages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent_app/pages/bar_charts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent_app/pages/filter_on_symbols.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent_app/pages/histograms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent_app/pages/not_found_404.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent_app/pages/percent_for_current.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash prj/percent_app/pages/percents_for_periods.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/csv_data_defs.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/csv_data_defs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Dividends.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/ETF/Dividends.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Fidelity Roth IRA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Fidelity X94563071.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Fidelity Z05742500.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Fidleity IRA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Potential.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/SA Added Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/SA Top Last 5 days.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/SA Top Rated.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Indices/Dow Jones 30.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Indices/Nasdaq 100.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Indices/S&amp;P 500.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Potential/Cannabis.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Potential/Dow Jones Potential.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Potential/Nasdaq 100 Potential.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Potential/SA Potential.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Potential/Stock Card V&amp;M Maybe.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy by SA Authors .csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy by SA Authors .csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Financial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Financial Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Growth Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Growth Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Healthcare Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Healthcare Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Industrial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Industrial Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Materials Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Materials Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Quant Dividend Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Quant Dividend Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top REITs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top REITs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Rated Dividend Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Rated Dividend Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Rated Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Rated Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Real Estate Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Real Estate Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Small Cap Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Small Cap Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Stocks by Quant.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Stocks by Quant.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Technology Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Technology Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Value Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Value Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/exchange_api/dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/exchange_api/dates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/scripts/mdb_missing.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/scripts/mdb_missing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/exchange_api/yfinance_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/exchange_api/yfinance_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/stock_mdb/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/stock_mdb/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/stock_mdb/dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/stock_mdb/dates.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/stock_mdb/delete_records.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/stock_mdb/delete_records.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/stock_mdb/df_from_mdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/stock_mdb/df_from_mdb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/performance/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/performance/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/performance/calc_percent_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/performance/calc_percent_change.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/performance/period_interval_df.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance/df_period_interval.py" beforeDir="false" afterPath="$PROJECT_DIR$/performance/df_period_interval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance/performance_test/test_pecent_change.py" beforeDir="false" afterPath="$PROJECT_DIR$/performance/performance_test/test_pecent_change.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/get_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/get_profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/energy_stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/energy_stocks.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +198,35 @@
       <recent name="$PROJECT_DIR$/dash prj/percent_app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/logs" />
+      <recent name="$PROJECT_DIR$/market_data/data/Seeking_Alpha" />
+      <recent name="$PROJECT_DIR$/dash prj/percent" />
       <recent name="$PROJECT_DIR$/dash prj/percent_app/pages" />
       <recent name="$PROJECT_DIR$/dash prj/examples" />
-      <recent name="$PROJECT_DIR$/dash prj/percent_app" />
-      <recent name="$PROJECT_DIR$/logs" />
-      <recent name="$PROJECT_DIR$/market_data/excel" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.remote_mdb">
+  <component name="RunManager" selected="Python.app">
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="stock_market" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rapid_apis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rapid_apis/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="app (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,7 +248,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="filter_on_symbols" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -121,11 +256,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash prj/examples/tables" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_prj/percent_app" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash prj/percent_app/pages/filter_on_symbols.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/percent_app/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,7 +269,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="input_text" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="get_profile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -142,11 +277,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash prj/examples/input" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rapid_apis/seeking_alpha" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash prj/examples/input/input_text.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rapid_apis/seeking_alpha/get_profile.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +290,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="remote_mdb" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mdb_missing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,32 +298,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/market_data/stock_mdb" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/market_data/scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/market_data/stock_mdb/remote_mdb.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_ndays_range" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="stock_market" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/performance/performance_test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/performance/performance_test/test_ndays_range.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/market_data/scripts/mdb_missing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,11 +313,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.remote_mdb" />
-        <item itemvalue="Python.test_ndays_range" />
+        <item itemvalue="Python.app" />
+        <item itemvalue="Python.get_profile" />
+        <item itemvalue="Python.__init__" />
         <item itemvalue="Python.app (2)" />
-        <item itemvalue="Python.filter_on_symbols" />
-        <item itemvalue="Python.input_text" />
+        <item itemvalue="Python.mdb_missing" />
       </list>
     </recent_temporary>
   </component>
@@ -346,13 +460,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dash prj/examples/css layout/three column.py</url>
+          <url>file://$PROJECT_DIR$/dash_prj/examples/css layout/three column.py</url>
           <line>31</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/market_data/stock_mdb/df_from_mdb.py</url>
-          <line>97</line>
+          <line>104</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

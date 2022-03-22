@@ -1,1 +1,0 @@
-from .app_percents_for_periods import *
