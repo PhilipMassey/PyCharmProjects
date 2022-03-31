@@ -6,7 +6,7 @@ def df_fidelity_sectors():
     url = "https://fidelity-investments.p.rapidapi.com/market/get-sectors"
     headers = {
         'x-rapidapi-host': "fidelity-investments.p.rapidapi.com",
-        'x-rapidapi-key': "b8e3f8e3c8msh1c3174e834acd9bp10bb99jsnba74a76fb55e"
+        'x-rapidapi-key': monthly
         }
 
     response = requests.request("GET", url, headers=headers)

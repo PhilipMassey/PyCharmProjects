@@ -14,3 +14,9 @@ print('total documents',db_coll.count_documents({col_name:{'$gte':0}}))
 result = db_coll.update_many( {col_name:{'$gte':0}}, { '$unset': { col_name: '' } } )
 
 print(result.matched_count, result.modified_count)
+
+print('total documents',db_coll.count_documents({'Date':{'$eq':dt}}))
+myquery = { "Date": dt }
+newvalues = { "$set": { "Date": newdt} }
+result = db_coll.update_many(myquery, newvalues)
+print(result.matched_count, result.modified_count)

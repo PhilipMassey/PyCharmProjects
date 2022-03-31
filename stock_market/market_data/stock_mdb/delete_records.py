@@ -5,6 +5,11 @@ from pymongo import MongoClient
 client = MongoClient()
 db = client['stock_market']
 
+# delete all
+#results = db[db_coll_name].remove({})
+#results.values()
+
+
 
 def delete_row_for_day(ndays):
     adate = md.get_date_for_mdb(ndays)

@@ -1,3 +1,8 @@
+import sys
+sys.path.extend(['/Users/philipmassey/PycharmProjects/stock_market'])
+sys.path.extend(['/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages'])
+
+
 import dash
 import dash_labs as dl
 import dash_bootstrap_components as dbc

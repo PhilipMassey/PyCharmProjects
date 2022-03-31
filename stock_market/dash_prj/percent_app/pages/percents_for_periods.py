@@ -8,6 +8,10 @@ from dash.dependencies import Output, Input
 import market_data as md
 import performance as pf
 import pandas as pd
+from dash.exceptions import PreventUpdate
+import dash_bootstrap_components as dbc
+from dash_extensions import EventListener
+import webbrowser
 
 
 label_size = '18px'
@@ -79,7 +83,18 @@ dropdowns = html.Div([
 
 ], style= {'width': '100%','display': 'inline-block'})
 
+
 results_table = html.Div(id="results-table")
+listen_table = html.Div(
+    [
+        EventListener(
+            id="el",
+            events=[{"event": "dblclick", "props": ["srcElement.className", "srcElement.innerText"]}],
+            logging=True,
+            children=results_table,
+        )
+    ]
+)
 
 
 dct_profile = md.dct_mdb_profile_directory_port()
@@ -91,7 +106,11 @@ def get_tooltip(symbol):
 
 
 #app = dash.Dash(__name__)
-layout = html.Div([results_date, perc_or_mean_block, ndays_range_block, calc_interval_block, dropdowns, results_table])
+layout = html.Div([results_date, perc_or_mean_block, ndays_range_block,
+                   calc_interval_block, dropdowns,
+                   listen_table,
+                   html.Div(id="event")
+                   ])
 
 
 #callback on directory selection
@@ -157,6 +176,23 @@ def update_table(calc_percent, opt_ndays_range, perc_or_mean, directory, port):
              'maxWidth': '250px'},
         ],
         sort_action='native'))
+
+
+
+@callback(Output("event", "children"), Input("el", "event"), Input("el", "n_events"))
+def click_event(event, n_events):
+    # Check if the click is on the active cell.
+    if not event or "cell--selected" not in event["srcElement.className"]:
+        raise PreventUpdate
+    # Return the content of the cell.
+    print(event, event["srcElement.className"])
+    if event["srcElement.className"] == 'dash-cell column-0 cell--selected focused':
+        symbol = event['srcElement.innerText']
+        webbrowser.open('https://seekingalpha.com/symbol/' + symbol)
+        webbrowser.open('https://seekingalpha.com/symbol/' + symbol + '/earnings/estimates')
+        webbrowser.open('https://stockcard.io/' + symbol)
+
+    return f"Cell content is {event['srcElement.innerText']}, number of double clicks {n_events}"
 
 # if __name__ == "__main__":
 #     app.run_server(debug=True)

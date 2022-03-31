@@ -13,7 +13,7 @@ def get_sa_screener_details_list():
 
     headers = {
         'x-rapidapi-host': "seeking-alpha.p.rapidapi.com",
-        'x-rapidapi-key': "b8e3f8e3c8msh1c3174e834acd9bp10bb99jsnba74a76fb55e"
+        'x-rapidapi-key': seeking_alpha_key
     }
 
     response = requests.request("GET", url, headers=headers)
@@ -32,7 +32,7 @@ def adict_screener_details(screeners, count=20):
     headers = {
         'content-type': "application/json",
         'x-rapidapi-host': "seeking-alpha.p.rapidapi.com",
-        'x-rapidapi-key': "b8e3f8e3c8msh1c3174e834acd9bp10bb99jsnba74a76fb55e"
+        'x-rapidapi-key': seeking_alpha_key
     }
 
     querystring = {"page": "1", "per_page": "20"}

@@ -2,25 +2,15 @@ import requests
 import pandas as pd
 import json
 import os
+from os.path import join
 import market_data as md
 import rapid_apis as sa_apis
-
-eports = ['Top Energy Stocks', 'Top Energy by SA Authors ']
-esymbols = md.symbols_from_file('/Users/philipmassey/PycharmProjects/stock_market/rapid_apis/seeking_alpha/screener_details_apis/energy_stocks.csv')
-
-
-def get_esymbols(dict_api_symbols, eports):
-    for eport in eports:
-        esymbols.extend(dict_api_symbols[eport])
-        esymbols.extend(md.get_symbols_for_portfolios([eport]))
-    return set(esymbols)
 
 
 def remove_elements(alist, elements):
     for el in elements:
         if el in alist:
             alist.remove(el)
-
 
 def replacedot(resultsdict):
     for port in resultsdict:
@@ -29,13 +19,6 @@ def replacedot(resultsdict):
         for ticker in listtickers:
             newtickers.append(ticker.replace(".",'-'))
         resultsdict[port] = newtickers
-
-def remove_energy_stocks(resultsdict):
-    esymbols = get_esymbols(resultsdict, eports)
-    for port in resultsdict.keys():
-        if port not in eports:
-            symbols = resultsdict[port]
-            remove_elements(symbols, esymbols)
 
 
 def trim_to_count(resultsdict,count):
