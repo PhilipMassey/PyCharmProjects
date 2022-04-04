@@ -1,0 +1,1 @@
+db_seeking_alpha_history = 'seeking_alpha_history'

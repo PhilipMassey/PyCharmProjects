@@ -53,7 +53,8 @@ def mdb_add_symbols_names_directory(directory):
             #print(result)
             mdb_symbols.extend(not_added_symbols)
 
-dirs = md.get_directorys()
-for directory in dirs:
-    print('Directory: ',directory)
-    mdb_add_symbols_names_directory(directory)
+if __name__ == '__main__':
+    dirs = md.get_directorys()
+    for directory in dirs:
+        print('Directory: ',directory)
+        mdb_add_symbols_names_directory(directory)

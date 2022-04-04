@@ -114,10 +114,6 @@ def mdb_document_count(ndays, db_coll_name):
 
 
 def mdb_profile_get_symbols(symbols=[]) -> list:
-    """
-
-    :rtype: object
-    """
     coll_name = md.db_symbol_profile
     db_coll = db[coll_name]
     if len(symbols) == 0:

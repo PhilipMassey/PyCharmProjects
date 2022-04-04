@@ -5,10 +5,8 @@ from datetime import datetime as dt
 import yfinance as yf
 from dash.dependencies import Input, Output
 #app = dash.Dash('Hello World')
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css 118']
-external_stylesheets = ['./assets/bWLwgP.css 118']
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__)
 
 
 app.layout = html.Div([
@@ -37,7 +35,6 @@ def update_graph(selected_dropdown_value):
         'layout': {'margin': {'l': 40, 'r': 0, 'bWLwgP.css': 20, 'b': 30}}
     }
 
-app.css.append_css({'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'})
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True, port=1052)

@@ -2,40 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad664d6c-8e2c-4ab6-9246-4df6f1c8022d" name="Default Changelist" comment="rapid_apis">
-      <change afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/mdb_sa.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash_prj/examples/tables/table_of_percents_for_periods.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_prj/examples/tables/table_of_percents_for_periods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash_prj/percent_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_prj/percent_app/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash_prj/percent_app/pages/percents_for_periods.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_prj/percent_app/pages/percents_for_periods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Solar, Semis, Water.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Solar, Semis, Water.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash_prj/examples/plots/plot_close.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_prj/examples/plots/plot_close.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy by SA Authors .csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy by SA Authors .csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Financial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Financial Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Growth Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Growth Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Healthcare Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Healthcare Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Industrial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Industrial Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Materials Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Materials Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Quant Dividend Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Quant Dividend Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top REITs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top REITs.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Rated Dividend Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Rated Dividend Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Rated Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Rated Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Real Estate Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Real Estate Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Small Cap Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Small Cap Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Stocks by Quant.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Stocks by Quant.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Technology Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Technology Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Value Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Value Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/stock_mdb/delete_records.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/stock_mdb/delete_records.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/stock_mdb/mdb_edit.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/stock_mdb/mdb_edit.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapid_apis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapid_apis/fidelity/fidelity.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/fidelity/fidelity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/api_compare_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/api_compare_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/stock_mdb/df_from_mdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/stock_mdb/df_from_mdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/performance/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/performance/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/get_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/get_profile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/energy_stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/energy_stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/get_results_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/get_results_list.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Shell Script" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dash_prj/percent_app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dash_prj/examples/plots" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Some old symbols.csv" />
@@ -98,11 +76,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dash_prj/examples/plots" />
+      <recent name="$PROJECT_DIR$/dash_prj/percent_app/pages" />
       <recent name="$PROJECT_DIR$/dash_prj/percent_app" />
       <recent name="$PROJECT_DIR$/dash prj/percent_app/pages" />
       <recent name="$PROJECT_DIR$/dash prj/examples/tables" />
-      <recent name="$PROJECT_DIR$/dash prj/examples/input" />
-      <recent name="$PROJECT_DIR$/dash prj/examples" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis" />
@@ -113,27 +91,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.app">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="stock_market" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rapid_apis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rapid_apis/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,7 +112,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="double_click" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="fruit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,11 +120,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_prj/examples/tables" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_prj/examples/plots" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/examples/tables/double_click.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/examples/plots/fruit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -176,7 +133,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_profile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="plot_change_percent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,11 +141,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rapid_apis/seeking_alpha" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_prj/examples/plots" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rapid_apis/seeking_alpha/get_profile.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/examples/plots/plot_change_percent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -197,7 +154,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="table_of_percents_for_periods" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="plot_close" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,11 +162,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_prj/examples/tables" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_prj/examples/plots" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/examples/tables/table_of_percents_for_periods.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/examples/plots/plot_close.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plot_percents_for_periods" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="stock_market" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_prj/percent_app/pages" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/percent_app/pages/plot_percents_for_periods.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -221,10 +199,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.table_of_percents_for_periods" />
-        <item itemvalue="Python.double_click" />
-        <item itemvalue="Python.get_profile" />
-        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.plot_percents_for_periods" />
+        <item itemvalue="Python.plot_change_percent" />
+        <item itemvalue="Python.fruit" />
+        <item itemvalue="Python.plot_close" />
       </list>
     </recent_temporary>
   </component>
