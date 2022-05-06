@@ -3,12 +3,12 @@ import json
 import http.client
 import market_data as md
 import pandas as pd
-
+import rapid_apis as ra_apis
 conn = http.client.HTTPSConnection("seeking-alpha.p.rapidapi.com")
 
 headers = {
     'x-rapidapi-host': "seeking-alpha.p.rapidapi.com",
-    'x-rapidapi-key': "b8e3f8e3c8msh1c3174e834acd9bp10bb99jsnba74a76fb55e"
+    'x-rapidapi-key': ra_apis.seeking_alpha_key
     }
 
 
@@ -48,8 +48,9 @@ def mdb_add_symbols_names_directory(directory):
         if len(not_added_symbols) > 0:
             print('\t\t no name: ', not_added_symbols)
             symbol_name_dct = dct_symbol_name(list(not_added_symbols))
-            data = {'symbol': symbol_name_dct.keys(), 'name': symbol_name_dct.values()}
-            result = md.add_dct_to_mdb(data, md.db_symbol_profile)
+            if len(symbol_name_dct) != 0:  #replaced dot symbols
+                data = {'symbol': symbol_name_dct.keys(), 'name': symbol_name_dct.values()}
+                result = md.add_dct_to_mdb(data, md.db_symbol_profile)
             #print(result)
             mdb_symbols.extend(not_added_symbols)
 

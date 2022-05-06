@@ -7,6 +7,48 @@ import market_data as md
 import rapid_apis as sa_apis
 
 
+def change_value_to_list(dictionary):
+    for key in dictionary:
+        dictionary[key] = list(dictionary[key])
+
+
+def get_energy_symbols(resultsdict):
+    energy_ports = ['Top Energy Stocks', 'Top Energy by SA Authors ']
+    esymbols = []
+    for eport in energy_ports:
+        esymbols.extend(resultsdict[eport])
+    esymbols = list(set(esymbols))
+    return esymbols
+
+
+def remove_energy_stocks(resultsdict):
+    esymbols = get_energy_symbols(resultsdict)
+    for port in resultsdict.keys():
+        ra_apis.remove_elements(resultsdict[port], esymbols)
+    print('remove energy stocks')
+
+
+def build_dict_count(screeners, default_count = 15):
+    screener_names = [screener[0] for screener in screeners]
+    dict_count ={}
+    for name in screener_names:
+        dict_count[name] = default_count
+    dict_count['Top Rated Stocks'] = 30
+    dict_count['Top Stocks by Quant'] = 30
+    dict_count['Top Energy Stocks'] = 0
+    dict_count['Top Energy by SA Authors '] = 0
+    dict_count['Most Shorted Stocks'] = 0
+    dict_count['Strong Buy Stocks With Short Squeeze Potential'] = 0
+    return dict_count
+
+
+def trim_to_count(resultsdict, dict_count):
+    for port in resultsdict.keys():
+        trim = dict_count[port]
+        resultsdict[port] = resultsdict[port][:trim]
+    print('trimmed resultsdict')
+
+
 def remove_elements(alist, elements):
     for el in elements:
         if el in alist:
@@ -19,31 +61,6 @@ def replacedot(resultsdict):
         for ticker in listtickers:
             newtickers.append(ticker.replace(".",'-'))
         resultsdict[port] = newtickers
-
-
-def trim_to_count(resultsdict,count):
-    for port in resultsdict.keys():
-        if port not in eports:
-            resultsdict[port] = resultsdict[port][:count]
-
-
-def compare_old_new(resultsdict):
-    oldnew_dict = {}
-    for port in resultsdict.keys():
-        new_symbols = resultsdict[port]
-        current_symbols = md.get_symbols(ports=[port])
-        oldnew_dict[port] = {'old': set(current_symbols).difference(set(new_symbols)),
-                             'new': set(new_symbols).difference(set(current_symbols))}
-    return oldnew_dict
-
-def write_oldnew_dict(oldnew_dict,fpath_name):
-    with open(fpath_name, 'w') as f:
-        for key in oldnew_dict.keys():
-            f.write(key + '\n')
-            f.write('\t' + str(oldnew_dict[key]['old']) + '\n')
-            f.write('\t' + str(oldnew_dict[key]['new']) + '\n')
-        f.close()
-    print('writen old/new comparison: ', path)
 
 
 def file_api_symbols(resultsdict, subdir, suffix):
@@ -59,11 +76,15 @@ def file_api_symbols(resultsdict, subdir, suffix):
 
 if __name__ == '__main__':
     screeners = sa_apis.get_sa_screener_details_list()
-    resultsdict = sa_apis.adict_screener_details(screeners, 20)
-
-    replacedot((resultsdict))
+    for idx in range(len(screeners)):
+        screener = screeners[idx]
+        print(idx, screener[0])
+    resultsdict = adict_screener_details(screeners, perpage=45)
+    change_value_to_list(resultsdict)
     remove_energy_stocks(resultsdict)
-    trim_to_count(resultsdict,10)
+    replacedot((resultsdict))
+    dict_count = build_dict_count(screeners)
+    trim_to_count(resultsdict, dict_count)
 
     oldnew_dict = compare_old_new(resultsdict)
 

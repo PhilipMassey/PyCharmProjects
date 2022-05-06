@@ -2,13 +2,13 @@ import requests
 import json
 import pandas as pd
 import market_data as md
-
+import rapid_apis as ra_apis
 
 url = "https://seeking-alpha.p.rapidapi.com/v2/auto-complete"
 
 headers = {
     'x-rapidapi-host': "seeking-alpha.p.rapidapi.com",
-    'x-rapidapi-key': "b8e3f8e3c8msh1c3174e834acd9bp10bb99jsnba74a76fb55e"
+    'x-rapidapi-key': ra_apis.seeking_alpha_key
     }
 
 def get_symbol_name(symbol):

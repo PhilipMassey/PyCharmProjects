@@ -58,16 +58,16 @@ def get_desc_date(dfRow):
     return calendar.day_name[date.weekday()]+' '+'{:%Y-%m-%d}'.format(date)
 
 
-def get_dates_ndays_and_today(ndays):
-    t0day = get_busdate_ndays_ago(0)
-    nday = get_busdate_ndays_ago(ndays)
-    return nday,t0day
+def get_ndate_and_todate(ndays, period):
+    strdate = get_busdate_ndays_ago(ndays+period)
+    enddate = get_busdate_ndays_ago(ndays)
+    return strdate,enddate
 
 
-def get_ndate_and_prevdate(ndays, step):
-    pday = get_busdate_ndays_ago(ndays + step)
-    day = get_busdate_ndays_ago(ndays)
-    return pday,day
+def get_ndate_and_prevdate(ndays):
+    strdate = get_busdate_ndays_ago(ndays + 1)
+    enddate = get_busdate_ndays_ago(ndays)
+    return strdate,enddate
 
 
 
