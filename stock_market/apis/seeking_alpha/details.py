@@ -2,7 +2,7 @@ import requests
 import json
 import pandas as pd
 import market_data as md
-import rapid_apis as ra_apis
+import apis as ra_apis
 
 url = "https://seeking-alpha.p.rapidapi.com/v2/auto-complete"
 

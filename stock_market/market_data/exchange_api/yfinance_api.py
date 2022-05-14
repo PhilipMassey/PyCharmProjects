@@ -5,6 +5,9 @@ import market_data as md
 def get_yahoo_ndays_ago(ndays, symbols):
     if 'Date' in symbols:
         symbols.remove('Date')
+    if len(symbols) == 1:
+        symbols = list(symbols)
+        symbols.append('FB')
     if len(symbols) == 0:
         df = pd.DataFrame({})
     elif ndays == 0:
@@ -18,7 +21,7 @@ def get_yahoo_ndays_ago(ndays, symbols):
         start, end = md.get_ndate_and_prevdate(ndays - 1)
         df = yf.download(tickers=symbols, interval="1d", start=start, end=end, group_by='column',
                          auto_adjust=True, prepost=True, threads=True)
-        #df.drop('FB', axis=1, level=1, inplace=True, errors='ignore')
+        df.drop('FB', axis=1, level=1, inplace=True, errors='ignore')
         df = df.dropna(axis=1, how='all')
     strdate = md.get_mdb_strdate_for_ndays(ndays)
     if strdate in df.index:

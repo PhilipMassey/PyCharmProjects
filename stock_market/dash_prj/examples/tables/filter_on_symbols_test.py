@@ -1,5 +1,4 @@
 import dash
-dash.register_page(__name__)
 from dash import callback
 from dash import Dash, dcc, html
 from dash.dependencies import Input, Output
@@ -8,9 +7,11 @@ from flask import request
 import market_data as md
 import pandas as pd
 
+app = Dash()
+
 Holding = md.get_port_and_symbols('Holding')
 holding_portfolios = Holding['portfolio'].unique()
-layout = html.Div(
+app.layout = html.Div(
     [
         dcc.Input(id="input-symbol", type="text", placeholder="", debounce=True),
         html.Div(id='output-symbol'),
@@ -19,14 +20,14 @@ layout = html.Div(
     )
 
 
-@callback(
+@app.callback(
     Output('output-symbol','children'),
     Output('listing-table', 'children'),
     Input('input-symbol', 'value')
 )
 def update_table(symbol):
     print(symbol)
-    print(request.args)
+    print('request arge',request.args)
     if symbol == None or len(symbol) == 0:
         df = pd.DataFrame({'Status': ['depends']})
     else:
@@ -51,7 +52,5 @@ def update_table(symbol):
             sort_action='native'))
 
 
-
-
 if __name__ == "__main__":
-    app.run_server(debug=True,port=8001)
+    app.run_server(debug=True,port=8002)

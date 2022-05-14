@@ -1,5 +1,5 @@
 import requests
-import rapid_apis as ra_apis
+import apis as ra_apis
 
 url = "https://seeking-alpha.p.rapidapi.com/screeners/list"
 

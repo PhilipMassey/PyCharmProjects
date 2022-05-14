@@ -3,31 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="ad664d6c-8e2c-4ab6-9246-4df6f1c8022d" name="Default Changelist" comment="rapid_apis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash_prj/examples/tables/layout.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Sector XL ETF.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash_prj/percent_app/pages/filter_on_symbols.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_prj/percent_app/pages/filter_on_symbols.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dash_prj/percent_app/pages/percents_for_periods.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_prj/percent_app/pages/percents_for_periods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Mercancia.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/ETF/Mercancia.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Sector XL.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/ETF/Sector XL.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Thematic ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/ETF/Thematic ETF.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Fidelity Dividend.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Fidelity Dividend.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Fidelity Health.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Fidelity Health.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Fidelity Potential.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Fidelity Potential.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Fidleity Long Term.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Fidleity Long Term.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/SA New.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/SA Rated Also.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/SA Rated.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/SA Industiral.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/SA Technology.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/SA Technology.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Solar, Semis, Water.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Solar, Semis, Water.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Stock Card.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Stock Card.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/vale stock card.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/vale.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/vale.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Most Shorted Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Most Shorted Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Stock Card Quiza.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/vale.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Stock Card Value and Momentum.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Strong Buy Stocks With Short Squeeze Potential.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Strong Buy Stocks With Short Squeeze Potential.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy by SA Authors .csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy by SA Authors .csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Financial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Financial Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Growth Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Growth Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Healthcare Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Healthcare Stocks.csv" afterDir="false" />
@@ -45,14 +32,32 @@
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Value Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Value Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/exchange_api/dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/exchange_api/dates.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/exchange_api/yfinance_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/exchange_api/yfinance_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/details.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/details.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/screener/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/screener/list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/get_profile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/api_compare_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/api_compare_update.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/energy_stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/energy_stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/get_results_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/get_results_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/fidelity/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/fidelity/fidelity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/details.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/analysis_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/etf top 10 holdings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/filters_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/holdings_ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/httml_client_ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/request_ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/screener/filters list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/screener/get_details.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/screener/list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/screener/screeners_ex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/screener/screens list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/top rated stocks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/examples/valuation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/api_compare_update.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/energy_stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/get_results_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis/mdb_sa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rapid_apis/seeking_alpha/update_name.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +102,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Shell Script" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/market_data/data/Seeking_Alpha" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dash_prj/examples/tables" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Some old symbols.csv" />
@@ -115,11 +120,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dash_prj/examples/tables" />
       <recent name="$PROJECT_DIR$/market_data/data/Seeking_Alpha" />
       <recent name="$PROJECT_DIR$/dash_prj/examples/plots" />
       <recent name="$PROJECT_DIR$/dash_prj/percent_app/pages" />
       <recent name="$PROJECT_DIR$/dash_prj/percent_app" />
-      <recent name="$PROJECT_DIR$/dash prj/percent_app/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/logs" />
@@ -129,8 +134,8 @@
       <recent name="$PROJECT_DIR$/rapid_apis/seeking_alpha/screener_details_apis" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.update_name">
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.url_parse">
+    <configuration name="earnings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,11 +143,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_prj/percent_app" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apis/finnhub" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/percent_app/app.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apis/finnhub/earnings.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,7 +156,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="holding_in_sa_ports" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="filter_on_symbols_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -163,7 +168,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/examples/tables/holding_in_sa_ports.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/examples/tables/filter_on_symbols_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -193,7 +198,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="plot_percents_for_periods" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="update_name (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -201,11 +206,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_prj/percent_app/pages" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apis/seeking_alpha" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/percent_app/pages/plot_percents_for_periods.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apis/seeking_alpha/update_name.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -214,7 +219,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="update_name" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="url_parse" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -222,11 +227,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/rapid_apis/seeking_alpha" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dash_prj/examples/input" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rapid_apis/seeking_alpha/update_name.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dash_prj/examples/input/url_parse.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -237,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.update_name" />
-        <item itemvalue="Python.app" />
-        <item itemvalue="Python.holding_in_sa_ports" />
+        <item itemvalue="Python.url_parse" />
+        <item itemvalue="Python.filter_on_symbols_test" />
+        <item itemvalue="Python.update_name (1)" />
+        <item itemvalue="Python.earnings" />
         <item itemvalue="Python.mdb_missing" />
-        <item itemvalue="Python.plot_percents_for_periods" />
       </list>
     </recent_temporary>
   </component>

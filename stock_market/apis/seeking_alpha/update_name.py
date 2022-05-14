@@ -3,7 +3,7 @@ import json
 import http.client
 import market_data as md
 import pandas as pd
-import rapid_apis as ra_apis
+import apis as ra_apis
 conn = http.client.HTTPSConnection("seeking-alpha.p.rapidapi.com")
 
 headers = {

@@ -3,7 +3,7 @@ import pandas as pd
 import json
 import os
 import market_data as md
-import rapid_apis as ra_apis
+import apis as ra_apis
 subdir = 'Seeking_Alpha'
 suffix = '.csv'
 
