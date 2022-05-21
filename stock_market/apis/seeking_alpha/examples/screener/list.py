@@ -1,11 +1,12 @@
 import requests
-import apis as ra_apis
+import market_data as md
+
 
 url = "https://seeking-alpha.p.rapidapi.com/screeners/list"
 
 headers = {
     'x-rapidapi-host': "seeking-alpha.p.rapidapi.com",
-    'x-rapidapi-key': ra_apis.seeking_alpha_key
+    'x-rapidapi-key': md.seeking_alpha_key
     }
 
 response = requests.request("GET", url, headers=headers)

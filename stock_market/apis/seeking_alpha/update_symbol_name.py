@@ -8,7 +8,7 @@ conn = http.client.HTTPSConnection("seeking-alpha.p.rapidapi.com")
 
 headers = {
     'x-rapidapi-host': "seeking-alpha.p.rapidapi.com",
-    'x-rapidapi-key': ra_apis.seeking_alpha_key
+    'x-rapidapi-key': md.seeking_alpha_key
     }
 
 
