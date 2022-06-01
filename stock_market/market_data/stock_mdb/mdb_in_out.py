@@ -100,23 +100,3 @@ def count_mdb_on_date(ndays,symbol,db_coll_name):
     db_coll = db[db_coll_name]
     return db_coll.count_documents({'Date': adate, 'symbol':symbol})
 
-
-def count_mdb_symbol_detween_dates(ndays,period,symbol,db_coll_name):
-    symbol = symbol.upper()
-    start_date, end_date = md.get_ndate_and_todate(ndays,period)
-    start_date, end_date = md.get_mdbdate_from_strdate(start_date),md.get_mdbdate_from_strdate(end_date)
-    db_coll = db[db_coll_name]
-    return db_coll.count_documents({'Date': {'$lte':end_date, '$gte':start_date}, 'symbol':symbol})
-
-def add_symbol_info_mdb(ndays,period, symbol,df , db_coll_name):
-    symbol = symbol.upper()
-    count = 0
-    try:
-        count = count_mdb_symbol_detween_dates(ndays, period, symbol, db_coll_name)
-        if count == 0:
-            results = md.add_df_to_db(df, db_coll_name, dropidx=False)
-            #print(len(results.inserted_ids))
-            count = len(results.inserted_ids)
-    except BulkWriteError as bwe:
-        print("Duplicate entry" ,df.index.values[0],df.symbol.values[0])
-    return count

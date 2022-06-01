@@ -83,7 +83,7 @@ dropdowns = html.Div([
 
 
 
-dct_profile = md.dct_mdb_profile_directory_port()
+dct_profile = md.dct_symbol_name_directory_port()
 def get_tooltip(symbol):
     if symbol in dct_profile:
         return dct_profile[symbol][0]

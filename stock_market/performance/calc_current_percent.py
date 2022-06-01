@@ -32,7 +32,7 @@ def df_closing_percent_change(ndays_range, calc_percent, symbols):
     df_percents = df_calc_symbol_perc(df_all, calc_percent, ndays_range)
     if calc_percent == pf.calc_interval_between:
         df_percents = df_all_overall_perc(df_all, df_percents)
-    return df_percents  #.reset_index().rename(columns={'index':'symbol'})
+    return df_percents.reset_index().rename(columns={'index':'symbol'})
 
 
 def df_today_prevday_percent_change(symbols):
@@ -58,6 +58,7 @@ def df_closing_percent_change_current(ndays_range, calc_percent, symbols):
         df_all = df_ndays_perc
     else:
         df_perc_today = df_today_prevday_percent_change(symbols)
+        df_perc_today = df_perc_today.reset_index().rename(columns={'index': 'symbol'})
         df_all = pd.concat([df_ndays_perc, df_perc_today], axis=1)
-    return df_all.reset_index().rename(columns={'index':'symbol'})
+    return df_all.T.drop_duplicates().T
 

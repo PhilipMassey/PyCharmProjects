@@ -28,13 +28,12 @@ def get_df_from_mdb_for_nday(ndays, coll_name, symbols='', incl='', dateidx=True
     return df
 
 
-def get_df_from_mdb(ndays,db_coll_name,columns='',query_field='Date'):
-    adate = md.get_date_for_mdb(ndays)
+def get_df_from_mdb(db_coll_name,columns=''):
     db_coll = db[db_coll_name]
     if len(columns) == 0:
-        mdb_data = db_coll.find({query_field: adate})
+        mdb_data = db_coll.find()
     else:
-        mdb_data = db_coll.find({query_field: adate},columns)
+        mdb_data = db_coll.find(columns)
     df = md.mdb_to_df(mdb_data)
     return df
 
@@ -61,33 +60,12 @@ def get_df_from_mdb_between_days(ndays_ago, dbcol_name, symbols='', incl=md.all,
     df = md.mdb_to_df(mdb_data, dateidx=True)
     return df
 
-#
-# def get_mdb_row_for_date(adate, db_coll_name, addtodb='False'):
-#     db_coll = db[db_coll_name]
-#     df = pd.DataFrame({})
-#     try:
-#         mdb_data = db_coll.find({db_coll : adate})
-#         df = md.mdb_to_df(mdb_data, dateidx=True)
-#     except:
-#         import sys
-#         e = sys.exc_info()
-#         print(e)
-#         print('{} mdb index error - no records for {}.'.format(db_coll_name, adate))
-#         if addtodb == True:
-#             ndays = md.getNBusDaysFromDateStr(adate.strftime("%Y-%m-%d"))
-#             df = md.get_yahoo_ndays_ago(ndays, md.get_symbols(directory=md.all))
-#             df = df.dropna(axis=1, how='all')
-#             md.addCloseVolumeRowToMdb(df,db_coll)
-#             mdb_data = db_coll.find({db_coll: adate})
-#             df = md.mdb_to_df(mdb_data, dateidx=True)
-#     return df
-
 
 ### SYMBOL queries
 
-def get_df_from_mdb_columns(columns, db_colln):
+def get_df_from_mdb_columns(columns, dbcol_name):
     columns.append('Date')
-    db_coll = db[db_colln]
+    db_coll = db[dbcol_name]
     mdb_data= db_coll.find({}, columns)
     df = md.mdb_to_df(mdb_data, dateidx=True)
     return df
@@ -138,6 +116,42 @@ def dct_mdb_profile_symbols(symbols=[]) -> dict:
     df.drop(columns='_id.$oid', inplace=True)
     return df.T.to_dict('list')
 
-def dct_mdb_profile_directory_port(directory='', ports=[]):
+def dct_mdb_symbol_names(symbols=[]) -> dict:
+    coll_name = md.db_symbol_profile
+    db_coll = db[coll_name]
+    if len(symbols) == 0:
+        mongo_data = db_coll.find()
+    else:
+        mongo_data = db_coll.find({"symbol" : { "$in" : symbols}})
+    sanitized = json.loads(json_util.dumps(mongo_data))
+    df = json_normalize(sanitized)
+    dct_sn = {}
+    for idx in range(df.shape[0]):
+        dct_sn[df.iloc[idx].symbol] = df.iloc[idx]['profile.companyName']
+    return dct_sn
+
+def df_symbol_profile(symbols=[]) -> list:
+    coll_name = md.db_symbol_profile
+    db_coll = db[coll_name]
+    if len(symbols) == 0:
+        mongo_data = db_coll.find()
+    else:
+        mongo_data = db_coll.find({"symbol": {"$in": symbols}})
+    sanitized = json.loads(json_util.dumps(mongo_data))
+    df = json_normalize(sanitized)
+    return df
+
+
+def dct_symbol_name_directory_port(directory='', ports=[]):
         symbols = md.get_symbols(directory, ports)
-        return dct_mdb_profile_symbols(symbols)
+        return dct_mdb_symbol_names(symbols)
+
+def df_mdb_between_days(ndays, period, symbols, db_coll_name,fields=None):
+    start_date, end_date = md.get_ndate_and_todate(ndays,period)
+    start_date, end_date = md.get_mdbdate_from_strdate(start_date),md.get_mdbdate_from_strdate(end_date)
+    db_coll = db[db_coll_name]
+    if not 'Date' in symbols:
+        symbols.append('Date')
+    mdb_data = db_coll.find({'Date': {'$lte':end_date, '$gte':start_date}, 'symbol': {'$in' : symbols}},fields)
+    df = md.mdb_to_df(mdb_data, dateidx=True)
+    return df

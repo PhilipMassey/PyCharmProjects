@@ -24,7 +24,8 @@ db_volume = 'market_data_volume'
 db_test_close = 'test_close'
 db_test_vol = 'test_volume'
 db_symbol_profile = 'symbol_profile'
-
+db_symbol_info = 'symbol_info'
+db_seeking_alpha_history = 'seeking_alpha_history'
 
 from .csv_data_defs import *
 from .portfolio_defs import *
@@ -51,4 +52,4 @@ sa_ports = ['Top Communication Stocks', 'Top Consumer Discretionary Stocks', 'To
             'Top Real Estate Stocks', 'Top REITs', 'Top Small Cap Stocks', 'Top Stocks by Quant',
             'Top Stocks Under $10', 'Top Technology Stocks', 'Top Utility Stocks', 'Top Value Stocks',
             'Top Yield Monsters']
-sc_port = 'Stock Card Value and Momentum'
+sc_port = 'Stock Card'

@@ -45,7 +45,7 @@ def count_mdb_on_date(ndays,symbol,db_coll_name):
 
 
 def count_mdb_symbol_detween_dates(ndays,period,symbol,db_coll_name):
-    start_date, end_date = md.get_ndate_and_todate(ndays,30)
+    start_date, end_date = md.get_ndate_and_todate(ndays,period)
     start_date, end_date = md.get_mdbdate_from_strdate(start_date),md.get_mdbdate_from_strdate(end_date)
     db_coll = db[db_coll_name]
     return db_coll.count_documents({'Date': {'$lte':end_date, '$gte':start_date}, 'symbol':symbol})

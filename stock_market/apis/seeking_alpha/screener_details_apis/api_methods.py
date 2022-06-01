@@ -40,7 +40,7 @@ def adict_screener_details(screeners, perpage):
     for screener in screeners:
         print(screener[0],end=',')
         fname = screener[0]
-        payload = screener[1].replace(', "disabled": False','')
+        payload = screener[1].replace(', "disabled": False','').replace('"authors_rating_pro"','"authors_rating"')
         response = requests.request("POST", url, data=payload, headers=headers, params=querystring)
         data = response.text
         if str(data) == '400 - Bad Request' or 'error' in str(data):
@@ -51,3 +51,18 @@ def adict_screener_details(screeners, perpage):
             tickers = df['attributes.name'].values
             adict[fname] = tickers
     return adict
+
+def write_screener_parameters():
+    screeners = apis.get_sa_screener_details_list()
+    home = '/Users/philipmassey/'
+    subdir = 'Downloads/Investing/rapidapi/seeking alpha'
+    fname = 'Screener details'
+    suffix = '.json'
+    path = os.path.join(home,subdir,fname +suffix)
+    with open(path, 'w') as f:
+        for idx in range(len(screeners)):
+            screener = screeners[idx]
+            f.write(screener[0] + '\n')
+            f.write(screener[1])
+    f.close()
+

@@ -4,21 +4,29 @@ import json
 import os
 from os.path import join
 import market_data as md
-import apis as ra_apis
+import apis as apis
 
 
 def change_value_to_list(dictionary):
     for key in dictionary:
         dictionary[key] = list(dictionary[key])
 
+def get_energy_stocks():
+    base = '/Users/philipmassey/PycharmProjects/stock_market'
+    subdir = 'apis/seeking_alpha/screener_details_apis'
+    fname= 'energy_stocks.csv'
+    path = join(base, subdir, fname)
+    df = pd.read_csv(path)
+    df.rename(columns={'Ticker':'symbol'},inplace=True)
+    return list(df.symbol.values)
+
 
 def get_energy_symbols(resultsdict):
+    esymbols = get_energy_stocks()
     energy_ports = ['Top Energy Stocks', 'Top Energy by SA Authors ']
-    esymbols = []
     for eport in energy_ports:
         esymbols.extend(resultsdict[eport])
-    esymbols = list(set(esymbols))
-    return esymbols
+    return list(set(esymbols))
 
 
 def remove_energy_stocks(resultsdict):
@@ -62,27 +70,7 @@ def replacedot(resultsdict):
             newtickers.append(ticker.replace(".",'-'))
         resultsdict[port] = newtickers
 
-holding_ports =['SA Technology', 'SA Health, Industrial', 'Fidelity Potential', 'SA Industiral']
 
-def get_old_holding_symbols(resultsdict):
-    holding_symbols = set(md.get_symbols('',ports=holding_ports))
-    stock_card = md.get_symbols_for_portfolios(['Stock Card Value and Momentum'])
-    api_symbols = [*resultsdict.values()]
-    api_symbols = set([item for sublist in api_symbols for item in sublist])
-    old_symbols = holding_symbols - api_symbols
-    for symbol in sorted(old_symbols):
-        print(symbol,end=', ')
-
-def get_old_sa_symbols(resultsdict):
-    sa_directory = md.get_symbols_dir_or_port('Seeking_Alpha',None)
-    stock_card = md.get_symbols_for_portfolios(['Stock Card Value and Momentum'])
-    sa_symbols = set(sa_directory) - set(stock_card)
-    api_symbols = [*resultsdict.values()]
-    api_symbols = set([item for sublist in api_symbols for item in sublist])
-    old_symbols = sa_symbols - api_symbols
-    print('Seeking Aplha symbols downgraded in api')
-    for symbol in sorted(old_symbols):
-        print(symbol,end=', ')
 
 def file_api_symbols(resultsdict, subdir, suffix):
     for key in resultsdict.keys():
@@ -96,26 +84,26 @@ def file_api_symbols(resultsdict, subdir, suffix):
 
 
 if __name__ == '__main__':
-    screeners = ra_apis.get_sa_screener_details_list()
+    screeners = apis.get_sa_screener_details_list()
     for idx in range(len(screeners)):
         screener = screeners[idx]
         print(idx, screener[0])
-    resultsdict = adict_screener_details(screeners, perpage=45)
+    resultsdict = apis.adict_screener_details(screeners, perpage=45)
     change_value_to_list(resultsdict)
     remove_energy_stocks(resultsdict)
     replacedot((resultsdict))
     dict_count = build_dict_count(screeners)
     trim_to_count(resultsdict, dict_count)
 
-    oldnew_dict = compare_old_new(resultsdict)
+    #oldnew_dict = compare_old_new(resultsdict)
+    apis.print_old_sa_symbols(resultsdict)
+    apis.print_old_holding_symbols(resultsdict)
 
     home = '/Users/philipmassey/'
     subdir = 'Downloads'
     fname = 'SA rapid api update'
     suffix = '.txt'
     fpath_name = os.path.join(home,sudir,fname,suffix)
-    get_old_sa_symbols(resultsdict)
-    get_old_holding_symbols(resultsdict)
     subdir = 'Seeking_Alpha'
     suffix = '.csv'
     file_api_symbols(resultsdict, subdir, suffix)

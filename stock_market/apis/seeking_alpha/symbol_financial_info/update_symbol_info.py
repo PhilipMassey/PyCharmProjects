@@ -13,7 +13,7 @@ def mdb_add_symbol_info_for_symbols(ndays, period, symbols,db_coll_name):
             if count == 0:
                 print('+', end='')
                 df = apis.df_symbol_info(ndays, symbol)
-                md.add_symbol_info_mdb(ndays, period, symbol, df, db_coll_name)
+                apis.add_symbol_info_mdb(ndays, period, symbol, df, db_coll_name)
                 update_count += 1
             else:
                 skipped += 1
@@ -25,11 +25,14 @@ def mdb_add_symbol_info_for_symbols(ndays, period, symbols,db_coll_name):
     print('\nOf',total_symbols, '+', update_count, '>',skipped)
     if error_count > 0:
         print('errors',error_count)
-    
+
 
 if __name__ == '__main__':
-    symbols = md.get_symbols('ETF')
-    db_coll_name = 'symbol_info'
+    directories = md.get_directorys()
+    db_coll_name = md.db_symbol_info
     ndays = 0
     period = 10
-    mdb_add_symbol_info_for_symbols(ndays, period, symbols,db_coll_name)
+    for directory in directories:
+        print(directory)
+        symbols = md.get_symbols(directory)
+        mdb_add_symbol_info_for_symbols(ndays, period, symbols,db_coll_name)

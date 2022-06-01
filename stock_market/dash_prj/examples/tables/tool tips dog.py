@@ -36,7 +36,7 @@ data_election = OrderedDict(
 df = pd.DataFrame(data_election)
 
 app = dash.Dash(__name__)
-dct = md.dct_mdb_profile_directory_port()
+dct = md.dct_symbol_name_directory_port()
 
 app.layout = dash_table.DataTable(
     data=df.to_dict('records'),

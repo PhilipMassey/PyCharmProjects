@@ -97,10 +97,10 @@ listen_table = html.Div(
 )
 
 
-dct_profile = md.dct_mdb_profile_directory_port()
+dct_profile = md.dct_symbol_name_directory_port()
 def get_tooltip(symbol):
     if symbol in dct_profile:
-        return dct_profile[symbol][0]
+        return dct_profile[symbol]
     else:
         return 'No worries,mate!'
 
@@ -144,8 +144,9 @@ def update_table(calc_percent, opt_ndays_range, perc_or_mean, directory, port):
         ndays_range = pf.get_ndays_range(opt_ndays_range)
         if perc_or_mean == pf.perc_option:
             symbols = md.get_symbols_dir_or_port(directory=directory, port=port)
-            if directory == 'Holding' or directory == 'Investors Edge' or port is not None:
-                df = pf.df_closing_percent_change_current(ndays_range, calc_percent, symbols)
+            if directory == 'Holding' or port is not None:
+                df = pf.df_closing_percent_change(ndays_range, calc_percent, symbols)
+                #df = pf.df_closing_percent_change_current(ndays_range, calc_percent, symbols)
             else:
                 df = pf.df_closing_percent_change(ndays_range, calc_percent, symbols)
         elif perc_or_mean == pf.mean_option:
@@ -185,14 +186,16 @@ def click_event(event, n_events):
     if not event or "cell--selected" not in event["srcElement.className"]:
         raise PreventUpdate
     # Return the content of the cell.
-    print(event, event["srcElement.className"])
+    #print(event, event["srcElement.className"])
     if event["srcElement.className"] == 'dash-cell column-0 cell--selected focused':
         symbol = event['srcElement.innerText']
         webbrowser.open('https://seekingalpha.com/symbol/' + symbol)
         webbrowser.open('https://seekingalpha.com/symbol/' + symbol + '/earnings/estimates')
         webbrowser.open('https://stockcard.io/' + symbol)
+        webbrowser.open('http://localhost:8050/filter-on-symbols')
 
-    return f"Cell content is {event['srcElement.innerText']}, number of double clicks {n_events}"
+    #return f"Cell content is {event['srcElement.innerText']}, number of double clicks {n_events}"
+
 
 # if __name__ == "__main__":
 #     app.run_server(debug=True)

@@ -28,9 +28,9 @@ df = md.mdb_to_df(mdb_data)
 
 
 df = md.get_df_from_mdb_for_nday(ndays, md.db_close, symbols)
-#print('size',df.size)
+print('size',df)
 
 
 
-df = md.get_df_from_mdb(ndays,md.db_close)
+df = md.get_df_from_mdb_for_nday(ndays,md.db_close)
 #print('df',df)
