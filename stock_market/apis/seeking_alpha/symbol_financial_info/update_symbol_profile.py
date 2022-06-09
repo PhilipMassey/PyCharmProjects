@@ -33,7 +33,7 @@ def dct_api_symbol_profile(symbols):
     return dct_symbol_profile
 
 
-def mdb_add_symbols_profiles_for_directory(directory):
+def mdb_add_symbols_profiles_for_directory(ndays,vdirectory, db_coll_name):
     ports = md.get_ports_for_directory(directory)
     mdb_symbols = md.mdb_profile_get_symbols()
     for port in ports:
@@ -42,16 +42,20 @@ def mdb_add_symbols_profiles_for_directory(directory):
         not_added_symbols = set(symbols).difference(set(mdb_symbols))
         print(len(not_added_symbols))
         if len(not_added_symbols) > 0:
-            print('\t\t no profil: ', not_added_symbols)
-            symbol_name_dct = dct_api_symbol_profile(list(not_added_symbols))
-            if len(symbol_name_dct) != 0:
-                data = {'symbol': symbol_name_dct.keys(), 'profile': symbol_name_dct.values()}
-                result = md.add_dct_to_mdb(data, md.db_symbol_profile)
-            #print(result)
-            mdb_symbols.extend(not_added_symbols)
+            print('\t\t no profile: ', not_added_symbols)
+            dct_api = dct_api_symbol_profile(list(not_added_symbols))
+            if len(dct_api) != 0:
+                df = pd.DataFrame.from_dict(dct_api)
+                df = df.T.reset_index().rename(columns={'index':'symbol'})
+                md.df_add_date_column(ndays,df)
+                inserted = md.mdb_add_df(df,db_coll_name)
+                #print(inserted)
+                mdb_symbols.extend(not_added_symbols)
 
 if __name__ == '__main__':
     dirs = md.get_directorys()
+    ndays = 0
+    db_coll_name = md.db_symbol_profile
     for directory in dirs:
         print('Directory: ',directory)
-        mdb_add_symbols_profiles_for_directory(directory)
+        mdb_add_symbols_profiles_for_directory(ndays, directory, db_coll_name)

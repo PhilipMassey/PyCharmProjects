@@ -2,6 +2,15 @@ import requests
 import pandas as pd
 import market_data as md
 import apis
+from pymongo import MongoClient
+from pymongo.errors import BulkWriteError
+from bson import json_util
+from pandas import json_normalize
+import json
+
+client = MongoClient()
+db = client['stock_market']
+
 
 key_data_fields = ['eps','peRatioFwd','estimateEps','divYield','marketCap','volume','evEbit','evEbitda','evFcf','evSales','fcf','fcfShare','marketCap','movAvg10d','movAvg10w','movAvg200d','payout4y','payoutRatio','pegRatio','peRatioFwd','priceBook','priceCf','priceSales','priceTangb','quickRatio','revenueGrowth','revenueGrowth3','revPShare','revToAssets','roa','roe','shares','ltDebtCap']
 

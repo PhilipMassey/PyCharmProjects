@@ -9,7 +9,7 @@ import pandas as pd
 
 app = Dash()
 
-Holding = md.get_port_and_symbols('Holding')
+Holding = md.get_port_and_symbols('holding')
 holding_portfolios = Holding['portfolio'].unique()
 app.layout = html.Div(
     [
@@ -36,7 +36,7 @@ def update_table(symbol):
         portfolios_symbols = md.get_port_and_symbols(directory=md.all)
         portfolios_with_symbols = portfolios_symbols[portfolios_symbols['symbol'] == symbol]['portfolio']
         dct = {'Listed': [port for port in portfolios_with_symbols if port not in holding_portfolios],
-               'Holding': [port for port in portfolios_with_symbols if port in holding_portfolios]}
+               'holding': [port for port in portfolios_with_symbols if port in holding_portfolios]}
         df = pd.DataFrame.from_dict(dct, orient='index')
         df = df.T
         print(df)

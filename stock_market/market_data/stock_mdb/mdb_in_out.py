@@ -11,6 +11,13 @@ import json
 client = MongoClient()
 db = client['stock_market']
 
+def mdb_add_df(df,db_coll_name):
+    data_dict = df.to_dict("records")
+    db_coll = db[db_coll_name]
+    result = db_coll.insert_many(data_dict)
+    return len(result.inserted_ids  )
+
+
 def add_df_to_db(df, db_coll_name, dropidx=False):
     db_coll = db[db_coll_name]
     df = df.copy(deep=True)
@@ -23,6 +30,8 @@ def add_df_to_db(df, db_coll_name, dropidx=False):
     result = db_coll.insert_many(data_dict)
     #print('Inserted {:d} into {}' .format(len(result.inserted_ids),db_coll_name))   #,len(df.index)))
     return result
+
+
 
 
 def add_dct_to_mdb(dct, db_coll_name):

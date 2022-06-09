@@ -9,7 +9,7 @@ if __name__ == '__main__':
     df = md.get_df_from_mdb_columns([],db_coll_name)
     print('history: ',set(df.index))
 
-    df = md.get_dir_port_symbols('Holding')
+    df = md.get_dir_port_symbols('holding')
     print('current symbols; ', df.shape[0])
 
     strdt = md.get_mdb_strdate_for_ndays(0)

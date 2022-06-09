@@ -72,7 +72,9 @@ def replacedot(resultsdict):
 
 
 
-def file_api_symbols(resultsdict, subdir, suffix):
+def file_api_symbols(resultsdict):
+    subdir = 'Seeking_Alpha'
+    suffix = '.csv'
     for key in resultsdict.keys():
         tickers = resultsdict[key]
         path = os.path.join(md.data_dir, subdir, key + suffix)
@@ -98,13 +100,5 @@ if __name__ == '__main__':
     #oldnew_dict = compare_old_new(resultsdict)
     apis.print_old_sa_symbols(resultsdict)
     apis.print_old_holding_symbols(resultsdict)
-
-    home = '/Users/philipmassey/'
-    subdir = 'Downloads'
-    fname = 'SA rapid api update'
-    suffix = '.txt'
-    fpath_name = os.path.join(home,sudir,fname,suffix)
-    subdir = 'Seeking_Alpha'
-    suffix = '.csv'
-    file_api_symbols(resultsdict, subdir, suffix)
+    file_api_symbols(resultsdict)
 

@@ -10,7 +10,7 @@ import performance as pf
 import pandas as pd
 import dash_bootstrap_components as dbc
 import plotly.express as px
-
+import apis
 label_size = '18px'
 
 results_date = html.Div('Current date',id='results-date-p',
@@ -68,7 +68,7 @@ dropdowns = html.Div([
 
 
 
-dct_profile = md.dct_symbol_name_directory_port()
+dct_profile = apis.dct_mdb_symbol_names()
 def get_tooltip(symbol):
     if symbol in dct_profile:
         return dct_profile[symbol][0]
@@ -114,7 +114,7 @@ def update_graph(calc_percent, opt_ndays_range,  directory, port):
         df = pd.DataFrame({'directory':[directory], 'symbol':[port]})
     else:
         ndays_range = pf.get_ndays_range(opt_ndays_range)
-        if directory == 'Holding' or port is not None:
+        if directory == 'holding' or port is not None:
             symbols = md.get_symbols_dir_or_port(directory=directory, port=port)
             df = pf.df_calc_percent_change_zero(ndays_range, calc_percent, symbols)
             fig = px.line(df, x=df.index.values, y=df.columns.values)

@@ -145,7 +145,7 @@ def update_table(calc_percent, opt_ndays_range, perc_or_mean, directory, port):
         ndays_range = pf.get_ndays_range(opt_ndays_range)
         if perc_or_mean == pf.perc_option:
             symbols = md.get_symbols_dir_or_port(directory=directory, port=port)
-            if directory == 'Holding' or port is not None:
+            if directory == 'holding' or port is not None:
                 df = pf.df_closing_percent_change_current(ndays_range, calc_percent, symbols)
             else:
                 df = pf.df_closing_percent_change(ndays_range, calc_percent, symbols)

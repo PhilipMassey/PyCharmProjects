@@ -1,6 +1,7 @@
 import requests
 import pandas as pd
 import json
+from json import JSONDecodeError
 import os
 import market_data as md
 import apis as ra_apis
@@ -38,19 +39,24 @@ def adict_screener_details(screeners, perpage):
 
     adict = {}
     for screener in screeners:
-        print(screener[0],end=',')
-        fname = screener[0]
-        payload = screener[1].replace(', "disabled": False','').replace('"authors_rating_pro"','"authors_rating"')
-        response = requests.request("POST", url, data=payload, headers=headers, params=querystring)
-        data = response.text
-        if str(data) == '400 - Bad Request' or 'error' in str(data):
-            print(data)
-            print(screener[0], screener[1])
-        else:
-            df = pd.json_normalize(json.loads(data)['data'])
-            tickers = df['attributes.name'].values
-            adict[fname] = tickers
+        try:
+            print(screener[0],end=',')
+            fname = screener[0]
+            payload = screener[1].replace(', "disabled": False','').replace('"authors_rating_pro"','"authors_rating"')
+            response = requests.request("POST", url, data=payload, headers=headers, params=querystring)
+            data = response.text
+            if str(data) == '400 - Bad Request' or 'error' in str(data):
+                print(data)
+                print(screener[0], screener[1])
+            else:
+                df = pd.json_normalize(json.loads(data)['data'])
+                tickers = df['attributes.name'].values
+                adict[fname] = tickers
+        except (JSONDecodeError,KeyError) as e:
+            print('\n',e, fname)
+            error_count += 1
     return adict
+
 
 def write_screener_parameters():
     screeners = apis.get_sa_screener_details_list()

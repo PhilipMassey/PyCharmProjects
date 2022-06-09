@@ -102,50 +102,6 @@ def mdb_profile_get_symbols(symbols=[]) -> list:
     df = json_normalize(sanitized)
     return list(df.symbol.values)
 
-
-def dct_mdb_profile_symbols(symbols=[]) -> dict:
-    coll_name = md.db_symbol_profile
-    db_coll = db[coll_name]
-    if len(symbols) == 0:
-        mongo_data = db_coll.find()
-    else:
-        mongo_data = db_coll.find({"symbol" : { "$in" : symbols}})
-    sanitized = json.loads(json_util.dumps(mongo_data))
-    df = json_normalize(sanitized)
-    df = df.set_index('symbol')
-    df.drop(columns='_id.$oid', inplace=True)
-    return df.T.to_dict('list')
-
-def dct_mdb_symbol_names(symbols=[]) -> dict:
-    coll_name = md.db_symbol_profile
-    db_coll = db[coll_name]
-    if len(symbols) == 0:
-        mongo_data = db_coll.find()
-    else:
-        mongo_data = db_coll.find({"symbol" : { "$in" : symbols}})
-    sanitized = json.loads(json_util.dumps(mongo_data))
-    df = json_normalize(sanitized)
-    dct_sn = {}
-    for idx in range(df.shape[0]):
-        dct_sn[df.iloc[idx].symbol] = df.iloc[idx]['profile.companyName']
-    return dct_sn
-
-def df_symbol_profile(symbols=[]) -> list:
-    coll_name = md.db_symbol_profile
-    db_coll = db[coll_name]
-    if len(symbols) == 0:
-        mongo_data = db_coll.find()
-    else:
-        mongo_data = db_coll.find({"symbol": {"$in": symbols}})
-    sanitized = json.loads(json_util.dumps(mongo_data))
-    df = json_normalize(sanitized)
-    return df
-
-
-def dct_symbol_name_directory_port(directory='', ports=[]):
-        symbols = md.get_symbols(directory, ports)
-        return dct_mdb_symbol_names(symbols)
-
 def df_mdb_between_days(ndays, period, symbols, db_coll_name,fields=None):
     start_date, end_date = md.get_ndate_and_todate(ndays,period)
     start_date, end_date = md.get_mdbdate_from_strdate(start_date),md.get_mdbdate_from_strdate(end_date)

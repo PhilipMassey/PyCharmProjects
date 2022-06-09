@@ -23,11 +23,13 @@ def int_to_en(num):
 def df_holding_in_sa_ports():
     sa_ports = md.sa_ports
     sa_ports.append(md.sc_port)
-    holding = md.get_symbols('Holding')
+    holding_symbols = md.get_symbols('holding')
+    seeking_ports = md.get_ports_for_directory('Seeking_Alpha')
     dct = {}
+
     for port in sa_ports:
         quant = md.get_symbols_for_portfolios([port])
-        symbols = sorted(set(holding).intersection(set(quant)))
+        symbols = sorted(set(holding_symbols).intersection(set(quant)))
         #print(port, ': ', symbols)
         dct[port] = symbols
     df = pd.DataFrame.from_dict(dct, orient='index')
@@ -35,34 +37,5 @@ def df_holding_in_sa_ports():
     df.reset_index(inplace=True)
     df.rename(columns={'index':'port'},inplace=True)
     return df
-df = df_holding_in_sa_ports()
 
-
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
-
-# table = dash_table.DataTable(
-#     id="tbl",
-#     data=df.to_dict("records"),
-#     columns=[{"name": i, "id": i} for i in df.columns],
-# )
-#
-
-
-
-# app.layout = dbc.Container(
-#     [
-#         dbc.Label("Click a cell in the table:"),
-#         listen_table,
-#         dbc.Alert("Click the table", id="out"),
-#         html.Div(id="event"),
-#     ]
-# )
-
-app.layout = dash_table.DataTable(
-    data=df.to_dict('records'),
-    style_cell={'textAlign': 'left'},
-)
-
-if __name__ == "__main__":
-    app.run_server(debug=True, port=7676)
 

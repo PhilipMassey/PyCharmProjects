@@ -8,6 +8,12 @@ client = MongoClient()
 db = client['stock_market']
 
 
+def df_add_date_column(ndays, df):
+    strdt = md.get_mdb_strdate_for_ndays(ndays)
+    dt = md.get_mdbdate_from_strdate(strdt)
+    df['Date'] = dt
+
+
 def df_idxdate_tostr(df):
     d = df.index.values[0]
     return np.datetime_as_string(d, timezone='UTC')[:10]
@@ -57,3 +63,4 @@ def df_add_date_index(ndays,df):
     df['Date'] = dt
     df.set_index('Date',inplace=True)
     return df
+
