@@ -41,7 +41,7 @@ def isit_weekend():
 
 
 
-def get_ndays_periods(months=[],weeks=[]):
+def get_ndays_periods(months=[],weeks=[],days=[]):
     last_day = get_ndays_for_end()
     now = datetime.now()
     periods = []
@@ -49,7 +49,11 @@ def get_ndays_periods(months=[],weeks=[]):
         periods.append(get_nbusdays_from_date(now - relativedelta(months=idx)))
     for idx in weeks:
         periods.append(get_nbusdays_from_date(now - relativedelta(weeks=idx)))
-    periods.append(last_day)
+    for idx in days:
+        periods.append(get_nbusdays_from_date(now - relativedelta(days=idx)))
+        periods = sorted(list(set(periods)),reverse=True)
+    if len(days) == 0:
+        periods.append(last_day)
     return tuple(periods)
 
 

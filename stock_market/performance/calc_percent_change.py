@@ -46,6 +46,9 @@ def get_ndays_range(opt_ndays_range):
         ndays_range = md.get_ndays_periods(weeks=list(range(6, 0, -1)))
     elif opt_ndays_range == pf.calc_percent_year:
         ndays_range = md.get_ndays_periods(months=(12,6,3,1),weeks=(2,1))
+    elif opt_ndays_range == pf.calc_percent_daily:
+        ndays_range = md.get_ndays_periods(days=list(range(10, 0, -1)))
+        #ndays_range = md.get_ndays_periods(days=list(range(24, 0, -1)))
     return ndays_range
 
 

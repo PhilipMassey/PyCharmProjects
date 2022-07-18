@@ -9,7 +9,7 @@ def df_calc_symbol_perc_plot(df_all, calc_percent, ndays_range):
     for symbol in df_all.columns.values:
         closings =  df_all[symbol].values
         alist = []
-        for idx in range(1,len(ndays_range)):
+        for idx in range(1,closings.shape[0]):  #len(ndays_range)):
             if calc_percent == pf.calc_interval_overall:
                 perc = (closings[idx] - closings[0])/closings[0]
             elif calc_percent == pf.calc_interval_between:

@@ -81,7 +81,6 @@ def file_api_symbols(resultsdict):
         with open(path, 'w') as f:
             f.write('Ticker\n' + '\n'.join(tickers))
             f.close()
-        print('updated: ', key)
     print('completed: updating ', subdir)
 
 

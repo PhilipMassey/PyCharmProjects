@@ -1,5 +1,5 @@
 import dash
-dash.register_page(__name__, path="/holding_analysis")
+dash.register_page(__name__, path="/"+__name__)
 from dash import callback
 from dash import Dash, dcc, html
 from dash.dependencies import Input, Output
@@ -77,19 +77,19 @@ def update_table(radio, directory, port):
     else:
         symbols = md.get_symbols_dir_or_port(directory=directory, port=port)
         if radio == 'sa':
-            df = analysis.df_symbols_by_sa_ports(symbols)
+            df = analysis.df_symbols_by_sa_ports(symbols,directory, port)
         elif radio == 'sector-industry':
             df = analysis.df_symbols_by_sector_industry(symbols)
         elif radio == 'sector':
             df = analysis.df_symbols_by_sector(symbols)
         elif radio == 'symbols-by-portfolio':
-            ports_symbols = md.get_port_and_symbols(directory)
-            df = analysis.df_symbols_by_portfolio(ports_symbols)
+            df = analysis.df_symbols_by_portfolio(symbols, directory)
     return (md.get_date_for_ndays(0),
              dt.DataTable(
                 id='table',
                 columns=[{"name": i, "id": i} for i in df.columns],
                 data=df.to_dict('records'),
+                 export_format="csv",
                  style_cell={
                      'font_family': 'arial',
                      'font_size': '20px',

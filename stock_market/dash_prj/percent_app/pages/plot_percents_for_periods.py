@@ -26,7 +26,8 @@ radio_ndays_range = html.Div([
             {'label': '2 Months', 'value': pf.calc_percent_2monthly},
             {'label': '1 Month', 'value': pf.calc_percent_monthly},
             {'label': '2 Weeks', 'value': pf.calc_percent_2weekly},
-            {'label': '1 Week', 'value': pf.calc_percent_weekly}
+            {'label': '1 Week', 'value': pf.calc_percent_weekly},
+            {'label': 'Daily', 'value': pf.calc_percent_daily}
         ],
         labelStyle={'display': 'block'},
         value=pf.calc_percent_weekly, ),

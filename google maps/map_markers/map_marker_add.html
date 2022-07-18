@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js"></script>
+<script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCWixfah-Z_yi3JE9Pq_msh6jxVm6_yonw"></script>
+
+</head>
+
+<body onload = "loadMap()">
+
+   <div class="row">
+        <div class="column" >
+            <h2>Column 1</h2>
+            <input id="fileInput" type="file" accept="image/*" multiple="false" value="Select image">
+            <input id="button" type="button" value="Add image and redraw"  onclick="addImageAndRedraw()">
+            <div class="div_image" id="image_list"></div>
+
+        </div>
+        <div class="column" >
+            <h2>Column 2</h2>
+            <div id = "sample" style = "width:580px; height:400px;"></div>
+            <p>Some text..</p>
+        </div>
+   </div>
+
+</body>
+
+</html>

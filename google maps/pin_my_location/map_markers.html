@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+   * {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  background-color:yellow
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.div_image {
+   width: 400px;
+   height: auto;
+   text-align: center;
+   padding: 5px;
+}
+img {
+    width: 100%; /* or any custom size */
+    height: 100%;
+    object-fit: contain;
+}
+img2 {
+   max-width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+</style>
+
+
+<!--
+      <script src = "https://maps.googleapis.com/maps/api/js"></script>
+-->
+      <script src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCWixfah-Z_yi3JE9Pq_msh6jxVm6_yonw"></script>
+         function loadMap() {
+
+            var mapOptions = {
+               center:new google.maps.LatLng(47.547412076332755, -122.15551020814637),
+               zoom:7
+            }
+
+            var map = new google.maps.Map(document.getElementById("sample"),mapOptions);
+
+            var marker = new google.maps.Marker({
+               position: new google.maps.LatLng(47.547412076332755, -122.15551020814637),
+               map: map,
+            });
+         }
+      </script>
+
+</head>
+
+<body onload = "loadMap()">
+
+  <div class="row">
+      <div class="column" >
+       <h2>Column 1</h2>
+        <button  onclick="clickButton()">Load image</button>
+          <div class="div_image" id="image_1""> image 1</div>
+     </div>
+      <div class="column" >
+         <h2>Column 2</h2>
+         <div id = "sample" style = "width:580px; height:400px;"></div>
+         <p>Some text..</p>
+      </div>
+   </div>
+
+
+</body>
+
+</html>

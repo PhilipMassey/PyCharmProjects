@@ -41,7 +41,8 @@ radio_ndays_range = html.Div([
             {'label': '2 Months', 'value': pf.calc_percent_2monthly},
             {'label': '1 Month', 'value': pf.calc_percent_monthly},
             {'label': '2 Weeks', 'value': pf.calc_percent_2weekly},
-            {'label': '1 Week', 'value': pf.calc_percent_weekly}
+            {'label': '1 Week', 'value': pf.calc_percent_weekly},
+            {'label': 'Daily', 'value': pf.calc_percent_daily}
         ],
         labelStyle={'display': 'block'},
         value=pf.calc_percent_weekly, ),
@@ -99,10 +100,14 @@ listen_table = html.Div(
 
 dct_profile = apis.dct_mdb_symbol_names()
 def get_tooltip(symbol):
+    line = 'No profile'
     if symbol in dct_profile:
-        return dct_profile[symbol]
+        line = dct_profile[symbol]
+        if line is None:
+            line =  'No Profile'
     else:
-        return 'No worries,mate!'
+        line =  'No worries,mate!'
+    return line
 
 
 #app = dash.Dash(__name__)
@@ -185,16 +190,12 @@ def click_event(event, n_events):
     # Check if the click is on the active cell.
     if not event or "cell--selected" not in event["srcElement.className"]:
         raise PreventUpdate
-    # Return the content of the cell.
-    #print(event, event["srcElement.className"])
+
     if event["srcElement.className"] == 'dash-cell column-0 cell--selected focused':
         symbol = event['srcElement.innerText']
         webbrowser.open('https://seekingalpha.com/symbol/' + symbol)
         webbrowser.open('https://seekingalpha.com/symbol/' + symbol + '/earnings/estimates')
         webbrowser.open('https://stockcard.io/' + symbol)
-        webbrowser.open('http://localhost:8050/filter-on-symbols')
-
-    #return f"Cell content is {event['srcElement.innerText']}, number of double clicks {n_events}"
 
 
 # if __name__ == "__main__":

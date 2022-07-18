@@ -15,6 +15,7 @@ def df_seeking_alpha_ports(ndays=0):
     df.set_index('Date', inplace=True)
     return df
 
+
 def sa_into_mdb(df, db_coll_name):
     results = md.add_df_to_db(df, db_coll_name, dropidx=False)
     print(len(results.inserted_ids), '\tCount of updates added to ',db_coll_name)

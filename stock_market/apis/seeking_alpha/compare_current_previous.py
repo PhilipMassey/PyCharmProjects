@@ -5,13 +5,16 @@ sa_top_ports = ['Top Communication Stocks','Top Consumer Discretionary Stocks','
 'Top REITs']
 
 def print_old_holding_symbols(resultsdict):
-    holding_symbols = set(md.get_symbols('',ports=holding_ports))
-    stock_card = md.get_symbols_for_portfolios(['Stock Card'])
+    holding_symbols = set(md.get_symbols('Holding'))
+    tal_vez_vendar = md.get_symbols('', ['Tal Vez Vender'])
+    holding_symbols = holding_symbols - (set(tal_vez_vendar))
+    print('Holding symbols: ', len(holding_symbols))
     api_symbols = [*resultsdict.values()]
     api_symbols = set([item for sublist in api_symbols for item in sublist])
     old_symbols = holding_symbols - api_symbols
     print('holding symbols not in api')
     print(sorted(old_symbols))
+
 
 def print_old_sa_symbols(resultsdict):
     sa_directory = md.get_symbols_dir_or_port('Seeking_Alpha',None)

@@ -17,7 +17,7 @@ def mdb_add_symbol_info_for_symbols(ndays, period, symbols,db_coll_name):
                 update_count += 1
             else:
                 skipped += 1
-                print('>', end=',')
+                print('>', end='')
         except (JSONDecodeError,KeyError) as e:
             print('\n',e, symbol)
             error_count += 1

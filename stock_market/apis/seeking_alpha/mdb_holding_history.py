@@ -7,7 +7,7 @@ db_coll_name = 'holding history'
 
 if __name__ == '__main__':
     df = md.get_df_from_mdb_columns([],db_coll_name)
-    print('history: ',set(df.index))
+    print('history: ',sorted(list(set(df.index))))
 
     df = md.get_dir_port_symbols('holding')
     print('current symbols; ', df.shape[0])
@@ -21,5 +21,5 @@ if __name__ == '__main__':
     print('added current holding: ' ,len(results.inserted_ids))
 
     df = md.get_df_from_mdb_columns([],db_coll_name)
-    print('history: ',set(df.index))
+    print('history: ', sorted(list(set(df.index))))
 

@@ -38,6 +38,7 @@ def adict_screener_details(screeners, perpage):
     querystring = {"page": "1", "per_page": "" + str(perpage) + ""}
 
     adict = {}
+    error_count = 0
     for screener in screeners:
         try:
             print(screener[0],end=',')
