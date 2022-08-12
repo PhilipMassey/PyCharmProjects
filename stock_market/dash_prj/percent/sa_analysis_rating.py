@@ -1,5 +1,5 @@
 import dash
-dash.register_page(__name__, path="/")
+#dash.register_page(__name__, path="/")
 from dash import callback
 from dash import html
 from dash import dcc
@@ -13,61 +13,13 @@ import dash_bootstrap_components as dbc
 from dash_extensions import EventListener
 import webbrowser
 import apis
+import analysis
 
 label_size = '18px'
 
 results_date = html.Div('Current date',id='results-date',
                         style={'width': '100%', 'text-align': 'center','font-size':label_size})
 
-label_perc_or_mean = html.Label('Perc or Mean',style={'font-size':label_size})
-radio_perc_or_mean = html.Div([
-    dcc.RadioItems(
-        id='radio-perc-or-mean',
-        options=[
-            {'label': 'Portfolio Mean', 'value': pf.mean_option},
-            {'label': 'Symbol percent change', 'value': pf.perc_option}
-            ],
-       labelStyle={'display': 'block'},
-       value=pf.perc_option, ),
-])
-
-
-label_ndays_range = html.Label('Select Period', style={'font-size':label_size})
-radio_ndays_range = html.Div([
-    dcc.RadioItems(
-        id='radio-ndays-range',
-        options=[
-            {'label': '5, 10, 21, 64, 128, 252 days', 'value': pf.calc_percent_year},
-            {'label': '2 Months', 'value': pf.calc_percent_2monthly},
-            {'label': '1 Month', 'value': pf.calc_percent_monthly},
-            {'label': '2 Weeks', 'value': pf.calc_percent_2weekly},
-            {'label': '1 Week', 'value': pf.calc_percent_weekly},
-            {'label': 'Daily', 'value': pf.calc_percent_daily}
-        ],
-        labelStyle={'display': 'block'},
-        value=pf.calc_percent_daily),
-])
-
-
-label_calc_percent = html.Label('Calc percent', style={'font-size':label_size})
-radio_calc_percent = html.Div([
-    dcc.RadioItems(
-        id='radio-calc-percent',
-        options=[
-            {'label': 'Calc overall', 'value': pf.calc_interval_overall},
-            {'label': 'Calc between', 'value': pf.calc_interval_between}
-        ],
-        labelStyle={'display': 'block'},
-        value=pf.calc_interval_between, ),
-])
-
-
-perc_or_mean_block = html.Div([label_perc_or_mean, radio_perc_or_mean],
-                         style={'width': '33%', 'display': 'inline-block'})
-ndays_range_block = html.Div([label_ndays_range, radio_ndays_range],
-                             style={'width': '33%', 'display': 'inline-block'})
-calc_interval_block = html.Div([label_calc_percent, radio_calc_percent],
-                               style={'width': '33%', 'display': 'inline-block', 'float': 'right'})
 
 dirs = md.get_portfolio_dirs()
 dropdowns = html.Div([
@@ -100,26 +52,22 @@ listen_table = html.Div(
 
 dct_profile = apis.dct_mdb_symbol_names()
 def get_tooltip(symbol):
-    line = 'No profile'
     if symbol in dct_profile:
-        line = dct_profile[symbol]
-        if line is None:
-            line =  'No Profile'
+        return dct_profile[symbol]
     else:
-        line =  'No worries,mate!'
-    return line
+        return 'No worries,mate!'
 
 
-#app = dash.Dash(__name__)
-layout = html.Div([results_date, perc_or_mean_block, ndays_range_block,
-                   calc_interval_block, dropdowns,
+app = dash.Dash(__name__)
+app.layout = html.Div([results_date,
+                   dropdowns,
                    listen_table,
                    html.Div(id="event")
                    ])
 
 
 #callback on directory selection
-@callback(
+@app.callback(
     Output('dropdown-ports', 'options'),
     [Input('dropdown-dirs', 'value')])
 def update_dropdown_ports(value):
@@ -131,32 +79,21 @@ def update_dropdown_ports(value):
 
 
 #update table based on
-@callback(
+@app.callback(
     Output('results-date','children'),
     Output('results-table', 'children'),
-    Input('radio-calc-percent', 'value'),
-    Input('radio-ndays-range', 'value'),
-    Input('radio-perc-or-mean', 'value'),
     Input('dropdown-dirs', 'value'),
     Input('dropdown-ports', 'value')
 )
-def update_table(calc_percent, opt_ndays_range, perc_or_mean, directory, port):
+def update_table(directory, port):
     results_date_value = 'No results'
     if directory is None:
-        ndays_range = md.get_ndays_periods(months=list(range(12, 0, -2)))
         df = pd.DataFrame({'directory':[directory], 'symbol':[port]})
+    elif port is not None:
+        df = analysis.df_port_sa_rating(port)
     else:
-        ndays_range = pf.get_ndays_range(opt_ndays_range)
-        if perc_or_mean == pf.perc_option:
-            symbols = md.get_symbols_dir_or_port(directory=directory, port=port)
-            if directory == 'holding' or port is not None:
-                df = pf.df_closing_percent_change(ndays_range, calc_percent, symbols)
-                #df = pf.df_closing_percent_change_current(ndays_range, calc_percent, symbols)
-            else:
-                df = pf.df_closing_percent_change(ndays_range, calc_percent, symbols)
-        elif perc_or_mean == pf.mean_option:
-            df = pf.df_dir_ports_means_for_range(ndays_range, calc_percent, directory)
-    return (md.get_date_for_ndays(ndays_range[-1]),
+        df = analysis.df_directory_sa_rating(directory)
+    return (md.get_date_for_ndays(0),
         dt.DataTable(
         id='table',
         columns=[{"name": i, "id": i} for i in df.columns],
@@ -185,7 +122,7 @@ def update_table(calc_percent, opt_ndays_range, perc_or_mean, directory, port):
 
 
 
-@callback(Output("event", "children"), Input("el", "event"), Input("el", "n_events"))
+@app.callback(Output("event", "children"), Input("el", "event"), Input("el", "n_events"))
 def click_event(event, n_events):
     # Check if the click is on the active cell.
     if not event or "cell--selected" not in event["srcElement.className"]:
@@ -198,7 +135,7 @@ def click_event(event, n_events):
         webbrowser.open('https://stockcard.io/' + symbol)
 
 
-# if __name__ == "__main__":
-#     app.run_server(debug=True)
+if __name__ == "__main__":
+     app.run_server(debug=True, port = 8056)
 
 

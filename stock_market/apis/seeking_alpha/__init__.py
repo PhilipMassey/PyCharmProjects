@@ -1,5 +1,6 @@
 from .screener_details_apis import *
 from .symbol_financial_info import *
+from .api_compare_update import *
 from .compare_current_previous import *
 from .mdb_sa_history import *
 from .mdb_holding_history import *

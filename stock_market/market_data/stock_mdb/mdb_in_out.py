@@ -109,3 +109,13 @@ def count_mdb_on_date(ndays,symbol,db_coll_name):
     db_coll = db[db_coll_name]
     return db_coll.count_documents({'Date': adate, 'symbol':symbol})
 
+def get_mdb_value_column(ndays, column, coll_name):
+    value = 0
+    adate = md.get_date_for_mdb(ndays)
+    db_coll = db[coll_name]
+    if db_coll.count_documents({'Date': adate}) > 0:
+        mdb_data = db_coll.find({'Date': adate},{column:1})
+        sanitized = json.loads(json_util.dumps(mdb_data))
+        normalized = json_normalize(sanitized)
+        value = normalized[column][0]
+    return value
