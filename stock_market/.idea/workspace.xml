@@ -3,26 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="ad664d6c-8e2c-4ab6-9246-4df6f1c8022d" name="Default Changelist" comment="rapid_apis">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/symbol_portfolio_rating.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/seeking_alpha/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/compare_current_previous.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash_prj/percent_app/pages/percents_for_periods.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_prj/percent_app/pages/percents_for_periods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash_prj/percent_app/pages/plot_percents_for_periods.py" beforeDir="false" afterPath="$PROJECT_DIR$/dash_prj/percent_app/pages/plot_percents_for_periods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/ARK.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Markets ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/ETF/Markets ETF.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Sector XL.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/ETF/Sector XL.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Thematic ETF.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/ETF/Thematic ETF.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Water ETF.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Biotechnology.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Health &amp; Value.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/api_compare_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/seeking_alpha/api_compare_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/screener_details_apis/energy_stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/apis/seeking_alpha/screener_details_apis/energy_stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/AAA/AAA Grade &lt; 20.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/AAA/AAA Holding.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/AAA Grade &lt; 20.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/AAA Rating &lt;20.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/AAA Rating Sum &lt; 30.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Dividends.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Dividends.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Health.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Health.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Long Term.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Long Term.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Performing.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Potential.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Potential.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Technology.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Technology.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Value and Momentum.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Value and Momentum.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Stock Card.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/World.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/World.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Stock Card.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Stock Card.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" afterDir="false" />
@@ -43,9 +37,6 @@
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Value Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Value Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/exchange_api/yfinance_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/exchange_api/yfinance_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/stock_mdb/dates.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/stock_mdb/dates.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/stock_mdb/mdb_in_out.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/stock_mdb/mdb_in_out.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

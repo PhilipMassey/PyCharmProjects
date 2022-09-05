@@ -41,7 +41,7 @@ def build_dict_count(screeners, default_count = 15):
     dict_count ={}
     for name in screener_names:
         dict_count[name] = default_count
-    dict_count['Top Rated Stocks'] = 30
+    #dict_count['Top Rated Stocks'] = 20
     dict_count['Top Stocks by Quant'] = 30
     dict_count['Top Energy Stocks'] = 0
     dict_count['Top Energy by SA Authors '] = 0
