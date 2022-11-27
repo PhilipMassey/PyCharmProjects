@@ -41,19 +41,13 @@ def dct_mdb_symbol_industry_sector(symbols=[]) -> dict:
     return dct['sectorname'],dct['primaryname']
 
 
-
-# def dct_mdb_symbol_names(symbols=[]) -> dict:
-#     coll_name = md.db_symbol_profile
-#     db_coll = db[coll_name]
-#     if len(symbols) == 0:
-#         mongo_data = db_coll.find()
-#     else:
-#         mongo_data = db_coll.find({"symbol" : { "$in" : symbols}})
-#     sanitized = json.loads(json_util.dumps(mongo_data))
-#     df = json_normalize(sanitized)
-#     dct_sn = {}
-#     for idx in range(df.shape[0]):
-#         dct_sn[df.iloc[idx].symbol] = df.iloc[idx]['profile.companyName']
-#     return dct_sn
-
-
+def get_sectors_industry():
+    coll_name = md.db_symbol_profile
+    db_coll = db[coll_name]
+    mongo_data = db_coll.find()
+    sanitized = json.loads(json_util.dumps(mongo_data))
+    df = json_normalize(sanitized)
+    df.drop(columns=['_id.$oid'],inplace=True)
+    df = df[['sectorname', 'primaryname']].dropna()
+    df.rename(columns={'sectorname': 'sector', 'primaryname': 'industry'}, inplace=True)
+    return df

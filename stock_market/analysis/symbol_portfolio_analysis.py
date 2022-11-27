@@ -104,6 +104,7 @@ def df_symbols_by_sector_industry(symbols):
     df['Industry'] = [l[1] for l in df.index.values]
     df.reset_index(inplace=True)
     df.drop(columns=['index'],inplace=True)
-    df.sort_values(by='Sector',inplace=True)
+    #df.sort_values(by='Sector',inplace=True)
+    df.sort_values(by=['Sector', 'Industry'],inplace=True)
     df = reorder_cols(df)
     return df

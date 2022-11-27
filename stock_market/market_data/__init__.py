@@ -2,6 +2,7 @@ from os.path import join
 import configparser
 config = configparser.RawConfigParser()
 
+base_dir = '/Users/philipmassey/PycharmProjects/stock_market/'
 data_dir = '/Users/philipmassey/PycharmProjects/stock_market/market_data/data'
 config_file_path = '/Users/philipmassey/.tokens/'
 pycharm_path = join(config_file_path, 'pycharm.cfg')
@@ -15,6 +16,7 @@ all = 'ALL'
 ark = 'ARK'
 etf = 'ETF'
 holding = 'holding'
+logs = 'logs'
 sa = 'Seeking_Alpha'
 test = 'test'
 watching = 'Watching'
@@ -47,6 +49,7 @@ utilities_renewable_energy = 'Utilities-Renewable Energy'
 water_etf = 'Water ETF'
 
 sa_ports = ['Top Communication Stocks', 'Top Consumer Discretionary Stocks', 'Top Consumer Staples Stocks',
+            'Top Energy by SA Authors', 'Top Energy Stocks',
             'Top Financial Stocks', 'Top Growth Stocks', 'Top Healthcare Stocks', 'Top Industrial Stocks',
             'Top Materials Stocks', 'Top Quant Dividend Stocks', 'Top Rated Dividend Stocks', 'Top Rated Stocks',
             'Top Real Estate Stocks', 'Top REITs', 'Top Small Cap Stocks', 'Top Stocks by Quant',

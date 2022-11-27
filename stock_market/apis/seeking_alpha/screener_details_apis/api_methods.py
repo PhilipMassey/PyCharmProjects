@@ -4,7 +4,6 @@ import json
 from json import JSONDecodeError
 import os
 import market_data as md
-import apis as ra_apis
 subdir = 'Seeking_Alpha'
 suffix = '.csv'
 
@@ -41,7 +40,7 @@ def adict_screener_details(screeners, perpage):
     error_count = 0
     for screener in screeners:
         try:
-            print(screener[0],end=',')
+            print(screener[0])
             fname = screener[0]
             payload = screener[1].replace(', "disabled": False','').replace('"authors_rating_pro"','"authors_rating"')
             response = requests.request("POST", url, data=payload, headers=headers, params=querystring)
