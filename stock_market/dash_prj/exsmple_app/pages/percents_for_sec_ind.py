@@ -70,10 +70,25 @@ ndays_range_block = html.Div([label_ndays_range, radio_ndays_range],
 calc_perc_by_block = html.Div([label_calc_perc_by, radio_calc_perc_by],
                                style={'width': '33%', 'display': 'inline-block', 'float': 'right'})
 
+dirs = md.get_portfolio_dirs()
+dropdowns_ports = html.Div([
+        html.Div([
+            html.Label('Portfolio Directories'),
+            dcc.Dropdown(id='dropdown-dirs-a', options=[{'label': i, 'value': i} for i in dirs], value=None)],
+            style={'width': '49%', 'float': 'left'}
+            ),
+    html.Div([
+       html.Label('Portfolios'),
+        dcc.Dropdown(id='dropdown-ports-a', options=[], value=None)],
+        style = {'width': '49%','float': 'right'}
+    ),
+
+], style= {'width': '100%','display': 'inline-block'})
+
+
 df_sector_ind = apis.get_sectors_industry()
 sectors = sorted(list(df_sector_ind['sector'].unique()))
-
-dropdowns = html.Div([
+dropdowns_sectors = html.Div([
         html.Div([
             html.Label('Sector'),
             dcc.Dropdown(id='dropdown-sector', options=[{'label': i, 'value': i} for i in sectors], value=None)],
@@ -115,10 +130,23 @@ def get_tooltip(symbol):
 
 #app = dash.Dash(__name__)
 layout = html.Div([results_date, perc_or_mean_block, ndays_range_block,
-                   calc_perc_by_block, dropdowns,
+                   calc_perc_by_block, dropdowns_ports,dropdowns_sectors,
                    listen_table,
                    html.Div(id="event-1")
                    ])
+
+#callback on directory selection
+@callback(
+    Output('dropdown-ports-a', 'options'),
+    [Input('dropdown-dirs-a', 'value')])
+def update_dropdown_ports(value):
+    if(value != None):
+        df_port_symbols = md.get_dir_port_symbols(value)
+        return [{'label': i, 'value': i} for i in sorted(df_port_symbols["portfolio"].unique())]
+    else:
+        return []
+
+
 
 
 #callback on sector selection
@@ -140,13 +168,18 @@ def update_dropdown_industries(value):
     Input('radio-calc-perc_by', 'value'),
     Input('radio-ndays-range', 'value'),
     Input('radio-perc-or-mean', 'value'),
+    Input('dropdown-dirs-a', 'value'),
+    Input('dropdown-ports-a', 'value'),
     Input('dropdown-sector', 'value'),
     Input('dropdown-industry', 'value')
 )
-def update_table(calc_perc_by, opt_ndays_range, perc_or_mean, sector, industry):
+def update_table(calc_perc_by, opt_ndays_range, perc_or_mean, directory, port, sector, industry):
     results_date_value = 'No results'
     ndays_range = pf.get_ndays_range(opt_ndays_range)
-    symbols = md.get_symbols(md.all)
+    if directory is not None:
+        symbols = md.get_symbols_dir_or_port(directory=directory, port=port)
+    else:
+        symbols = md.get_symbols(md.all)
     df_all = pf.df_secind_sym_perf(ndays_range, symbols)
 
     if sector is None:

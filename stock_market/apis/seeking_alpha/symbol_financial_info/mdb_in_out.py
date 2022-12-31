@@ -14,7 +14,7 @@ def df_symbol_profile(symbols=[],fields=None) -> list:
     coll_name = md.db_symbol_profile
     db_coll = db[coll_name]
     if len(symbols) == 0:
-        mongo_data = db_coll.find()
+        mongo_data = db_coll.find({},fields)
     else:
         mongo_data = db_coll.find({"symbol": {"$in": symbols}},fields)
     sanitized = json.loads(json_util.dumps(mongo_data))
