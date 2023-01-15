@@ -6,6 +6,13 @@ from os.path import join
 import market_data as md
 import apis
 
+exclude_screeners = ["Earnings Season's Strong Sells",
+"Earnings Season's Top Stocks",
+"Top Energy by SA Authors ",
+"Most Shorted Stocks",
+"Strong Buy Stocks With Short Squeeze Potential",
+"Earnings Season's Top Stocks"]
+
 
 def build_dict_count(screeners, default_count = 15):
     screener_names = [screener[0] for screener in screeners]
@@ -14,8 +21,6 @@ def build_dict_count(screeners, default_count = 15):
         dict_count[name] = default_count
     dict_count['Top Rated Stocks'] = 45
     dict_count['Top Stocks by Quant'] = 45
-    dict_count['Most Shorted Stocks'] = 0
-    dict_count['Strong Buy Stocks With Short Squeeze Potential'] = 0
     return dict_count
 
 screeners = apis.get_sa_screener_details_list()

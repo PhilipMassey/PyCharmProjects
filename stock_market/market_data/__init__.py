@@ -18,6 +18,7 @@ etf = 'ETF'
 holding = 'holding'
 logs = 'logs'
 sa = 'Seeking_Alpha'
+sa_history = 'sa_history'
 test = 'test'
 watching = 'Watching'
 db_client = 'stock_market'
@@ -28,6 +29,7 @@ db_test_vol = 'test_volume'
 db_symbol_profile = 'symbol_profile'
 db_symbol_info = 'symbol_info'
 db_seeking_alpha_history = 'seeking_alpha_history'
+db_holding_history = 'holding history'
 
 from .csv_data_defs import *
 from .portfolio_defs import *
@@ -56,3 +58,5 @@ sa_ports = ['Top Communication Stocks', 'Top Consumer Discretionary Stocks', 'To
             'Top Stocks Under $10', 'Top Technology Stocks', 'Top Utility Stocks', 'Top Value Stocks',
             'Top Yield Monsters']
 sc_port = 'Stock Card'
+
+load_missing_failed = []

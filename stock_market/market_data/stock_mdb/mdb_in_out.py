@@ -71,6 +71,7 @@ def add_dfup_to_db(dfup, db_coll_name):
     df['Date'] = dt
     md.add_df_to_db(df, db_coll_name, dropidx=True)
 
+
 def get_mdb_rows_close_vol(strdate, incl=md.all):
     adate = get_mdbdate_from_strdate(strdate)
     dbcoll_name = md.db_close
@@ -109,6 +110,26 @@ def count_mdb_on_date(ndays,symbol,db_coll_name):
     db_coll = db[db_coll_name]
     return db_coll.count_documents({'Date': adate, 'symbol':symbol})
 
+
+def df_from_mdb_all_data(db_coll_name, columns=[]):
+    db_coll = db[db_coll_name]
+    if len(columns) != 0:
+        columns.append('Date')
+        mdb_data= db_coll.find({}, columns)
+    else:
+        mdb_data= db_coll.find({})
+    return md.mdb_to_df(mdb_data, dateidx=True)
+
+
+def df_from_mdb_filter(db_coll_name, afilter, columns=[]):
+    db_coll = db[db_coll_name]
+    if len(columns) != 0:
+        columns.append('Date')
+        mdb_data= db_coll.find({'symbol':afilter}, columns)
+    else:
+       mdb_data= db_coll.find({'symbol':afilter})
+    return md.mdb_to_df(mdb_data, dateidx=True)
+
 def get_mdb_value_column(ndays, column, coll_name):
     value = 0
     adate = md.get_date_for_mdb(ndays)
@@ -119,3 +140,4 @@ def get_mdb_value_column(ndays, column, coll_name):
         normalized = json_normalize(sanitized)
         value = normalized[column][0]
     return value
+

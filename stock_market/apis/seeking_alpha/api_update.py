@@ -11,29 +11,32 @@ def change_value_to_list(dictionary):
     for key in dictionary:
         dictionary[key] = list(dictionary[key])
 
-def get_energy_stocks():
+def get_china_stocks():
     base = '/Users/philipmassey/PycharmProjects/stock_market'
-    subdir = 'apis/seeking_alpha/screener_details_apis'
-    fname= 'energy_stocks.csv'
+    subdir = 'logs'
+    fname= 'china.csv'
     path = join(base, subdir, fname)
     df = pd.read_csv(path)
     df.rename(columns={'Ticker':'symbol'},inplace=True)
     return list(df.symbol.values)
 
 
-def get_energy_symbols(resultsdict):
-    esymbols = get_energy_stocks()
-    energy_ports = ['Top Energy Stocks', 'Top Energy by SA Authors ']
-    for eport in energy_ports:
-        esymbols.extend(resultsdict[eport])
-    return list(set(esymbols))
+def get_china_symbols():
+    csymbols = get_chine_stocks()
+    return list(set(csymbols))
 
 
-def remove_energy_stocks(resultsdict):
-    esymbols = get_energy_symbols(resultsdict)
+def remove_elements(alist, elements):
+    for el in elements:
+        if el in alist:
+            alist.remove(el)
+
+
+def remove_china_stocks(resultsdict):
+    csymbols = get_china_symbols()
     for port in resultsdict.keys():
-        remove_elements(resultsdict[port], esymbols)
-    print('remove energy stocks')
+        remove_elements(resultsdict[port], csymbols)
+    print('remove china stocks')
 
 
 def trim_to_count(resultsdict, dict_count):
@@ -43,11 +46,6 @@ def trim_to_count(resultsdict, dict_count):
     print('trimmed resultsdict')
 
 
-def remove_elements(alist, elements):
-    for el in elements:
-        if el in alist:
-            alist.remove(el)
-
 def replacedot(resultsdict):
     for port in resultsdict:
         listtickers = resultsdict[port]
@@ -55,7 +53,6 @@ def replacedot(resultsdict):
         for ticker in listtickers:
             newtickers.append(ticker.replace(".",'-'))
         resultsdict[port] = newtickers
-
 
 
 def file_api_symbols(resultsdict, path):

@@ -8,8 +8,9 @@ start = md.get_ndays_for_end()
 end = 260
 symbols = md.get_symbols(incl)
 #symbols = ['TLT','EDV']
+md.load_missing_failed = []
 for ndays in range(start, end):
     symbols = md.update_mdb_with_missing_row(ndays, symbols)
     print()
-
+print('Content md.load_missing_failed',md.load_missing_failed)
     # [md.update_mdb_with_missing_row(ndays, directory) for ndays in range(start, end)]

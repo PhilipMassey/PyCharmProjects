@@ -1,6 +1,7 @@
 import market_data as md
 import pandas as pd
 import apis
+import performance as pf
 
 def int_to_en(num):
     d = { 0 : '0', 1 : '1', 2 : '2', 3 : '3',4: '4', 5 : '5',6 : '6', 7 : '7', 8 : '8', 9 : '9',
@@ -90,14 +91,67 @@ def reorder_cols(df):
     return df[ucols]
 
 
+def dct_sector_symbols(symbols):
+    fields = ['symbol', 'sectorname', 'primaryname']
+    df = apis.df_symbol_profile(symbols, fields)
+    df.dropna(inplace=True)
+    dct = {}
+    for sector in df.sectorname.values:
+        dct[(sector)] = sorted(list(df[(df.sectorname == sector)].symbol.values))
+    return dct
+
+
+def df_sector_means_for_range(ndays_range,symbols):
+    dct = dct_sector_symbols(symbols)
+    dfall = pd.DataFrame({})
+    for sector in dct.keys():
+        dct_symbols = (dct[sector])
+        calc_percent = pf.calc_interval_between
+        df = pf.df_closing_percent_change(ndays_range, calc_percent, dct_symbols)
+        dfs = df.describe()
+        df = dfs.loc['mean'].to_frame().T.reset_index() #.rename(columns={'index':sector})
+        df.replace('mean',sector,inplace=True)
+        dfall = pd.concat([dfall,df])
+    dfall = dfall.sort_values(by=['index']).round(decimals=2).rename(columns={'index':'Sector'})
+    return dfall
+
+
+def dct_sector_industry_symbols(symbols):
+    fields = ['symbol', 'sectorname', 'primaryname']
+    df = apis.df_symbol_profile(symbols, fields)
+    df.dropna(inplace=True)
+    dct = {}
+    for sector in df.sectorname.values:
+        for industry in df[df.sectorname == sector].primaryname.values:
+            dct[(sector, industry)] = sorted(
+                list(df[(df.sectorname == sector) & (df.primaryname == industry)].symbol.values))
+    return dct
+
+
+def df_sector_industry_means_for_range(ndays_range,symbols):
+    dct = dct_sector_industry_symbols(symbols)
+    dfall = pd.DataFrame({})
+    for sector_industry in dct.keys():
+        dct_symbols = dct[(sector_industry)]
+        calc_percent = pf.calc_interval_between
+        df = pf.df_closing_percent_change(ndays_range, calc_percent, dct_symbols)
+        dfs = df.describe()
+        df = dfs.loc['mean'].to_frame().T.reset_index() #.rename(columns={'index':sector})
+        df.replace('mean',sector_industry,inplace=True)
+        dfall = pd.concat([dfall,df])
+    dfall = dfall.sort_values(by=['index']).round(decimals=2).rename(columns={'index':'Sector'})
+    return dfall
+
+
 def df_symbols_by_sector_industry(symbols):
     fields = ['symbol','sectorname','primaryname']
     df = apis.df_symbol_profile(symbols, fields)
     df.dropna(inplace=True)
     dct = {}
     for sector in df.sectorname.values:
-            for industry in df[df.sectorname==sector].primaryname.values:
-                dct[(sector,industry)] = sorted(list(df[df.primaryname==industry].symbol.values))
+        for industry in df[df.sectorname==sector].primaryname.values:
+            dct[(sector,industry)] = sorted(list(df[(df.sectorname==sector) & (df.primaryname==industry)].symbol.values))
+
     df =pd.DataFrame.from_dict(dct, orient='index')
     df.columns = [int_to_en(column) for column in df.columns]
     df['Sector'] = [l[0] for l in df.index.values]
@@ -108,3 +162,4 @@ def df_symbols_by_sector_industry(symbols):
     df.sort_values(by=['Sector', 'Industry'],inplace=True)
     df = reorder_cols(df)
     return df
+

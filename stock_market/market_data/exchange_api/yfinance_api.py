@@ -34,7 +34,8 @@ def get_yahoo_ndays_ago(ndays, symbols):
     if len(df['Close'].columns) < len(symbols):
         failed = set(symbols).difference(df['Close'].columns)
         print('yahoo failed to download:', failed)
-        sys.exit(1)
+        md.load_missing_failed.append(failed)
+        #sys.exit(1)
     if df.size == 0:
         return pd.DataFrame({})
     else:

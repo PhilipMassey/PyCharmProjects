@@ -3,7 +3,7 @@ import market_data as md
 from pymongo import MongoClient
 client = MongoClient()
 db = client['stock_market']
-db_coll_name = 'holding history'
+db_coll_name = md.db_holding_history
 
 if __name__ == '__main__':
     df = md.get_df_from_mdb_columns([],db_coll_name)
