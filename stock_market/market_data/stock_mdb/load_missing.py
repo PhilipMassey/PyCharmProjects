@@ -6,10 +6,10 @@ client = MongoClient()
 db = client['stock_market']
 
 
-def update_mdb_with_missing_row(ndays, symbols):
+def update_mdb_with_missing_row(ndays, symbols, load_missing_failed):
     strdate = md.get_busdate_ndays_ago(ndays)
     print('ndays {} is the {}'.format(ndays,strdate), end=', ')
-    df_m, dbaction, symbols = get_missing_market_row(ndays, symbols)
+    df_m, dbaction, symbols = get_missing_market_row(ndays, symbols, load_missing_failed)
     if df_m.size > 0:
         print(int(df_m.size/2),dbaction)
         if dbaction == 'ADD':
@@ -18,7 +18,7 @@ def update_mdb_with_missing_row(ndays, symbols):
             update_mdbs_row(df_m)
     return symbols
 
-def get_missing_market_row(ndays, symbols):
+def get_missing_market_row(ndays, symbols, load_missing_failed):
     dbaction = None
     df_missing = pd.DataFrame({})
     missing_symbols = []
@@ -39,13 +39,17 @@ def get_missing_market_row(ndays, symbols):
         print(dbaction, list(missing_symbols)[0:3], '....')
         df_missing = md.get_yahoo_ndays_ago(ndays, missing_symbols)
         df_missing = df_missing.dropna(axis=1, how='all')
+        yahoo_symbols = df_missing['Close'].columns.values
+        for el in missing_symbols:
+            if el not in yahoo_symbols:
+                load_missing_failed.append(el)
     return (df_missing,dbaction, symbols)
 
 
 def add_dfclosevol_row_to_dbs(df):
     md.add_df_to_db(df['Close'], md.db_close)
-    md.add_df_to_db(df['Volume'], md.db_volume)
+#    md.add_df_to_db(df['Volume'], md.db_volume)
 
 def update_mdbs_row(df):
     md.update_mdb_with_dfrow(df['Close'], md.db_close)
-    md.update_mdb_with_dfrow(df['Volume'], md.db_volume)
+    #md.update_mdb_with_dfrow(df['Volume'], md.db_volume)

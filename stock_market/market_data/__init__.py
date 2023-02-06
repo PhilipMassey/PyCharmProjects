@@ -57,6 +57,25 @@ sa_ports = ['Top Communication Stocks', 'Top Consumer Discretionary Stocks', 'To
             'Top Real Estate Stocks', 'Top REITs', 'Top Small Cap Stocks', 'Top Stocks by Quant',
             'Top Stocks Under $10', 'Top Technology Stocks', 'Top Utility Stocks', 'Top Value Stocks',
             'Top Yield Monsters']
-sc_port = 'Stock Card'
 
-load_missing_failed = []
+sa_sectors = ['Top Communication Stocks',
+            'Top Consumer Discretionary Stocks',
+            'Top Consumer Staples Stocks',
+            'Top Energy Stocks',
+            'Top Financial Stocks',
+            'Top Healthcare Stocks',
+            'Top Industrial Stocks',
+            'Top Materials Stocks',
+            'Top REITs',
+            'Top Real Estate Stocks',
+            'Top Technology Stocks',
+            'Top Utility Stocks',
+            'Top Yield Monsters'
+            ]
+
+sa_others = ['Top ETFs by Quant',
+             'Top Rated Stocks',
+             'Top Stocks by Quant',
+             'Top Value Stocks']
+
+symbols_not_in_yahoo = []

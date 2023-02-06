@@ -29,13 +29,15 @@ def get_yahoo_ndays_ago(ndays, symbols):
         df = df.loc[[pddate]]
     else:
         df = pd.DataFrame({})
-    #df.drop('FB', axis=1, level=1, inplace=True, errors='ignore')
+    #df.drop('SPY', axis=1, level=1, inplace=True, errors='ignore')
     df = df.dropna(axis=1, how='all')
-    if len(df['Close'].columns) < len(symbols):
-        failed = set(symbols).difference(df['Close'].columns)
-        print('yahoo failed to download:', failed)
-        md.load_missing_failed.append(failed)
-        #sys.exit(1)
+    if df.size == 0:
+        print('no results from yahoo')
+        sys.exit(1)
+    # if len(df['Close'].columns) < len(symbols):
+    #     failed = set(symbols).difference(df['Close'].columns)
+    #     print('yahoo failed to download:', failed)
+    #     md.load_missing_failed + list(failed)
     if df.size == 0:
         return pd.DataFrame({})
     else:

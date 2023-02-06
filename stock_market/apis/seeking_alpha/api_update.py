@@ -11,19 +11,15 @@ def change_value_to_list(dictionary):
     for key in dictionary:
         dictionary[key] = list(dictionary[key])
 
-def get_china_stocks():
+
+def get_china_symbols():
     base = '/Users/philipmassey/PycharmProjects/stock_market'
     subdir = 'logs'
     fname= 'china.csv'
     path = join(base, subdir, fname)
     df = pd.read_csv(path)
     df.rename(columns={'Ticker':'symbol'},inplace=True)
-    return list(df.symbol.values)
-
-
-def get_china_symbols():
-    csymbols = get_chine_stocks()
-    return list(set(csymbols))
+    return list(set(df.symbol.values))
 
 
 def remove_elements(alist, elements):
@@ -65,3 +61,9 @@ def file_api_symbols(resultsdict, path):
             f.close()
     print('completed: updating ', path)
 
+def filter_to_sector_screeners(screeners):
+    nscreeners = []
+    for screener in screeners:
+        if screener[0] in md.sa_sectors:
+            nscreeners.append(screener)
+    return nscreeners

@@ -24,6 +24,7 @@ def build_dict_count(screeners, default_count = 15):
     return dict_count
 
 screeners = apis.get_sa_screener_details_list()
+screeners = apis.remove_screeners(screeners)
 resultsdict = apis.adict_screener_details(screeners, perpage=45)
 apis.change_value_to_list(resultsdict)
 apis.replacedot((resultsdict))

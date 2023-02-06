@@ -39,3 +39,8 @@ def delete_records_for_symbol(symbols, db_coll_name):
     result = db_coll.delete_many({"symbol": {"$in": symbols}})
     #result = db_coll.delete_many({})
     return result.deleted_count
+
+def delete_all_records(symbols, db_coll_name):
+    db_coll = db[db_coll_name]
+    result = db_coll.delete_many({})
+    return result.deleted_count

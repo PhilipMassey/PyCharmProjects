@@ -131,5 +131,4 @@ def click_event(event, n_events):
         symbol = event['srcElement.innerText']
         webbrowser.open('https://seekingalpha.com/symbol/' + symbol)
         webbrowser.open('https://seekingalpha.com/symbol/' + symbol + '/earnings/estimates')
-        webbrowser.open('https://stockcard.io/' + symbol)
 

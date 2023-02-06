@@ -1,5 +1,6 @@
 import dash
-dash.register_page(__name__, path="/")
+#dash.register_page(__name__, path="/")
+dash.register_page(__name__, path="/"+__name__)
 from dash import callback
 from dash import html
 from dash import dcc
@@ -195,7 +196,6 @@ def click_event(event, n_events):
         symbol = event['srcElement.innerText']
         webbrowser.open('https://seekingalpha.com/symbol/' + symbol)
         webbrowser.open('https://seekingalpha.com/symbol/' + symbol + '/earnings/estimates')
-        webbrowser.open('https://stockcard.io/' + symbol)
 
 
 # if __name__ == "__main__":

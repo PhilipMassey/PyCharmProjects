@@ -36,8 +36,7 @@ def df_non_sa(directory, port):
     return dfnsa
 
 def df_symbols_by_sa_ports(symbols,directory, port):
-    sa_ports = md.sa_ports
-    sa_ports.append(md.sc_port)
+    sa_ports = md.sa_sectors
     dct = {}
     for sa_port in sa_ports:
         quant = md.get_symbols_for_portfolios([sa_port])

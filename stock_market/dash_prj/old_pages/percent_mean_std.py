@@ -37,7 +37,6 @@ radio_ndays_range = html.Div([
     dcc.RadioItems(
         id='radio-ndays-range',
         options=[
-            {'label': '5, 10, 21, 64, 128, 252 days', 'value': pf.calc_percent_year},
             {'label': '2 Months', 'value': pf.calc_percent_2monthly},
             {'label': '1 Month', 'value': pf.calc_percent_monthly},
             {'label': '2 Weeks', 'value': pf.calc_percent_2weekly},
@@ -49,26 +48,10 @@ radio_ndays_range = html.Div([
 ])
 
 
-label_calc_perc_by = html.Label('Calc percent by', style={'font-size':label_size})
-radio_calc_perc_by = html.Div([
-    dcc.RadioItems(
-        id='radio-calc-perc_by',
-        options=[
-            {'label': 'Calc by symbol', 'value': pf.calc_percent_symbol},
-            {'label': 'Calc by industry', 'value': pf.calc_percent_industry},
-            {'label': 'Calc by sector', 'value': pf.calc_percent_sector}
-        ],
-        labelStyle={'display': 'block'},
-        value=pf.calc_percent_symbol, ),
-])
-
-
 perc_or_mean_block = html.Div([label_perc_or_mean, radio_perc_or_mean],
                          style={'width': '33%', 'display': 'inline-block'})
 ndays_range_block = html.Div([label_ndays_range, radio_ndays_range],
                              style={'width': '33%', 'display': 'inline-block'})
-calc_perc_by_block = html.Div([label_calc_perc_by, radio_calc_perc_by],
-                               style={'width': '33%', 'display': 'inline-block', 'float': 'right'})
 
 dirs = md.get_portfolio_dirs()
 dropdowns_ports = html.Div([
@@ -79,7 +62,7 @@ dropdowns_ports = html.Div([
             ),
     html.Div([
        html.Label('Portfolios'),
-        dcc.Dropdown(id='dropdown-ports-a', options=[], value=None)],
+        dcc.Dropdown(id='dropdown-ports-si', options=[], value=None)],
         style = {'width': '49%','float': 'right'}
     ),
 
@@ -130,14 +113,14 @@ def get_tooltip(symbol):
 
 #app = dash.Dash(__name__)
 layout = html.Div([results_date, perc_or_mean_block, ndays_range_block,
-                   calc_perc_by_block, dropdowns_ports,dropdowns_sectors,
+                   dropdowns_ports,dropdowns_sectors,
                    listen_table,
                    html.Div(id="event-1")
                    ])
 
 #callback on directory selection
 @callback(
-    Output('dropdown-ports-a', 'options'),
+    Output('dropdown-ports-si', 'options'),
     [Input('dropdown-dirs-a', 'value')])
 def update_dropdown_ports(value):
     if(value != None):
@@ -165,15 +148,14 @@ def update_dropdown_industries(value):
 @callback(
     Output('results-date-1','children'),
     Output('results-table-1', 'children'),
-    Input('radio-calc-perc_by', 'value'),
     Input('radio-ndays-range', 'value'),
     Input('radio-perc-or-mean', 'value'),
     Input('dropdown-dirs-a', 'value'),
-    Input('dropdown-ports-a', 'value'),
+    Input('dropdown-ports-si', 'value'),
     Input('dropdown-sector', 'value'),
     Input('dropdown-industry', 'value')
 )
-def update_table(calc_perc_by, opt_ndays_range, perc_or_mean, directory, port, sector, industry):
+def update_table(opt_ndays_range, perc_or_mean, directory, port, sector, industry):
     results_date_value = 'No results'
     ndays_range = pf.get_ndays_range(opt_ndays_range)
     if directory is not None:
@@ -227,7 +209,6 @@ def click_event(event, n_events):
         symbol = event['srcElement.innerText']
         webbrowser.open('https://seekingalpha.com/symbol/' + symbol)
         webbrowser.open('https://seekingalpha.com/symbol/' + symbol + '/earnings/estimates')
-        webbrowser.open('https://stockcard.io/' + symbol)
 
 
 # if __name__ == "__main__":
