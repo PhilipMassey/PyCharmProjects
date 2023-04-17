@@ -50,14 +50,6 @@ utilities = 'Utilities'
 utilities_renewable_energy = 'Utilities-Renewable Energy'
 water_etf = 'Water ETF'
 
-sa_ports = ['Top Communication Stocks', 'Top Consumer Discretionary Stocks', 'Top Consumer Staples Stocks',
-            'Top Energy by SA Authors', 'Top Energy Stocks',
-            'Top Financial Stocks', 'Top Growth Stocks', 'Top Healthcare Stocks', 'Top Industrial Stocks',
-            'Top Materials Stocks', 'Top Quant Dividend Stocks', 'Top Rated Dividend Stocks', 'Top Rated Stocks',
-            'Top Real Estate Stocks', 'Top REITs', 'Top Small Cap Stocks', 'Top Stocks by Quant',
-            'Top Stocks Under $10', 'Top Technology Stocks', 'Top Utility Stocks', 'Top Value Stocks',
-            'Top Yield Monsters']
-
 sa_sectors = ['Top Communication Stocks',
             'Top Consumer Discretionary Stocks',
             'Top Consumer Staples Stocks',

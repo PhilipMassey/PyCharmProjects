@@ -1,0 +1,7 @@
+This program assumes that the stock data is stored in a CSV file called "stocks_data.csv", with the following columns:
+
+"stock": the name of the stock
+"1_month_return": the return of the stock over the past month
+"2_month_return": the return of the stock over the past 2 months
+"3_month_return": the return of the stock over the past 3 months
+"positive_return": a binary indicator variable that is 1 if the stock had a positive return over the next month, and 0 otherwise

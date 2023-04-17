@@ -8,7 +8,7 @@ def df_calc_symbol_perc(df_all, calc_percent, ndays_range):
     dates_index = [md.dateindex_as_ddmmm(dt) for dt in df_all.index.values[1:]]
     df_percents = pd.DataFrame({})
     for symbol in df_all.columns.values:
-        closings =  df_all[symbol].values
+        closings = df_all[symbol].values
         alist = []
         for idx in range(1,closings.shape[0]):      #(ndays_range)):
             if calc_percent == pf.calc_interval_overall:

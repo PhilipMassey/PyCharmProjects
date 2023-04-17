@@ -33,7 +33,7 @@ def dct_api_symbol_profile(symbols):
     return dct_symbol_profile
 
 
-def mdb_add_symbols_profiles_for_directory(ndays,vdirectory, db_coll_name):
+def mdb_add_symbols_profiles_for_directory(ndays,directory, db_coll_name):
     ports = md.get_ports_for_directory(directory)
     mdb_symbols = md.mdb_profile_get_symbols()
     for port in ports:
@@ -52,10 +52,15 @@ def mdb_add_symbols_profiles_for_directory(ndays,vdirectory, db_coll_name):
                 #print(inserted)
                 mdb_symbols.extend(not_added_symbols)
 
-if __name__ == '__main__':
+def update_symbol_profile():
+    print('running update_symbol_info')
     dirs = md.get_directorys()
     ndays = 0
     db_coll_name = md.db_symbol_profile
     for directory in dirs:
         print('Directory: ',directory)
         mdb_add_symbols_profiles_for_directory(ndays, directory, db_coll_name)
+
+
+if __name__ == '__main__':
+    update_symbol_profile()

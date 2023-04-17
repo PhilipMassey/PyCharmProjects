@@ -26,8 +26,8 @@ def mdb_add_symbol_info_for_symbols(ndays, period, symbols,db_coll_name):
     if error_count > 0:
         print('errors',error_count)
 
-
-if __name__ == '__main__':
+def update_symbol_info():
+    print('running update_symbol_profile')
     directories = md.get_directorys()
     db_coll_name = md.db_symbol_info
     ndays = 0
@@ -36,3 +36,7 @@ if __name__ == '__main__':
         print(directory)
         symbols = md.get_symbols(directory)
         mdb_add_symbol_info_for_symbols(ndays, period, symbols,db_coll_name)
+
+
+if __name__ == '__main__':
+    update_symbol_info()

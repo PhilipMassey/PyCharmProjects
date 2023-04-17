@@ -21,7 +21,11 @@ def sa_into_mdb(df, db_coll_name):
     print(len(results.inserted_ids), '\tCount of updates added to ',db_coll_name)
 
 
-if __name__ == '__main__':
+def mdb_sa_history():
+    print('running mdb_sa_history')
     db_coll_name = md.db_seeking_alpha_history
     df = df_seeking_alpha_ports()
     sa_into_mdb(df, db_coll_name)
+
+if __name__ == '__main__':
+    mdb_sa_history()

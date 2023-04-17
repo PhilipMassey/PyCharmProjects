@@ -7,7 +7,6 @@ incl = md.all
 start = md.get_ndays_for_end()
 end = 260
 
-
 def run_mdb_missing(symbols):
     load_missing_failed = []
     for ndays in range(start, end):
@@ -22,7 +21,6 @@ def run_mdb_missing(symbols):
     print(values, counts)
         # [md.update_mdb_with_missing_row(ndays, directory) for ndays in range(start, end)]
 
-print(__name__)
 if __name__ == '__main__':
     symbols = md.get_symbols(incl)
     run_mdb_missing(symbols)
