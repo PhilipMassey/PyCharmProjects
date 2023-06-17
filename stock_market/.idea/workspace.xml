@@ -5,57 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad664d6c-8e2c-4ab6-9246-4df6f1c8022d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../MyOpenAI/myloopgpt/jamie_gpt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyOpenAI/myloopgpt/loopgpt.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyOpenAI/myloopgpt/research_gpt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyOpenAI/myloopgpt/vacation_gpt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyOpenAI/myloopgpt/weather_gpt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyOpenAI/myloopgpt/wolfram_gpt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyOpenAI/openai api/chatbot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/api_update._run.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/mdb_holding_history.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/seeking_alpha/mdb_holding_history.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/mdb_sa_history.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/seeking_alpha/mdb_sa_history.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/screener_details_apis/api_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/seeking_alpha/screener_details_apis/api_methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/update_symbol_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/seeking_alpha/update_symbol_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/update_symbol_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/apis/seeking_alpha/update_symbol_profile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtest/steady/5 days up to 05-24.csv" beforeDir="false" afterPath="$PROJECT_DIR$/backtest/steady/5 days up to 05-24.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dash_prj/examples/tables/holding_in_sa_ports.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Investors Edge/IE Real Estate.csv" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Investors Edge/IE Real Estate.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Investors Edge/IE Tal Vez Comprar.csv" beforeDir="false" afterPath="$PROJECT_DIR$/logs/Investors Edge/IE Tal Vez Comprar.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apis/seeking_alpha/run_api_update..py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/china.csv" beforeDir="false" afterPath="$PROJECT_DIR$/logs/china.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Dividend Funds.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Markets ETF.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Utilidades.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/sa_history/Top Consumer Discretionary Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sa_history/Top Consumer Discretionary Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/sa_history/Top Financial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sa_history/Top Financial Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/sa_history/Top Healthcare Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sa_history/Top Healthcare Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/sa_history/Top Yield Monsters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/logs/sa_history/Top Yield Monsters.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Dividends.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Dividends.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Health.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Health.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Individual.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Individual.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Long Term.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Long Term.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Short.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Holding/Short.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Holding/Treasury.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top ETFs.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Energy Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Financial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Financial Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Healthcare Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Healthcare Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Industrial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Industrial Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Materials Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Materials Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top REITs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top REITs.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top REITs.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Real Estate Stocks.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Technology Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Technology Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Communication Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Consumer Discretionary Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Consumer Discretionary Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Consumer Staples Stocks-old.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Consumer Staples Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Consumer Staples Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Energy Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Energy Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Financial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Financial Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Healthcare Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Healthcare Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Industrial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Industrial Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Materials Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Materials Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top REITs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top REITs.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Real Estate Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Real Estate Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Technology Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Technology Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Utility Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Utility Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Yield Monsters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/sa_history/Top Yield Monsters.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/scripts/mdb_missing.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/scripts/mdb_missing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/stock_mdb/delete_records.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/stock_mdb/delete_records.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/performance/calc_current_percent.py" beforeDir="false" afterPath="$PROJECT_DIR$/performance/calc_current_percent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Communications Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Consumer Discretionary Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Consumer Staples Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Energy Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Financial Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Healthcare Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Industrial Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Materials Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top REITs.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Real Estate Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Technology Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Utility Stocks.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/market_data/data/sa_history/Top Yield Monsters.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,15 +120,15 @@
       <recent name="$PROJECT_DIR$/dash_prj/exsmple_app/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/market_data/data/ETF" />
+      <recent name="$PROJECT_DIR$/logs" />
       <recent name="$PROJECT_DIR$/dash_prj/percent_app/pages" />
       <recent name="$PROJECT_DIR$/dash_prj/old_pages" />
       <recent name="$PROJECT_DIR$/dash_prj/exsmple_app/pages" />
-      <recent name="$PROJECT_DIR$/dash_prj/examples/grsph" />
-      <recent name="$PROJECT_DIR$/dash_prj" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.update_symbol_profile">
-    <configuration name="mdb_holding_history" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.run_post_api_update">
+    <configuration name="assemblyai" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,11 +136,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apis/seeking_alpha" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ai/openai" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apis/seeking_alpha/mdb_holding_history.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ai/openai/assemblyai.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,7 +149,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_api_update." type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="chat_history" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="stock_market" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ai/openai" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ai/openai/chat_history.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_api_update" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -164,7 +182,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apis/seeking_alpha/run_api_update..py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apis/seeking_alpha/run_api_update.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,7 +212,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="update_symbol_info" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="wrapper_for_chatGPT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock_market" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -202,32 +220,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apis/seeking_alpha" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ai/openai" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apis/seeking_alpha/update_symbol_info.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="update_symbol_profile" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="stock_market" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apis/seeking_alpha" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apis/seeking_alpha/update_symbol_profile.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ai/openai/wrapper_for_chatGPT.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -238,11 +235,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.update_symbol_profile" />
-        <item itemvalue="Python.update_symbol_info" />
         <item itemvalue="Python.run_post_api_update" />
         <item itemvalue="Python.run_api_update." />
-        <item itemvalue="Python.mdb_holding_history" />
+        <item itemvalue="Python.assemblyai" />
+        <item itemvalue="Python.wrapper_for_chatGPT" />
+        <item itemvalue="Python.chat_history" />
       </list>
     </recent_temporary>
   </component>

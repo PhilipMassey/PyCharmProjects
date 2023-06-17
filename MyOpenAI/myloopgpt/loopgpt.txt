@@ -1,0 +1,3 @@
+https://github.com/farizrahman4u/loopgpt
+
+/Users/philipmassey/PycharmProjects/MyOpenAI/myloopgpt

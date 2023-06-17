@@ -1,0 +1,11 @@
+pandasai
+https://github.com/gventuri/pandas-ai?utm_source=tldrai
+
+fter installing the virtual environment, please remember to install pre-commit to be compliant with our standards:
+
+OPENAI_API_KEY
+
+cp .env.example .env
+or
+llm = OpenAI(api_token="YOUR_OPENAI_API_KEY")
+
