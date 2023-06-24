@@ -39,5 +39,5 @@ def run_file_df_tickers(filename):
 
 
 if __name__ == '__main__':
-    filename = 'Portfolio_Positions-2023.csv'
+    filename = 'Portfolio_Positions.csv'
     run_file_df_tickers(filename)

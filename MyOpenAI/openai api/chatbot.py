@@ -5,7 +5,7 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 
 class ChatBot:
     def __init__(self, system=""):
-        openai.api_key = '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'
+        openai.api_key = os.getenv("OPENAI_API_KEY")
         self.system = system
         self.messages = []
         if self.system:

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const subQuadrants = document.querySelectorAll('.sub-quadrant');
 
-  const colorSetA = [
+const colorSetA = [
   ['#CCCCCC', '#CCCCCC', '#CCCCCC', '#CCCCCC'],
   ['#CCCCCC', '#CCCCCC', '#CCCCCC', '#CCCCCC'],
   ['#CCCCCC', '#CCCCCC', '#CCCCCC', '#CCCCCC'],
