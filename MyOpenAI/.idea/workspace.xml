@@ -5,53 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e23755e-03de-4b56-9f69-184b500d35cf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/myloopgpt/jamie_gpt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myloopgpt/loopgpt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myloopgpt/research_gpt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myloopgpt/vacation_gpt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myloopgpt/weather_gpt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myloopgpt/wolfram_gpt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/openai api/chatbot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/.idea/codestream.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/logs/china.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/logs/china.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/logs/sa_history/Top Consumer Discretionary Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/logs/sa_history/Top Consumer Discretionary Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/logs/sa_history/Top Financial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/logs/sa_history/Top Financial Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/logs/sa_history/Top Healthcare Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/logs/sa_history/Top Healthcare Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/logs/sa_history/Top Yield Monsters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/logs/sa_history/Top Yield Monsters.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Dividends.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Dividends.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Health.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Health.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Individual.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Individual.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Long Term.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Long Term.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Short.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Short.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Holding/Treasury.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Communication Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Consumer Discretionary Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Consumer Staples Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top ETFs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top ETFs.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Energy Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Energy Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Financial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Financial Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Healthcare Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Healthcare Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Industrial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Industrial Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Materials Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Materials Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top REITs.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Real Estate Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Technology Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Technology Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Utility Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../stock_market/market_data/data/Seeking_Alpha/Top Yield Monsters.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Communications Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Consumer Discretionary Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Consumer Staples Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Energy Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Financial Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Healthcare Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Industrial Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Materials Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top REITs.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Real Estate Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Technology Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Utility Stocks.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../stock_market/market_data/data/sa_history/Top Yield Monsters.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,11 +38,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/philipmassey/PycharmProjects/MyOpenAI/myloopgpt"
+    "last_opened_file_path": "/Users/philipmassey/PycharmProjects/MyOpenAI/spotify",
+    "settings.editor.selected.configurable": "preferences.CodeStreamConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spotify" />
       <recent name="$PROJECT_DIR$/myloopgpt" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -166,4 +123,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="key prob" />
+    <MESSAGE value="spotify lst" />
+    <option name="LAST_COMMIT_MESSAGE" value="spotify lst" />
+  </component>
 </project>

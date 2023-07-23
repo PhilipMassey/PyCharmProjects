@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad664d6c-8e2c-4ab6-9246-4df6f1c8022d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../MyOpenAI/openai api/chatbot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../MyOpenAI/openai api/chatbot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/.idea/codestream.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/square/script_one.js" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/square/one.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/square/script_three.js" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/square/three.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/square/script_two.js" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/square/two.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/square/square_one.html" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/square/one.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/square/square_three.html" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/square/square_three.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pythonProject/square/square_two.html" beforeDir="false" afterPath="$PROJECT_DIR$/../pythonProject/square/two.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyOpenAI/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyOpenAI/.idea/codestream.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MyOpenAI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyOpenAI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/ETF/Top ETFs.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/ETF/Top ETFs.csv" afterDir="false" />
@@ -30,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Industrial Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Industrial Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Materials Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Materials Stocks.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Technology Stocks.csv" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/data/Seeking_Alpha/Top Technology Stocks.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/market_data/scripts/read_fidexport_file_holding.py" beforeDir="false" afterPath="$PROJECT_DIR$/market_data/scripts/read_fidexport_file_holding.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
